@@ -10,9 +10,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/match"
-	"github.com/elastic/beats/v7/x-pack/libbeat/management/api"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
+	"github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management/api"
 )
 
 // ConfigBlacklist takes a ConfigBlocks object and filter it based on the given

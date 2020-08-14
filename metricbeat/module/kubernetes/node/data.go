@@ -21,8 +21,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/metricbeat/module/kubernetes"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/kubernetes"
 )
 
 func eventMapping(content []byte) (common.MapStr, error) {

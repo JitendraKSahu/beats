@@ -30,15 +30,15 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/fmtstr"
-	"github.com/elastic/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/elastic/beats/v7/libbeat/idxmgmt"
-	"github.com/elastic/beats/v7/libbeat/outputs"
-	_ "github.com/elastic/beats/v7/libbeat/outputs/elasticsearch"
-	"github.com/elastic/beats/v7/libbeat/outputs/outest"
-	"github.com/elastic/beats/v7/libbeat/outputs/outil"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
+	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/JitendraKSahu/beats/v7/libbeat/idxmgmt"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
+	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/elasticsearch"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outest"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outil"
 )
 
 const (

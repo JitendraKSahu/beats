@@ -27,8 +27,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/elastic/beats/v7/libbeat/api/npipe"
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/api/npipe"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 )
 
 func TestNamedPipe(t *testing.T) {

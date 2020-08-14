@@ -17,14 +17,14 @@ import (
 	"github.com/elastic/elastic-agent-client/v7/pkg/client"
 	"github.com/elastic/elastic-agent-client/v7/pkg/proto"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/libbeat/common/reload"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/management"
-	"github.com/elastic/beats/v7/x-pack/libbeat/management/api"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/management"
+	"github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management/api"
 
-	xmanagement "github.com/elastic/beats/v7/x-pack/libbeat/management"
+	xmanagement "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management"
 )
 
 // Manager handles internal config updates. By retrieving

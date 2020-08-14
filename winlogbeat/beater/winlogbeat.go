@@ -27,14 +27,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/paths"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
 
-	"github.com/elastic/beats/v7/winlogbeat/checkpoint"
-	"github.com/elastic/beats/v7/winlogbeat/config"
-	"github.com/elastic/beats/v7/winlogbeat/eventlog"
+	"github.com/JitendraKSahu/beats/v7/winlogbeat/checkpoint"
+	"github.com/JitendraKSahu/beats/v7/winlogbeat/config"
+	"github.com/JitendraKSahu/beats/v7/winlogbeat/eventlog"
 )
 
 // Debug logging functions for this package.

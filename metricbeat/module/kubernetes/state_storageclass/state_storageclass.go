@@ -18,8 +18,8 @@
 package state_storageclass
 
 import (
-	p "github.com/elastic/beats/v7/metricbeat/helper/prometheus"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	p "github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 func init() {

@@ -26,9 +26,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	mbtest "github.com/elastic/beats/v7/metricbeat/mb/testing"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
 )
 
 const (

@@ -18,10 +18,10 @@
 package multiline
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common/match"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/reader"
-	"github.com/elastic/beats/v7/libbeat/reader/readfile"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/reader"
+	"github.com/JitendraKSahu/beats/v7/libbeat/reader/readfile"
 )
 
 // MultiLine reader combining multiple line events into one multi-line event.

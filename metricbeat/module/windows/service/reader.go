@@ -28,7 +28,7 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/sys/windows/registry"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 )
 
 var (

@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 )
 
 type cache struct {

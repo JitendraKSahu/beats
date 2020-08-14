@@ -25,10 +25,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/filebeat/input/file"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
-	"github.com/elastic/beats/v7/libbeat/statestore"
+	"github.com/JitendraKSahu/beats/v7/filebeat/input/file"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
+	"github.com/JitendraKSahu/beats/v7/libbeat/statestore"
 )
 
 type Registrar struct {

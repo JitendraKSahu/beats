@@ -5,8 +5,8 @@
 package application
 
 import (
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
 )
 
 func metadata() (*info.ECSMeta, error) {

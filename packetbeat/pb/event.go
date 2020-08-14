@@ -26,9 +26,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/flowhash"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/flowhash"
 	"github.com/elastic/ecs/code/go/ecs"
 )
 

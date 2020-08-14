@@ -22,7 +22,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
 )
 
 // Core metric types.

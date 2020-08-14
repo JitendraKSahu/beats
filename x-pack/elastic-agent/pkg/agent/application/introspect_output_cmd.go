@@ -7,13 +7,13 @@ package application
 import (
 	"fmt"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/application/filters"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/program"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/noop"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/filters"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/noop"
 )
 
 // IntrospectOutputCmd is an introspect subcommand that shows configurations of the agent.

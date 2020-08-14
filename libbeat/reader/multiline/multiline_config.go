@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/match"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
 )
 
 type multilineType uint8

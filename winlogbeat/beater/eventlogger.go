@@ -21,17 +21,17 @@ import (
 	"io"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/acker"
-	"github.com/elastic/beats/v7/libbeat/common/fmtstr"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/processors"
-	"github.com/elastic/beats/v7/libbeat/processors/add_formatted_index"
-	"github.com/elastic/beats/v7/libbeat/publisher/pipetool"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors/add_formatted_index"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/pipetool"
 
-	"github.com/elastic/beats/v7/winlogbeat/checkpoint"
-	"github.com/elastic/beats/v7/winlogbeat/eventlog"
+	"github.com/JitendraKSahu/beats/v7/winlogbeat/checkpoint"
+	"github.com/JitendraKSahu/beats/v7/winlogbeat/eventlog"
 )
 
 type eventLogger struct {

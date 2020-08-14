@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/kubernetes"
-	"github.com/elastic/beats/v7/libbeat/common/safemapstr"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/safemapstr"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 // init registers the MetricSet with the central registry.

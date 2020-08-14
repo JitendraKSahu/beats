@@ -7,11 +7,11 @@ package application
 import (
 	"context"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/warn"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/warn"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 // Application is the application interface implemented by the different running mode.

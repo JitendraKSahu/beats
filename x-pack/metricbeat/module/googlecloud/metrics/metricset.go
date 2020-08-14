@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 
 	monitoring "cloud.google.com/go/monitoring/apiv3"
 	"github.com/golang/protobuf/ptypes/duration"
@@ -19,10 +19,10 @@ import (
 	"google.golang.org/genproto/googleapis/api/metric"
 	monitoringpb "google.golang.org/genproto/googleapis/monitoring/v3"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/x-pack/metricbeat/module/googlecloud"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/googlecloud"
 )
 
 const (

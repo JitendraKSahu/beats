@@ -5,9 +5,9 @@
 package application
 
 import (
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/kibana"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/kibana"
 )
 
 type localConfig struct {

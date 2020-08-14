@@ -23,12 +23,12 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/outputs"
-	"github.com/elastic/beats/v7/libbeat/outputs/codec"
-	"github.com/elastic/beats/v7/libbeat/outputs/outil"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outil"
 )
 
 const (

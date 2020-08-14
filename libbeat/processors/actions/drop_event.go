@@ -18,10 +18,10 @@
 package actions
 
 import (
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/processors"
-	"github.com/elastic/beats/v7/libbeat/processors/checks"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors/checks"
 )
 
 type dropEvent struct{}

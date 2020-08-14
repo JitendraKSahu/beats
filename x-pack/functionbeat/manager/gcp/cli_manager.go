@@ -15,12 +15,12 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/x-pack/functionbeat/function/provider"
-	"github.com/elastic/beats/v7/x-pack/functionbeat/manager/core"
-	"github.com/elastic/beats/v7/x-pack/functionbeat/manager/executor"
-	fngcp "github.com/elastic/beats/v7/x-pack/functionbeat/provider/gcp/gcp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/provider"
+	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/manager/core"
+	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/manager/executor"
+	fngcp "github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/gcp/gcp"
 )
 
 type installer interface {

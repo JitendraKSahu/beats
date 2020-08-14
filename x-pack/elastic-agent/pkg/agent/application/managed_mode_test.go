@@ -11,10 +11,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/application/filters"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/filters"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
 )
 
 func TestManagedModeRouting(t *testing.T) {

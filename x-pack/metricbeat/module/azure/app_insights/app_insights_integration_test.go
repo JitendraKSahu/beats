@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	mbtest "github.com/elastic/beats/v7/metricbeat/mb/testing"
+	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
 )
 
 func TestFetchMetricset(t *testing.T) {

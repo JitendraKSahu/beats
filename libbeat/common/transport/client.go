@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/testing"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/testing"
 )
 
 type Client struct {

@@ -7,9 +7,9 @@ package main
 import (
 	"os"
 
-	"github.com/elastic/beats/v7/x-pack/journalbeat/cmd"
+	"github.com/JitendraKSahu/beats/v7/x-pack/journalbeat/cmd"
 
-	_ "github.com/elastic/beats/v7/journalbeat/include"
+	_ "github.com/JitendraKSahu/beats/v7/journalbeat/include"
 )
 
 func main() {

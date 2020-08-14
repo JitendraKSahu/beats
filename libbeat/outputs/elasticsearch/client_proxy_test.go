@@ -33,9 +33,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/elastic/beats/v7/libbeat/common/atomic"
-	"github.com/elastic/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/elastic/beats/v7/libbeat/outputs/outil"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
+	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outil"
 )
 
 // These constants are inserted into client http request headers and confirmed

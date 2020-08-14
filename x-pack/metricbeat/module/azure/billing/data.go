@@ -13,8 +13,8 @@ import (
 
 	"github.com/shopspring/decimal"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 func EventsMapping(results Usage) []mb.Event {

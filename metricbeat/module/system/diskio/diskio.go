@@ -20,9 +20,9 @@
 package diskio
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/metricbeat/mb/parse"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
 
 	"github.com/pkg/errors"
 )

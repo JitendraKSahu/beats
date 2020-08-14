@@ -24,8 +24,8 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/elastic/beats/v7/libbeat/publisher"
-	"github.com/elastic/beats/v7/libbeat/testing"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/JitendraKSahu/beats/v7/libbeat/testing"
 )
 
 type failoverClient struct {

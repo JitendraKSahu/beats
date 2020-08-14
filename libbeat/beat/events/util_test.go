@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 )
 
 func TestGetMetaStringValue(t *testing.T) {

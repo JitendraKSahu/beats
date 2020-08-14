@@ -7,7 +7,7 @@ package billing
 import (
 	"github.com/stretchr/testify/mock"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 
 	"github.com/Azure/azure-sdk-for-go/services/consumption/mgmt/2019-01-01/consumption"
 )

@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
 )
 
 const (

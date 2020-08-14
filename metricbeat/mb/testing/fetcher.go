@@ -20,9 +20,9 @@ package testing
 import (
 	"testing"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 // Fetcher is an interface implemented by all fetchers for testing purpouses

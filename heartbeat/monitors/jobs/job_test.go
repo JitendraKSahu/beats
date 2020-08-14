@@ -22,9 +22,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/elastic/beats/v7/heartbeat/eventext"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/heartbeat/eventext"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 	"github.com/elastic/go-lookslike"
 	"github.com/elastic/go-lookslike/testslike"
 )

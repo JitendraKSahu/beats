@@ -26,11 +26,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 
-	"github.com/elastic/beats/v7/packetbeat/protos"
-	"github.com/elastic/beats/v7/packetbeat/protos/tcp"
+	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
+	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/tcp"
 )
 
 var debugf = logp.MakeDebug("rpc")

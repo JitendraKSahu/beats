@@ -20,8 +20,8 @@ package cluster
 import (
 	"encoding/json"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 type StorageTotals_Ram struct {

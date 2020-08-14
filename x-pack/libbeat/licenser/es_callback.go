@@ -10,9 +10,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/outputs/elasticsearch"
+	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/elasticsearch"
 )
 
 const licenseDebugK = "license"

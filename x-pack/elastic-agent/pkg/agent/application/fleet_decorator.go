@@ -7,9 +7,9 @@ package application
 import (
 	"fmt"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 func injectFleet(cfg *config.Config) func(*logger.Logger, *transpiler.AST) error {

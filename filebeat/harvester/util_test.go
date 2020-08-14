@@ -24,8 +24,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/elastic/beats/v7/libbeat/common/match"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 // InitMatchers initializes a list of compiled regular expressions.

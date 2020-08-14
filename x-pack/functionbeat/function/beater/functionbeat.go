@@ -11,18 +11,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common/fmtstr"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/monitoring"
-	"github.com/elastic/beats/v7/libbeat/processors"
-	"github.com/elastic/beats/v7/x-pack/functionbeat/config"
-	"github.com/elastic/beats/v7/x-pack/functionbeat/function/core"
-	"github.com/elastic/beats/v7/x-pack/functionbeat/function/provider"
-	"github.com/elastic/beats/v7/x-pack/functionbeat/function/telemetry"
-	"github.com/elastic/beats/v7/x-pack/libbeat/licenser"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/config"
+	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/core"
+	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/provider"
+	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/telemetry"
+	"github.com/JitendraKSahu/beats/v7/x-pack/libbeat/licenser"
 )
 
 var (

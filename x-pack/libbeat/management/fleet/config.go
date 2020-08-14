@@ -5,7 +5,7 @@
 package fleet
 
 import (
-	xmanagement "github.com/elastic/beats/v7/x-pack/libbeat/management"
+	xmanagement "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management"
 )
 
 // Config for central management

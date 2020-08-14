@@ -27,14 +27,14 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	"github.com/elastic/beats/v7/libbeat/common/fmtstr"
-	"github.com/elastic/beats/v7/libbeat/common/transport"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/outputs"
-	"github.com/elastic/beats/v7/libbeat/outputs/codec"
-	"github.com/elastic/beats/v7/libbeat/outputs/outil"
-	"github.com/elastic/beats/v7/libbeat/publisher"
-	"github.com/elastic/beats/v7/libbeat/testing"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outil"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/JitendraKSahu/beats/v7/libbeat/testing"
 )
 
 type client struct {

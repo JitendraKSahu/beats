@@ -12,7 +12,7 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 func reexec(log *logger.Logger, executable string) error {

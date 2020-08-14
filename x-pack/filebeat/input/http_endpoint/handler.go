@@ -14,10 +14,10 @@ import (
 	"net/http"
 	"time"
 
-	stateless "github.com/elastic/beats/v7/filebeat/input/v2/input-stateless"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	stateless "github.com/JitendraKSahu/beats/v7/filebeat/input/v2/input-stateless"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 type httpHandler struct {

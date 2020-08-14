@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 const message = "The Elastic Agent is currently in BETA and should not be used in production"

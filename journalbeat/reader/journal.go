@@ -24,13 +24,13 @@ import (
 
 	"github.com/coreos/go-systemd/v22/sdjournal"
 
-	"github.com/elastic/beats/v7/journalbeat/checkpoint"
-	"github.com/elastic/beats/v7/journalbeat/cmd/instance"
-	"github.com/elastic/beats/v7/journalbeat/pkg/journalfield"
-	"github.com/elastic/beats/v7/journalbeat/pkg/journalread"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common/backoff"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/journalbeat/checkpoint"
+	"github.com/JitendraKSahu/beats/v7/journalbeat/cmd/instance"
+	"github.com/JitendraKSahu/beats/v7/journalbeat/pkg/journalfield"
+	"github.com/JitendraKSahu/beats/v7/journalbeat/pkg/journalread"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/backoff"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 	"github.com/elastic/go-concert/ctxtool"
 )
 

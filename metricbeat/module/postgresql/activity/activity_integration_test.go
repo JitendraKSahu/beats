@@ -22,10 +22,10 @@ package activity
 import (
 	"testing"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/tests/compose"
-	mbtest "github.com/elastic/beats/v7/metricbeat/mb/testing"
-	"github.com/elastic/beats/v7/metricbeat/module/postgresql"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/tests/compose"
+	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/postgresql"
 
 	"github.com/stretchr/testify/assert"
 )

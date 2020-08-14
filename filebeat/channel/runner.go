@@ -18,13 +18,13 @@
 package channel
 
 import (
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/cfgfile"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/fmtstr"
-	"github.com/elastic/beats/v7/libbeat/processors"
-	"github.com/elastic/beats/v7/libbeat/processors/add_formatted_index"
-	"github.com/elastic/beats/v7/libbeat/publisher/pipetool"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors/add_formatted_index"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/pipetool"
 )
 
 type onCreateFactory struct {

@@ -11,13 +11,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/cfgfile"
-	"github.com/elastic/beats/v7/libbeat/cmd/instance"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/libbeat/common/file"
-	"github.com/elastic/beats/v7/libbeat/keystore"
-	"github.com/elastic/beats/v7/libbeat/kibana"
-	"github.com/elastic/beats/v7/x-pack/libbeat/management/api"
+	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
+	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/file"
+	"github.com/JitendraKSahu/beats/v7/libbeat/keystore"
+	"github.com/JitendraKSahu/beats/v7/libbeat/kibana"
+	"github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management/api"
 )
 
 const accessTokenKey = "management.accesstoken"

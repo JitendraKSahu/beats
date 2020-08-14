@@ -25,16 +25,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/acker"
-	"github.com/elastic/beats/v7/libbeat/common/atomic"
-	"github.com/elastic/beats/v7/libbeat/common/reload"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/outputs"
-	"github.com/elastic/beats/v7/libbeat/publisher"
-	"github.com/elastic/beats/v7/libbeat/publisher/processing"
-	"github.com/elastic/beats/v7/libbeat/publisher/queue"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/processing"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue"
 )
 
 // Pipeline implementation providint all beats publisher functionality.

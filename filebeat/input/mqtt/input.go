@@ -25,12 +25,12 @@ import (
 	libmqtt "github.com/eclipse/paho.mqtt.golang"
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/filebeat/channel"
-	"github.com/elastic/beats/v7/filebeat/input"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/backoff"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
+	"github.com/JitendraKSahu/beats/v7/filebeat/input"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/backoff"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 const (

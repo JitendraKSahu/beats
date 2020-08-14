@@ -7,7 +7,7 @@
 package googlecloud
 
 import (
-	"github.com/elastic/beats/v7/libbeat/asset"
+	"github.com/JitendraKSahu/beats/v7/libbeat/asset"
 )
 
 func init() {

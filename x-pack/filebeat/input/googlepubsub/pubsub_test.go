@@ -19,14 +19,14 @@ import (
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/api/iterator"
 
-	"github.com/elastic/beats/v7/filebeat/channel"
-	"github.com/elastic/beats/v7/filebeat/input"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/atomic"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/tests/compose"
-	"github.com/elastic/beats/v7/libbeat/tests/resources"
+	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
+	"github.com/JitendraKSahu/beats/v7/filebeat/input"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/tests/compose"
+	"github.com/JitendraKSahu/beats/v7/libbeat/tests/resources"
 )
 
 const (

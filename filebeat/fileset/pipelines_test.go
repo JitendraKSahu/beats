@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -20,11 +20,11 @@ package container
 import (
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/metricbeat/helper"
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/metricbeat/mb/parse"
-	"github.com/elastic/beats/v7/metricbeat/module/kubernetes/util"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/kubernetes/util"
 )
 
 const (

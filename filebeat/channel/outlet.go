@@ -18,8 +18,8 @@
 package channel
 
 import (
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common/atomic"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
 )
 
 type outlet struct {

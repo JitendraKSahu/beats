@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/elastic/beats/v7/libbeat/tests/compose"
-	mbtest "github.com/elastic/beats/v7/metricbeat/mb/testing"
+	"github.com/JitendraKSahu/beats/v7/libbeat/tests/compose"
+	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
 
 	rd "github.com/garyburd/redigo/redis"
 	"github.com/stretchr/testify/assert"

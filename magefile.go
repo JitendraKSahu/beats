@@ -28,10 +28,10 @@ import (
 	"github.com/pkg/errors"
 	"go.uber.org/multierr"
 
-	"github.com/elastic/beats/v7/generator/common/beatgen"
+	"github.com/JitendraKSahu/beats/v7/generator/common/beatgen"
 
-	devtools "github.com/elastic/beats/v7/dev-tools/mage"
-	"github.com/elastic/beats/v7/dev-tools/mage/gotool"
+	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
+	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/gotool"
 )
 
 var (

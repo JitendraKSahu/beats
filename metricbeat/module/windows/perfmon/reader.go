@@ -25,12 +25,12 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/elastic/beats/v7/metricbeat/helper/windows/pdh"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/windows/pdh"
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 const (

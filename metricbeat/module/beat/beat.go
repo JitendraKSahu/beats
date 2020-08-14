@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/metricbeat/helper"
-	"github.com/elastic/beats/v7/metricbeat/helper/elastic"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/elastic"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 func init() {

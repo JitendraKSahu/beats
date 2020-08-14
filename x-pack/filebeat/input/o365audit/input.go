@@ -12,14 +12,14 @@ import (
 	"github.com/joeshaw/multierror"
 	"github.com/pkg/errors"
 
-	v2 "github.com/elastic/beats/v7/filebeat/input/v2"
-	cursor "github.com/elastic/beats/v7/filebeat/input/v2/input-cursor"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/useragent"
-	"github.com/elastic/beats/v7/libbeat/feature"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/x-pack/filebeat/input/o365audit/poll"
+	v2 "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
+	cursor "github.com/JitendraKSahu/beats/v7/filebeat/input/v2/input-cursor"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/useragent"
+	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/o365audit/poll"
 	"github.com/elastic/go-concert/ctxtool"
 )
 

@@ -23,7 +23,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/elastic/beats/v7/packetbeat/protos"
+	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
 
 	"github.com/stretchr/testify/assert"
 )

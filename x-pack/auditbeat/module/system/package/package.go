@@ -24,13 +24,13 @@ import (
 	"github.com/joeshaw/multierror"
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/auditbeat/datastore"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/cfgwarn"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/x-pack/auditbeat/cache"
-	"github.com/elastic/beats/v7/x-pack/auditbeat/module/system"
+	"github.com/JitendraKSahu/beats/v7/auditbeat/datastore"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/cache"
+	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system"
 )
 
 const (

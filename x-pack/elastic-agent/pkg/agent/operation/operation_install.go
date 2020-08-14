@@ -7,10 +7,10 @@ package operation
 import (
 	"context"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/artifact/install"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/state"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/install"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/state"
 )
 
 // operationInstall installs a artifact from predefined location

@@ -14,7 +14,7 @@ import (
 	"github.com/gofrs/uuid"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 func TestClientCacheWrap(t *testing.T) {

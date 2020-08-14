@@ -25,12 +25,12 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/sqs"
 	"github.com/aws/aws-sdk-go-v2/service/sqs/sqsiface"
 
-	"github.com/elastic/beats/v7/filebeat/channel"
-	"github.com/elastic/beats/v7/filebeat/input"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/tests/resources"
-	awscommon "github.com/elastic/beats/v7/x-pack/libbeat/common/aws"
+	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
+	"github.com/JitendraKSahu/beats/v7/filebeat/input"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/tests/resources"
+	awscommon "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/aws"
 )
 
 const (

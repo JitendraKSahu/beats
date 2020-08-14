@@ -5,7 +5,7 @@
 package state
 
 import (
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/process"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/process"
 )
 
 // Status describes the current status of the application process.

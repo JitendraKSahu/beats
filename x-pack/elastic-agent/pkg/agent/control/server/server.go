@@ -8,14 +8,14 @@ import (
 	"context"
 	"net"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/application/reexec"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/reexec"
 
 	"google.golang.org/grpc"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/control"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/control/proto"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/release"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control/proto"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/release"
 )
 
 // Server is the daemon side of the control protocol.

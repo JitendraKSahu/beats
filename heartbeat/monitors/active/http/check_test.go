@@ -27,9 +27,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/match"
-	"github.com/elastic/beats/v7/libbeat/conditions"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
+	"github.com/JitendraKSahu/beats/v7/libbeat/conditions"
 )
 
 func TestCheckBody(t *testing.T) {

@@ -23,13 +23,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/outputs"
-	"github.com/elastic/beats/v7/libbeat/publisher"
-	"github.com/elastic/beats/v7/libbeat/publisher/queue"
-	"github.com/elastic/beats/v7/libbeat/publisher/queue/memqueue"
-	"github.com/elastic/beats/v7/libbeat/tests/resources"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue"
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/memqueue"
+	"github.com/JitendraKSahu/beats/v7/libbeat/tests/resources"
 )
 
 func TestClient(t *testing.T) {

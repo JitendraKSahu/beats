@@ -18,7 +18,7 @@
 package v2
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 	"github.com/elastic/go-concert/unison"
 )
 

@@ -16,7 +16,7 @@ import (
 	"golang.org/x/sys/windows/svc"
 	"golang.org/x/sys/windows/svc/mgr"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 // exec performs execution on Windows.

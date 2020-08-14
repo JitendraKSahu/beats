@@ -21,7 +21,7 @@ import (
 	"errors"
 	"net"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 type Dialer interface {

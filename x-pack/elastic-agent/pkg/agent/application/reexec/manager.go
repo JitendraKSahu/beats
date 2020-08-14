@@ -5,7 +5,7 @@
 package reexec
 
 import (
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 // ExecManager is the interface that the global reexec manager implements.

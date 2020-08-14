@@ -24,7 +24,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 
 	"github.com/stretchr/testify/assert"
 )

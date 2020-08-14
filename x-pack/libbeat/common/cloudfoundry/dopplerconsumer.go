@@ -14,7 +14,7 @@ import (
 	"github.com/cloudfoundry/noaa/consumer"
 	"github.com/cloudfoundry/sonde-go/events"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 type DopplerCallbacks struct {

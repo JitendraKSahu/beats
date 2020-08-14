@@ -18,8 +18,8 @@
 package controllermanager
 
 import (
-	"github.com/elastic/beats/v7/metricbeat/helper/prometheus"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 func init() {

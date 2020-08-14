@@ -5,9 +5,9 @@
 package management
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/feature"
-	"github.com/elastic/beats/v7/libbeat/management"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
+	"github.com/JitendraKSahu/beats/v7/libbeat/management"
 )
 
 func init() {

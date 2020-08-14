@@ -22,12 +22,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	s "github.com/elastic/beats/v7/libbeat/common/schema"
-	c "github.com/elastic/beats/v7/libbeat/common/schema/mapstriface"
-	"github.com/elastic/beats/v7/metricbeat/helper/elastic"
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/metricbeat/module/kibana"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	s "github.com/JitendraKSahu/beats/v7/libbeat/common/schema"
+	c "github.com/JitendraKSahu/beats/v7/libbeat/common/schema/mapstriface"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/elastic"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/kibana"
 )
 
 var (

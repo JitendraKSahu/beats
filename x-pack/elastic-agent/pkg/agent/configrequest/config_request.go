@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
 )
 
 const shortID = 8

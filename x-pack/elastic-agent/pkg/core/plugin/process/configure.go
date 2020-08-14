@@ -9,8 +9,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/state"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/state"
 )
 
 // Configure configures the application with the passed configuration.

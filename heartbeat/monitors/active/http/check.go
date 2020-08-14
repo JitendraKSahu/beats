@@ -27,11 +27,11 @@ import (
 
 	pkgerrors "github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/heartbeat/reason"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/jsontransform"
-	"github.com/elastic/beats/v7/libbeat/common/match"
-	"github.com/elastic/beats/v7/libbeat/conditions"
+	"github.com/JitendraKSahu/beats/v7/heartbeat/reason"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/jsontransform"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
+	"github.com/JitendraKSahu/beats/v7/libbeat/conditions"
 )
 
 // multiValidator combines multiple validations of each type into a single easy to use object.

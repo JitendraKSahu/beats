@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/packetbeat/protos/applayer"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/applayer"
 	"github.com/elastic/go-sysinfo"
 )
 

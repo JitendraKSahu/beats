@@ -5,8 +5,8 @@
 package cmd
 
 import (
-	"github.com/elastic/beats/v7/packetbeat/cmd"
-	xpackcmd "github.com/elastic/beats/v7/x-pack/libbeat/cmd"
+	"github.com/JitendraKSahu/beats/v7/packetbeat/cmd"
+	xpackcmd "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/cmd"
 )
 
 // Name of this beat.

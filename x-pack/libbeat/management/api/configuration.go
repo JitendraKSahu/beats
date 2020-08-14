@@ -13,9 +13,9 @@ import (
 	"github.com/mitchellh/hashstructure"
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common/reload"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 )
 
 var errConfigurationNotFound = errors.New("no configuration found, you need to enroll your Beat")

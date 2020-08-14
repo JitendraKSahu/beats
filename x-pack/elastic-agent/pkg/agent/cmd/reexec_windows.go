@@ -16,8 +16,8 @@ import (
 	"golang.org/x/sys/windows/svc"
 	"golang.org/x/sys/windows/svc/mgr"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/cli"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/cli"
 )
 
 func newReExecWindowsCommand(flags *globalFlags, _ []string, streams *cli.IOStreams) *cobra.Command {

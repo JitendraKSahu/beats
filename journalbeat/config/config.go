@@ -21,7 +21,7 @@
 package config
 
 import (
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 )
 
 // Config stores the configuration of Journalbeat

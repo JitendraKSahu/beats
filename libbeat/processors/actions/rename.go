@@ -22,12 +22,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/libbeat/processors"
-	"github.com/elastic/beats/v7/libbeat/processors/checks"
-	jsprocessor "github.com/elastic/beats/v7/libbeat/processors/script/javascript/module/processor"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/JitendraKSahu/beats/v7/libbeat/processors/checks"
+	jsprocessor "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/processor"
 )
 
 type renameFields struct {

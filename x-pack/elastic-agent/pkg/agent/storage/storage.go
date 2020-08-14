@@ -14,8 +14,8 @@ import (
 
 	"github.com/hectane/go-acl"
 
-	"github.com/elastic/beats/v7/libbeat/common/file"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/file"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
 )
 
 const perms os.FileMode = 0600

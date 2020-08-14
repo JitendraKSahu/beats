@@ -20,9 +20,9 @@ package index_summary
 import (
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/metricbeat/mb/parse"
-	"github.com/elastic/beats/v7/metricbeat/module/elasticsearch"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/elasticsearch"
 )
 
 // init registers the MetricSet with the central registry.

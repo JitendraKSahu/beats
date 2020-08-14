@@ -9,7 +9,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 )
 
 func newServerClientPair(t *testing.T, handler http.HandlerFunc) (*httptest.Server, *Client) {

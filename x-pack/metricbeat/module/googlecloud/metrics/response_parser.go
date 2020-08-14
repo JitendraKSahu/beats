@@ -9,14 +9,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/elastic/beats/v7/x-pack/metricbeat/module/googlecloud"
+	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/googlecloud"
 
 	"github.com/golang/protobuf/ptypes"
 	"github.com/pkg/errors"
 	"google.golang.org/genproto/googleapis/monitoring/v3"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 func newIncomingFieldExtractor(l *logp.Logger) *incomingFieldExtractor {

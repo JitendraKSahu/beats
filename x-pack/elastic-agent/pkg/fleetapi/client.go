@@ -14,11 +14,11 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/kibana"
-	"github.com/elastic/beats/v7/x-pack/elastic-agent/pkg/release"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/kibana"
+	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/release"
 )
 
 type clienter interface {

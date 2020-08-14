@@ -23,12 +23,12 @@ package service
 import (
 	"testing"
 
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 
 	"github.com/StackExchange/wmi"
 	"github.com/stretchr/testify/assert"
 
-	mbtest "github.com/elastic/beats/v7/metricbeat/mb/testing"
+	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
 )
 
 type Win32Service struct {

@@ -22,11 +22,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	p "github.com/elastic/beats/v7/metricbeat/helper/prometheus"
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/metricbeat/mb/parse"
-	"github.com/elastic/beats/v7/metricbeat/module/kubernetes/util"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	p "github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/kubernetes/util"
 )
 
 const (

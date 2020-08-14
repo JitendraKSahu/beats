@@ -28,16 +28,16 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/elastic/beats/v7/heartbeat/monitors/stdfields"
-	"github.com/elastic/beats/v7/heartbeat/monitors/wrappers"
-	"github.com/elastic/beats/v7/heartbeat/scheduler/schedule"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/stdfields"
+	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/wrappers"
+	"github.com/JitendraKSahu/beats/v7/heartbeat/scheduler/schedule"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/elastic/beats/v7/heartbeat/hbtest"
-	"github.com/elastic/beats/v7/heartbeat/monitors"
+	"github.com/JitendraKSahu/beats/v7/heartbeat/hbtest"
+	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors"
 	"github.com/elastic/go-lookslike"
 	"github.com/elastic/go-lookslike/testslike"
 )

@@ -20,8 +20,8 @@ package server
 import (
 	"encoding/json"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 
 	"github.com/pkg/errors"
 )

@@ -12,7 +12,7 @@ import (
 
 	"github.com/gofrs/uuid"
 
-	"github.com/elastic/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
 )
 
 const (

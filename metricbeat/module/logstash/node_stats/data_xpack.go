@@ -21,13 +21,13 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/elastic/beats/v7/metricbeat/module/logstash"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/logstash"
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/metricbeat/helper/elastic"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/elastic"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 type jvm struct {

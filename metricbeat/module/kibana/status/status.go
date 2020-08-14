@@ -20,10 +20,10 @@ package status
 import (
 	"fmt"
 
-	"github.com/elastic/beats/v7/metricbeat/helper"
-	"github.com/elastic/beats/v7/metricbeat/mb"
-	"github.com/elastic/beats/v7/metricbeat/mb/parse"
-	"github.com/elastic/beats/v7/metricbeat/module/kibana"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/module/kibana"
 )
 
 // init registers the MetricSet with the central registry.

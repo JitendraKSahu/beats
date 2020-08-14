@@ -23,14 +23,14 @@ import (
 	"net"
 	"time"
 
-	input "github.com/elastic/beats/v7/filebeat/input/v2"
-	stateless "github.com/elastic/beats/v7/filebeat/input/v2/input-stateless"
-	"github.com/elastic/beats/v7/filebeat/inputsource"
-	netcommon "github.com/elastic/beats/v7/filebeat/inputsource/common"
-	"github.com/elastic/beats/v7/filebeat/inputsource/unix"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/feature"
+	input "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
+	stateless "github.com/JitendraKSahu/beats/v7/filebeat/input/v2/input-stateless"
+	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource"
+	netcommon "github.com/JitendraKSahu/beats/v7/filebeat/inputsource/common"
+	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource/unix"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
 	"github.com/elastic/go-concert/ctxtool"
 )
 

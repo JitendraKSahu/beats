@@ -8,16 +8,16 @@ import (
 
 	"github.com/magefile/mage/mg"
 
-	devtools "github.com/elastic/beats/v7/dev-tools/mage"
-	"github.com/elastic/beats/v7/dev-tools/mage/target/build"
-	"github.com/elastic/beats/v7/dev-tools/mage/target/collectors"
-	"github.com/elastic/beats/v7/dev-tools/mage/target/common"
-	"github.com/elastic/beats/v7/dev-tools/mage/target/pkg"
-	"github.com/elastic/beats/v7/dev-tools/mage/target/unittest"
-	metricbeat "github.com/elastic/beats/v7/metricbeat/scripts/mage"
+	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
+	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/build"
+	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/collectors"
+	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/common"
+	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/pkg"
+	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/unittest"
+	metricbeat "github.com/JitendraKSahu/beats/v7/metricbeat/scripts/mage"
 
 	// mage:import
-	_ "github.com/elastic/beats/v7/metricbeat/scripts/mage/target/metricset"
+	_ "github.com/JitendraKSahu/beats/v7/metricbeat/scripts/mage/target/metricset"
 )
 
 func init() {

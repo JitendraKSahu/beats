@@ -10,7 +10,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 // Config options

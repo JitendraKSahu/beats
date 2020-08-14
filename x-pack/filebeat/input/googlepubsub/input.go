@@ -15,14 +15,14 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/api/option"
 
-	"github.com/elastic/beats/v7/filebeat/channel"
-	"github.com/elastic/beats/v7/filebeat/input"
-	"github.com/elastic/beats/v7/libbeat/beat"
-	"github.com/elastic/beats/v7/libbeat/common"
-	"github.com/elastic/beats/v7/libbeat/common/acker"
-	"github.com/elastic/beats/v7/libbeat/common/atomic"
-	"github.com/elastic/beats/v7/libbeat/common/useragent"
-	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
+	"github.com/JitendraKSahu/beats/v7/filebeat/input"
+	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
+	"github.com/JitendraKSahu/beats/v7/libbeat/common/useragent"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 const (

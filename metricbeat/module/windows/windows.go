@@ -22,9 +22,9 @@ package windows
 import (
 	"sync"
 
-	"github.com/elastic/beats/v7/libbeat/logp"
-	"github.com/elastic/beats/v7/metricbeat/helper"
-	"github.com/elastic/beats/v7/metricbeat/mb"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/helper"
+	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
 )
 
 var once sync.Once
