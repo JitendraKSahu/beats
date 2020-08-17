@@ -73,7 +73,7 @@ func Load(
 		Processors:    processors,
 	}
 
-	debugf("  76    ...Load........")
+	fmt.Errorf("  76    ...Load........")
 	return LoadWithSettings(beatInfo, monitors, config, makeOutput, settings)
 }
 
@@ -96,25 +96,25 @@ func LoadWithSettings(
 
 	name := beatInfo.Name
 
-	debugf("  99    ...LoadWithSettings........")
+	fmt.Errorf("  99    ...LoadWithSettings........")
 	queueBuilder, err := createQueueBuilder(config.Queue, monitors)
 	if err != nil {
 		return nil, err
 	}
 
-	debugf("  105    ...LoadWithSettings........")
+	fmt.Errorf("  105    ...LoadWithSettings........")
 	out, err := loadOutput(monitors, makeOutput)
 	if err != nil {
 		return nil, err
 	}
 
-	debugf("  111    ...LoadWithSettings........")
+	fmt.Errorf("  111    ...LoadWithSettings........")
 	p, err := New(beatInfo, monitors, queueBuilder, out, settings)
 	if err != nil {
 		return nil, err
 	}
 
-	debugf("  117   ...LoadWithSettings........")
+	fmt.Errorf("  117   ...LoadWithSettings........")
 
 	log.Infof("Beat name: %s", name)
 	return p, err
