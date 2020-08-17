@@ -30,12 +30,12 @@ import (
 )
 
 func init() {
-	outputs.RegisterType("elasticsearch", makeES)
+	outputs.RegisterType("kafkarest", makeKafkaRest)
 }
 
 const logSelector = "elasticsearch"
 
-func makeES(
+func makeKafkaRest(
 	im outputs.IndexManager,
 	beat beat.Info,
 	observer outputs.Observer,
