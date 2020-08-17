@@ -23,13 +23,13 @@ import (
 
 	"go.elastic.co/apm"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/processing"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue"
+	"github.com/elastic/beats/v7/libbeat/beat"
+	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/elastic/beats/v7/libbeat/monitoring"
+	"github.com/elastic/beats/v7/libbeat/outputs"
+	"github.com/elastic/beats/v7/libbeat/publisher/processing"
+	"github.com/elastic/beats/v7/libbeat/publisher/queue"
 )
 
 // Global pipeline module for loading the main pipeline from a configuration object
@@ -73,6 +73,7 @@ func Load(
 		Processors:    processors,
 	}
 
+	debugf("  76    ...Load........")
 	return LoadWithSettings(beatInfo, monitors, config, makeOutput, settings)
 }
 
@@ -95,20 +96,25 @@ func LoadWithSettings(
 
 	name := beatInfo.Name
 
+	debugf("  99    ...LoadWithSettings........")
 	queueBuilder, err := createQueueBuilder(config.Queue, monitors)
 	if err != nil {
 		return nil, err
 	}
 
+	debugf("  105    ...LoadWithSettings........")
 	out, err := loadOutput(monitors, makeOutput)
 	if err != nil {
 		return nil, err
 	}
 
+	debugf("  111    ...LoadWithSettings........")
 	p, err := New(beatInfo, monitors, queueBuilder, out, settings)
 	if err != nil {
 		return nil, err
 	}
+
+	debugf("  117   ...LoadWithSettings........")
 
 	log.Infof("Beat name: %s", name)
 	return p, err
