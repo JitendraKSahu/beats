@@ -83,7 +83,7 @@ func TestGetProcess(t *testing.T) {
 	}
 }
 
-// See https://github.com/elastic/beats/issues/6620
+// See https://github.com/JitendraKSahu/beats/issues/6620
 func TestGetSelfPid(t *testing.T) {
 	pid, err := GetSelfPid()
 	assert.NoError(t, err)

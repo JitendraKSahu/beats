@@ -33,7 +33,7 @@ import (
 // observable change during the interval.
 //
 // TODO: Replace this with a proper solution that uses the metric type from
-// where it is defined. See: https://github.com/elastic/beats/issues/5433
+// where it is defined. See: https://github.com/JitendraKSahu/beats/issues/5433
 var gauges = map[string]bool{
 	"libbeat.pipeline.events.active": true,
 	"libbeat.pipeline.clients":       true,

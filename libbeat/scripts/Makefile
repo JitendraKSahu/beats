@@ -4,7 +4,7 @@ BEAT_NAME?=libbeat## @packaging Name of the binary
 BEAT_FULL_NAME?=${BEAT_NAME}
 LICENSE?=ASL2
 BEAT_TITLE?=${BEAT_NAME}## @packaging Title of the application
-BEATS_ROOT?=github.com/elastic/beats
+BEATS_ROOT?=github.com/JitendraKSahu/beats
 BEATS_ROOT_IMPORT_PATH?=${BEATS_ROOT}/v7
 BEAT_PATH?=${BEATS_ROOT}/${BEAT_NAME}
 BEAT_IMPORT_PATH?=${BEATS_ROOT_IMPORT_PATH}/${BEAT_FULL_NAME}
@@ -16,7 +16,7 @@ BEAT_LICENSE?=ASL 2.0 ## @packaging Software license of the application
 BEAT_VENDOR?=Elastic ## @packaging Name of the vendor of the application
 BEAT_GOPATH=$(firstword $(subst :, ,${GOPATH}))
 BEAT_REF_YAML?=true
-ES_BEATS?=..## @community_beat Must be set to ./vendor/github.com/elastic/beats. It must always be a relative path.
+ES_BEATS?=..## @community_beat Must be set to ./vendor/github.com/JitendraKSahu/beats. It must always be a relative path.
 GOPACKAGES?=$(shell go list ${BEAT_IMPORT_PATH}/... | grep -v /scripts/cmd/ )
 PACKER_TEMPLATES_DIR?=${ES_BEATS}/dev-tools/packer ## @Building Directory of templates that are used by "make release"
 NOTICE_FILE?=../NOTICE.txt
@@ -69,7 +69,7 @@ COVERAGE_TOOL?=${BEAT_GOPATH}/bin/gotestcover
 COVERAGE_TOOL_REPO?=github.com/pierrre/gotestcover
 TESTIFY_TOOL_REPO?=github.com/stretchr/testify/assert
 NOW=$(shell date -u '+%Y-%m-%dT%H:%M:%SZ')
-GOBUILD_FLAGS?=-ldflags "-X github.com/elastic/beats/libbeat/version.buildTime=$(NOW) -X github.com/elastic/beats/libbeat/version.commit=$(COMMIT_ID)"
+GOBUILD_FLAGS?=-ldflags "-X github.com/JitendraKSahu/beats/libbeat/version.buildTime=$(NOW) -X github.com/JitendraKSahu/beats/libbeat/version.commit=$(COMMIT_ID)"
 GOIMPORTS=goimports
 GOIMPORTS_REPO?=golang.org/x/tools/cmd/goimports
 GOIMPORTS_LOCAL_PREFIX?=github.com/elastic
@@ -90,7 +90,7 @@ GOX_OS?=linux darwin windows freebsd netbsd openbsd ## @Building List of all OS 
 GOX_OSARCH?=!darwin/arm !darwin/arm64 !darwin/386 ## @building Space separated list of GOOS/GOARCH pairs to build by "make crosscompile".
 GOX_FLAGS?= ## @building Additional flags to append to the gox command used by "make crosscompile".
 # XXX: Should be switched back to `snapshot` once the Elasticsearch
-# snapshots are working. https://github.com/elastic/beats/pull/6416
+# snapshots are working. https://github.com/JitendraKSahu/beats/pull/6416
 TESTING_ENVIRONMENT?=snapshot## @testing The name of the environment under test
 BEAT_VERSION=$(shell head -n 1 ${ES_BEATS}/libbeat/docs/version.asciidoc | cut -c 17- )
 COMMIT_ID=$(shell git rev-parse HEAD)

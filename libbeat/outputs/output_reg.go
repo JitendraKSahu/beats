@@ -65,6 +65,7 @@ func RegisterType(name string, f Factory) {
 
 // FindFactory finds an output type its factory if available.
 func FindFactory(name string) Factory {
+	fmt.Errorf("outputReg :%v ", outputReg)		
 	return outputReg[name]
 }
 
