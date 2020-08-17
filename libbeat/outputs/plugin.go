@@ -46,7 +46,7 @@ func init() {
 		if outputReg[name] != nil {
 			return fmt.Errorf("output type %v already registered", name)
 		}
-
+		fmt.Println("name: %v", name)
 		RegisterType(name, b.factory)
 		return nil
 	})

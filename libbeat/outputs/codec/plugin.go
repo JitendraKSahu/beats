@@ -48,6 +48,7 @@ func init() {
 			}
 		}()
 
+		fmt.Println("Codec name: %v", b.name)
 		RegisterType(b.name, b.factory)
 		return
 	})
