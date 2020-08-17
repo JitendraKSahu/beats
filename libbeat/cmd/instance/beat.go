@@ -334,7 +334,7 @@ func (b *Beat) createBeater(bt beat.Creator) (beat.Beater, error) {
 		}
 	}
 	debugf("  355........")
-	//debugf("%+v\n",b.Config.Output)
+	debugf("%v\n",b.Config.Output)
 	pipeline, err := pipeline.Load(b.Info,
 		pipeline.Monitors{
 			Metrics:   reg,
