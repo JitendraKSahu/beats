@@ -323,6 +323,7 @@ func (b *Beat) createBeater(bt beat.Creator) (beat.Beater, error) {
 
 	debugf("Initializing output plugins")
 	outputEnabled := b.Config.Output.IsSet() && b.Config.Output.Config().Enabled()
+	debugf("  3326........")
 	if !outputEnabled {
 		if b.Manager.Enabled() {
 			logp.Info("Output is configured through Central Management")
