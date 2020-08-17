@@ -58,10 +58,12 @@ type Group struct {
 
 // RegisterType registers a new output type.
 func RegisterType(name string, f Factory) {
+	logp.Info(" 61   outputReg :%v ", outputReg)		
 	if outputReg[name] != nil {
 		panic(fmt.Errorf("output type  '%v' exists already", name))
 	}
 	outputReg[name] = f
+	logp.Info(" 66  ..   outputReg :%v ", outputReg)		
 }
 
 // FindFactory finds an output type its factory if available.
