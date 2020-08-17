@@ -30,6 +30,7 @@ import (
 )
 
 func init() {
+	log.Info("Kafakrest  33")
 	outputs.RegisterType("kafkarest", makeKafkaRest)
 }
 
