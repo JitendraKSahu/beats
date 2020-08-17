@@ -22,6 +22,7 @@ import (
 
 	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
 	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 var outputReg = map[string]Factory{}
@@ -65,7 +66,7 @@ func RegisterType(name string, f Factory) {
 
 // FindFactory finds an output type its factory if available.
 func FindFactory(name string) Factory {
-	fmt.Errorf("outputReg :%v ", outputReg)		
+	logp.Info("outputReg :%v ", outputReg)		
 	return outputReg[name]
 }
 
