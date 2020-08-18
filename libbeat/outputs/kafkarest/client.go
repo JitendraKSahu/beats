@@ -153,9 +153,11 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			continue
 		}
 
+		fmt.Println(msg)
 		fmt.Println(msg.msg)
 		msg.ref = ref
 		msg.initProducerMessage()
+		fmt.Println(msg.msg)
 		ch <- &msg.msg
 	}
 
