@@ -132,7 +132,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	c.observer.NewBatch(len(events))
 	
 	fmt.Println("........ 134          ...... ")
-	fmt.Println(c)
+	fmt.Println(c.hosts[0])
 	ref := &msgRef{
 		client: c,
 		count:  int32(len(events)),
@@ -155,6 +155,9 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 		fmt.Println(msg)
 		fmt.Println(msg.msg)
+		fmt.Println(msg.topic)
+		fmt.Println(string(msg.key))
+		fmt.Println(string(msg.value))
 		msg.ref = ref
 		msg.initProducerMessage()
 		fmt.Println(msg.msg)
