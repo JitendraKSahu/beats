@@ -18,12 +18,16 @@
 package kafkarest
 
 import (
+	"bytes"
 	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
+	"net/http"
 	"strings"
 	"sync"
 	"sync/atomic"
+	"time"
 
 	"github.com/Shopify/sarama"
 
@@ -130,9 +134,15 @@ func (c *client) Close() error {
 func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	events := batch.Events()
 	c.observer.NewBatch(len(events))
-	
+
+	var kafkaRecords []interface{}	
+	var topic string
+
 	fmt.Println("........ 134          ...... ")
 	fmt.Println(c.hosts[0])
+	url := c.hosts[0]
+	fmt.Println(c.topic)
+
 	ref := &msgRef{
 		client: c,
 		count:  int32(len(events)),
@@ -156,14 +166,23 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		fmt.Println(msg)
 		fmt.Println(msg.msg)
 		fmt.Println(msg.topic)
+		topic = msg.topic
 		fmt.Println(string(msg.key))
 		fmt.Println(string(msg.value))
+		record := map[string]interface{}{"key": string(msg.key), "value": string(msg.value)}
+		kafkaRecords = append(kafkaRecords, record)
+
 		msg.ref = ref
 		msg.initProducerMessage()
 		fmt.Println(msg.msg)
 		ch <- &msg.msg
 	}
 
+	fmt.Println(url)
+	fmt.Println(topic)
+	fmt.Println(kafkaRecords)
+	sendToKafka(url, topic,  kafkaRecords)
+	
 	return nil
 }
 
@@ -319,4 +338,51 @@ func (c *client) Test(d testing.Driver) {
 		})
 	}
 
+}
+
+func sendToKafka(url string, topic string, kafkaRecords []interface{}) {
+
+	kafkaUrl := "http://" + url +"/topics/" + topic
+	fmt.Println(kafkaUrl)
+	//noOfLogs := len(logs)
+	//if noOfLogs == 0 {
+	//	fmt.Println("No Logs")
+	//	return
+	//}
+
+	records := make(map[string]interface{})
+	records["records"] = kafkaRecords
+
+	kafkaData, err := json.Marshal(records)
+    if err != nil {
+        fmt.Println(err)
+        return 
+    }
+
+	fmt.Printf(string(kafkaData))
+	//fmt.Printf("No of records to be sent %d\n", len(logs))
+	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(kafkaData))
+    if err != nil {
+		fmt.Println(err)
+        return
+    }
+
+	req.Header.Set("Content-Type", "application/vnd.kafka.json.v2+json")
+	//req.Header.Set("Content-Type", "application/json")
+    //req.SetBasicAuth(esConfig.Username, esConfig.Password)
+
+    client := &http.Client{Timeout: 30 * time.Second}
+
+    res, err := client.Do(req)
+    if err != nil {
+    	fmt.Println(err)
+        return
+    }
+    defer res.Body.Close()
+    fmt.Println(res.StatusCode)
+    if res.StatusCode == 200 {
+    	fmt.Printf("Successfully sent records to Kafka\n")
+    } else {
+    	fmt.Println("Failed to send Kafka records", res.Status)
+    }
 }
