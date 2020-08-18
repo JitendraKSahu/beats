@@ -18,16 +18,12 @@
 package kafkarest
 
 import (
-	"bytes"
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
-	"net/http"
 	"strings"
 	"sync"
 	"sync/atomic"
-	"time"
 
 	"github.com/Shopify/sarama"
 
@@ -171,7 +167,6 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 		msg.ref = ref
 		msg.initProducerMessage()
-		fmt.Println(msg.msg)
 		ch <- &msg.msg
 	}
 
@@ -188,7 +183,6 @@ func (c *client) String() string {
 }
 
 func (c *client) getEventMessage(data *publisher.Event) (*message, error) {
-	fmt.Println("    167..........")
 	event := &data.Content
 	msg := &message{partition: -1, data: *data}
 
@@ -337,45 +331,3 @@ func (c *client) Test(d testing.Driver) {
 
 }
 
-func sendToDest(url string, topic string, kafkaRecords []interface{}) {
-
-	kafkaUrl := "http://" + url +"/topics/" + topic
-	fmt.Println(kafkaUrl)
-	fmt.Printf("No Logs: %v\n", len(kafkaRecords))
-
-	records := make(map[string]interface{})
-	records["records"] = kafkaRecords
-
-	recordsData, err := json.Marshal(records)
-    if err != nil {
-        fmt.Println(err)
-        return 
-    }
-
-	fmt.Printf(string(recordsData))
-	fmt.Printf("No of records to be sent %d\n", len(kafkaRecords))
-	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(recordsData))
-    if err != nil {
-		fmt.Println(err)
-        return
-    }
-
-	req.Header.Set("Content-Type", "application/vnd.kafka.json.v2+json")
-	//req.Header.Set("Content-Type", "application/json")
-    //req.SetBasicAuth(username, password)
-
-    client := &http.Client{Timeout: 30 * time.Second}
-
-    res, err := client.Do(req)
-    if err != nil {
-    	fmt.Println(err)
-        return
-    }
-    defer res.Body.Close()
-    fmt.Println(res.StatusCode)
-    if res.StatusCode == 200 {
-    	fmt.Printf("Successfully sent records to Kafka\n")
-    } else {
-    	fmt.Println("Failed to send Kafka records", res.Status)
-    }
-}
