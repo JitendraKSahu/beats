@@ -131,7 +131,8 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	events := batch.Events()
 	c.observer.NewBatch(len(events))
 	
-	fmt.Println("143          ...... ")
+	fmt.Println("........ 134          ...... ")
+	fmt.Println(c)
 	ref := &msgRef{
 		client: c,
 		count:  int32(len(events)),
@@ -142,6 +143,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 	ch := c.producer.Input()
 	for i := range events {
+		fmt.Println("145          ...... ")
 		d := &events[i]
 		msg, err := c.getEventMessage(d)
 		if err != nil {
@@ -151,6 +153,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			continue
 		}
 
+		fmt.Println(msg.msg)
 		msg.ref = ref
 		msg.initProducerMessage()
 		ch <- &msg.msg
