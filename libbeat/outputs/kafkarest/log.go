@@ -15,19 +15,46 @@
 // specific language governing permissions and limitations
 // under the License.
 
-package includes
+package kafkarest
 
 import (
-	// import queue types
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/format"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/console"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/elasticsearch"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/fileout"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/kafka"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/kafkarest"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/logstash"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/redis"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/memqueue"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/spool"
+	"github.com/Shopify/sarama"
+
+	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
+
+type kafkaLogger struct {
+	log *logp.Logger
+}
+
+func (kl kafkaLogger) Print(v ...interface{}) {
+	kl.Log("kafka message: %v", v...)
+}
+
+func (kl kafkaLogger) Printf(format string, v ...interface{}) {
+	kl.Log(format, v...)
+}
+
+func (kl kafkaLogger) Println(v ...interface{}) {
+	kl.Log("kafka message: %v", v...)
+}
+
+func (kl kafkaLogger) Log(format string, v ...interface{}) {
+	warn := false
+	for _, val := range v {
+		if err, ok := val.(sarama.KError); ok {
+			if err != sarama.ErrNoError {
+				warn = true
+				break
+			}
+		}
+	}
+	if kl.log == nil {
+		kl.log = logp.NewLogger(logSelector)
+	}
+	if warn {
+		kl.log.Warnf(format, v...)
+	} else {
+		kl.log.Infof(format, v...)
+	}
+}

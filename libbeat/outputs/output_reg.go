@@ -22,7 +22,7 @@ import (
 
 	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
 	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	//"github.com/JitendraKSahu/beats/v7/libbeat/logp"
 )
 
 var outputReg = map[string]Factory{}
@@ -58,17 +58,17 @@ type Group struct {
 
 // RegisterType registers a new output type.
 func RegisterType(name string, f Factory) {
-	logp.Info(" 61   outputReg :%v ", outputReg)		
+	fmt.Println(" 61   outputReg :%v ", outputReg)		
 	if outputReg[name] != nil {
 		panic(fmt.Errorf("output type  '%v' exists already", name))
 	}
 	outputReg[name] = f
-	logp.Info(" 66  ..   outputReg :%v ", outputReg)		
+	fmt.Println(" 66  ..   outputReg :%v ", outputReg)		
 }
 
 // FindFactory finds an output type its factory if available.
 func FindFactory(name string) Factory {
-	logp.Info("outputReg :%v ", outputReg)		
+	fmt.Println("outputReg :%v ", outputReg)		
 	return outputReg[name]
 }
 

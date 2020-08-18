@@ -39,6 +39,7 @@ const (
 	defaultMaxWaitRetry = 60 * time.Second
 
 	logSelector = "kafkarest"
+	defaultPort = 80
 )
 
 var (
@@ -47,20 +48,22 @@ var (
 )
 
 func init() {
-	sarama.Logger = kafkaLogger{log: logp.NewLogger(logSelector)}
+	//sarama.Logger = kafkaLogger{log: logp.NewLogger(logSelector)}
 
-	outputs.RegisterType("kafka", makeKafka)
+	outputs.RegisterType("kafkarest", makeKafkaRest)
 }
 
-func makeKafka(
+func makeKafkaRest(
 	_ outputs.IndexManager,
 	beat beat.Info,
 	observer outputs.Observer,
 	cfg *common.Config,
 ) (outputs.Group, error) {
 	log := logp.NewLogger(logSelector)
-	log.Debug("initialize kafka output")
+	log.Debug("initialize kafka rest output")
 
+	fmt.Println(readConfig(cfg))
+/*
 	config, err := readConfig(cfg)
 	if err != nil {
 		return outputs.Fail(err)
@@ -71,8 +74,15 @@ func makeKafka(
 		return outputs.Fail(err)
 	}
 
+
 	libCfg, err := newSaramaConfig(log, config)
 	if err != nil {
+		return outputs.Fail(err)
+	}
+*/
+
+	config := defaultConfig
+	if err := cfg.Unpack(&config); err != nil {
 		return outputs.Fail(err)
 	}
 
@@ -80,12 +90,11 @@ func makeKafka(
 	if err != nil {
 		return outputs.Fail(err)
 	}
-
+/*
 	codec, err := codec.CreateEncoder(beat, config.Codec)
 	if err != nil {
 		return outputs.Fail(err)
 	}
-
 	client, err := newKafkaClient(observer, hosts, beat.IndexPrefix, config.Key, topic, codec, libCfg)
 	if err != nil {
 		return outputs.Fail(err)
@@ -96,6 +105,58 @@ func makeKafka(
 		retry = -1
 	}
 	return outputs.Success(config.BulkMaxSize, retry, client)
+*/
+
+	tls, err := tlscommon.LoadTLSConfig(config.TLS)
+	if err != nil {
+		return outputs.Fail(err)
+	}
+
+	clients := make([]outputs.NetworkClient, len(hosts))
+	for i, h := range hosts {
+
+		hostUrl, err := url.Parse(h)
+		if err != nil {
+			return outputs.Fail(err)
+		}
+
+		if hostUrl.Host == "" {
+			return outputs.Fail(fmt.Errorf("invalid kafka rest url host %s", hostUrl.Host))
+		}
+
+		transp := transport.Config{
+			Timeout: config.Timeout,
+			Proxy:   &config.Proxy,
+			TLS:     tls,
+			Stats:   observer,
+		}
+
+		if transp.TLS == nil {
+			transp.TLS = &tlscommon.TLSConfig{} // enable with system default if TLS was not configured
+		}
+
+		conn, err := transport.NewClient(transp, "tcp", hostUrl.Host, defaultPort)
+		if err != nil {
+			return outputs.Fail(err)
+		}
+
+		pass := config.Password
+		hostPass, passSet := hostUrl.User.Password()
+		if passSet {
+			pass = hostPass
+		}
+
+		enc, err := codec.CreateEncoder(beat, config.Codec)
+		if err != nil {
+			return outputs.Fail(err)
+		}
+
+		client := newClient(conn, observer, config.Timeout,
+			pass, config.Db, key, dataType, config.Index, enc)
+		clients[i] = newBackoffClient(client, config.Backoff.Init, config.Backoff.Max)
+	}
+
+	return outputs.SuccessNet(config.LoadBalance, config.BulkMaxSize, config.MaxRetries, clients)
 }
 
 func buildTopicSelector(cfg *common.Config) (outil.Selector, error) {

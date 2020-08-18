@@ -15,19 +15,39 @@
 // specific language governing permissions and limitations
 // under the License.
 
-package includes
+package kafkarest
 
 import (
-	// import queue types
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/format"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/console"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/elasticsearch"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/fileout"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/kafka"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/kafkarest"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/logstash"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/redis"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/memqueue"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/spool"
+	"time"
+
+	"github.com/Shopify/sarama"
+
+	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
 )
+
+type message struct {
+	msg sarama.ProducerMessage
+
+	topic string
+	key   []byte
+	value []byte
+	ref   *msgRef
+	ts    time.Time
+
+	hash      uint32
+	partition int32
+
+	data publisher.Event
+}
+
+var kafkaMessageKey interface{} = int(0)
+
+func (m *message) initProducerMessage() {
+	m.msg = sarama.ProducerMessage{
+		Metadata:  m,
+		Topic:     m.topic,
+		Key:       sarama.ByteEncoder(m.key),
+		Value:     sarama.ByteEncoder(m.value),
+		Timestamp: m.ts,
+	}
+}

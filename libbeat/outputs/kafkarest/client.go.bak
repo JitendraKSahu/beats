@@ -39,18 +39,15 @@ import (
 
 type client struct {
 	log      *logp.Logger
+	*transport.Client	
 	observer outputs.Observer
-	hosts    []string
+	index    string
 	topic    outil.Selector
 	key      *fmtstr.EventFormatString
-	index    string
+	password string
+	publish  publishFn
+	timeout  time.Duration
 	codec    codec.Codec
-	config   sarama.Config
-	mux      sync.Mutex
-
-	producer sarama.AsyncProducer
-
-	wg sync.WaitGroup
 }
 
 type msgRef struct {
@@ -68,47 +65,50 @@ var (
 )
 
 func newKafkaClient(
+	tc *transport.Client,
 	observer outputs.Observer,
-	hosts []string,
-	index string,
+	timeout time.Duration,
+	pass string,
+	topic outil.Selector
 	key *fmtstr.EventFormatString,
-	topic outil.Selector,
-	writer codec.Codec,
-	cfg *sarama.Config,
+	index string,
+	codec codec.Codec,
 ) (*client, error) {
 	c := &client{
 		log:      logp.NewLogger(logSelector),
+		Client:   tc,
 		observer: observer,
-		hosts:    hosts,
-		topic:    topic,
-		key:      key,
+		timeout:  timeout,
+		password: pass,
 		index:    strings.ToLower(index),
+		key:      key,
+		codec:    codec,
+		topic:    topic,
 		codec:    writer,
-		config:   *cfg,
 	}
 	return c, nil
 }
 
 func (c *client) Connect() error {
-	c.mux.Lock()
-	defer c.mux.Unlock()
-
 	c.log.Debugf("connect: %v", c.hosts)
-
-	// try to connect
-	producer, err := sarama.NewAsyncProducer(c.hosts, &c.config)
+	c.log.Debug("connect")
+	err := c.Client.Connect()
 	if err != nil {
-		c.log.Errorf("Kafka connect fails with: %+v", err)
 		return err
 	}
 
-	c.producer = producer
+	to := c.timeout
+	conn := redis.NewConn(c.Client, to, to)
+	defer func() {
+		if err != nil {
+			conn.Close()
+		}
+	}()
 
-	c.wg.Add(2)
-	go c.successWorker(producer.Successes())
-	go c.errorWorker(producer.Errors())
-
-	return nil
+	if err = initRedisConn(conn, c.password, c.db); err == nil {
+		c.publish, err = c.makePublish(conn)
+	}
+	return err
 }
 
 func (c *client) Close() error {
@@ -130,8 +130,7 @@ func (c *client) Close() error {
 func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	events := batch.Events()
 	c.observer.NewBatch(len(events))
-	
-	fmt.Println("143          ...... ")
+
 	ref := &msgRef{
 		client: c,
 		count:  int32(len(events)),
@@ -164,7 +163,6 @@ func (c *client) String() string {
 }
 
 func (c *client) getEventMessage(data *publisher.Event) (*message, error) {
-	fmt.Println("    167..........")
 	event := &data.Content
 	msg := &message{partition: -1, data: *data}
 
