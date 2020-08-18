@@ -49,7 +49,7 @@ var (
 func init() {
 	sarama.Logger = kafkaLogger{log: logp.NewLogger(logSelector)}
 
-	outputs.RegisterType("kafka", makeKafka)
+	outputs.RegisterType("kafkaest", makeKafka)
 }
 
 func makeKafka(
