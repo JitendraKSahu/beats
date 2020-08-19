@@ -19,6 +19,7 @@ package kafkarest
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"strings"
@@ -133,6 +134,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 	var kafkaRecords []interface{}	
 	var topic string
+	var valueData map[string]interface{}
 
 	url := c.hosts[0]
 	//fmt.Println(c.topic)
@@ -163,17 +165,22 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		//fmt.Println(string(msg.key))
 		//fmt.Println(string(msg.value))
 		record := map[string]interface{}{"key": string(msg.key), "value": string(msg.value)}
+		json.Unmarshal(msg.value, &valueData)
+		topic = valueData["labels"].(map[string]interface{})["_tag_profileId"].(string)
+		fmt.Println(topic)
 		kafkaRecords = append(kafkaRecords, record)
+		sendToDest(url, topic,  kafkaRecords)
+		kafkaRecords = kafkaRecords[:0]
 
 		msg.ref = ref
 		msg.initProducerMessage()
 		ch <- &msg.msg
 	}
 
-	fmt.Println(url)
-	fmt.Println(topic)
-	fmt.Println(kafkaRecords)
-	sendToDest(url, topic,  kafkaRecords)
+	//fmt.Println(url)
+	//fmt.Println(topic)
+	//fmt.Println(kafkaRecords)
+	//sendToDest(url, topic,  kafkaRecords)
 	
 	return nil
 }
