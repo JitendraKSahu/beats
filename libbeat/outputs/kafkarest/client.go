@@ -133,7 +133,6 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	c.observer.NewBatch(len(events))
 
 	var kafkaRecords []interface{}	
-	var topic string
 	var valueData map[string]interface{}
 
 	url := c.hosts[0]
@@ -160,13 +159,12 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 		//fmt.Println(msg)
 		//fmt.Println(msg.msg)
-		//fmt.Println(msg.topic)
-		topic = msg.topic
 		//fmt.Println(string(msg.key))
 		//fmt.Println(string(msg.value))
 		json.Unmarshal(msg.value, &valueData)
 		if labels, ok := valueData["labels"]; ok {
-			topic = labels.(map[string]interface{})["_tag_profileId"].(string)
+			profileId := labels.(map[string]interface{})["_tag_profileId"].(string)
+			topic := "trace-" + profileId 
 			record := map[string]interface{}{"key": string(msg.key), "value": string(msg.value)}
 			fmt.Println(topic)
 			kafkaRecords = append(kafkaRecords, record)
