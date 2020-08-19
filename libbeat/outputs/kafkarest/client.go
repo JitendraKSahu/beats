@@ -164,13 +164,15 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		topic = msg.topic
 		//fmt.Println(string(msg.key))
 		//fmt.Println(string(msg.value))
-		record := map[string]interface{}{"key": string(msg.key), "value": string(msg.value)}
 		json.Unmarshal(msg.value, &valueData)
-		topic = valueData["labels"].(map[string]interface{})["_tag_profileId"].(string)
-		fmt.Println(topic)
-		kafkaRecords = append(kafkaRecords, record)
-		sendToDest(url, topic,  kafkaRecords)
-		kafkaRecords = kafkaRecords[:0]
+		if labels, ok := valueData["labels"]; ok {
+			topic = labels.(map[string]interface{})["_tag_profileId"].(string)
+			record := map[string]interface{}{"key": string(msg.key), "value": string(msg.value)}
+			fmt.Println(topic)
+			kafkaRecords = append(kafkaRecords, record)
+			sendToDest(url, topic,  kafkaRecords)
+			kafkaRecords = kafkaRecords[:0]
+		}
 
 		msg.ref = ref
 		msg.initProducerMessage()
