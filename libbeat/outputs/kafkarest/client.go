@@ -166,7 +166,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			profileId := labels.(map[string]interface{})["_tag_profileId"].(string)
 			topic := "trace-" + profileId 
 			//record := map[string]interface{}{"key": string(msg.key), "value": string(msg.value)}
-			record := map[string]interface{}{"key": msg.key, "value": msg.value}
+			record := map[string]interface{}{"key": msg.key, "value": valueData}
 			fmt.Println(topic)
 			kafkaRecords = append(kafkaRecords, record)
 			sendToDest(url, topic,  kafkaRecords)
