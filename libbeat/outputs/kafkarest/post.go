@@ -39,8 +39,8 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
         return 
     }
 
-	fmt.Println(string(recordsData))
-	fmt.Printf("No of records to be sent %d\n", len(kafkaRecords))
+	//fmt.Println(string(recordsData))
+	//fmt.Printf("No of records to be sent %d\n", len(kafkaRecords))
 	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(recordsData))
     if err != nil {
 		fmt.Println(err)
@@ -57,13 +57,16 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
     res, err := client.Do(req)
     if err != nil {
     	fmt.Println(err)
+		fmt.Println(kafkaUrl)
         return
     }
     defer res.Body.Close()
-    fmt.Println(res.StatusCode)
+    //fmt.Println(res.StatusCode)
     if res.StatusCode == 200 {
     	fmt.Printf("Successfully sent records to Kafka\n")
     } else {
+		fmt.Println(kafkaUrl)
+		fmt.Println(string(recordsData))
     	fmt.Println("Failed to send Kafka records", res.Status)
     }
 }
