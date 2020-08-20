@@ -29,7 +29,6 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
 
 	kafkaUrl := "http://" + url +"/topics/" + topic
 	fmt.Println(kafkaUrl)
-	fmt.Printf("No Logs: %v\n", len(kafkaRecords))
 
 	records := make(map[string]interface{})
 	records["records"] = kafkaRecords
@@ -40,7 +39,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
         return 
     }
 
-	fmt.Printf(string(recordsData))
+	fmt.Println(string(recordsData))
 	fmt.Printf("No of records to be sent %d\n", len(kafkaRecords))
 	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(recordsData))
     if err != nil {
