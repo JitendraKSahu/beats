@@ -48,8 +48,6 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
     }
 
 	req.Header.Set("Content-Type", "application/vnd.kafka.json.v2+json")
-	//req.Header.Set("Content-Type", "application/json")
-    //req.SetBasicAuth(username, password)
 	req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
 
     client := &http.Client{Timeout: 30 * time.Second}
@@ -63,7 +61,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
     defer res.Body.Close()
     //fmt.Println(res.StatusCode)
     if res.StatusCode == 200 {
-    	fmt.Printf("Successfully sent records to Kafka\n")
+    	//fmt.Printf("Successfully sent records to Kafka\n")
     } else {
 		fmt.Println(kafkaUrl)
 		fmt.Println(string(recordsData))
