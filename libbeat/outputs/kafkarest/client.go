@@ -134,7 +134,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 	var kafkaRecords []interface{}	
 	var valueData map[string]interface{}
-	var failedEvents []publisher.Event
+	//var failedEvents []publisher.Event
 
 	url := c.hosts[0]
 	//fmt.Println(c.topic)
@@ -147,7 +147,8 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		batch:  batch,
 	}
 
-	ch := c.producer.Input()
+	//ch := c.producer.Input()
+	//sendErr := nil
 	for i := range events {
 		d := &events[i]
 		msg, err := c.getEventMessage(d)
@@ -168,23 +169,28 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			topic := "trace-" + profileId 
 			record := map[string]interface{}{"key": msg.key, "value": valueData}
 			kafkaRecords = append(kafkaRecords, record)
-			sendErr := sendToDest(url, topic,  kafkaRecords)
-			if sendErr != nil {
-				failedEvents = append(failedEvents, events[i])
-			}
+			sendToDest(url, topic,  kafkaRecords)
+			//if sendErr != nil {
+			//	failedEvents = append(failedEvents, events[i])
+			//}
 		}
 
-		msg.ref = ref
-		msg.initProducerMessage()
-		ch <- &msg.msg
+		//msg.ref = ref
+		//msg.initProducerMessage()
+		//ch <- &msg.msg
 	}
 
+	batch.ACK()
 	//if len(kafkaRecords) > 0{	
-		if len(failedEvents) == 0 {
+		//if len(failedEvents) == 0 {
+/*
+		if sendErr != nil {
 			batch.ACK()
 		} else {
+			failedEvents = events
 			batch.RetryEvents(failedEvents)
 		}
+*/
 	//}
 	kafkaRecords = kafkaRecords[:0]
 
