@@ -132,10 +132,13 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	events := batch.Events()
 	c.observer.NewBatch(len(events))
 
-	var kafkaRecords []interface{}	
+	//var kafkaRecords []interface{}	
 	var valueData map[string]interface{}
-	//var failedEvents []publisher.Event
-
+	//data := make(map[string][]interface{})
+	data := make(map[string][]map[string]interface{})
+	eventsRecord := make(map[string][]publisher.Event)
+	failedEvents := events[:0]
+	var sendErr error
 	url := c.hosts[0]
 	//fmt.Println(c.topic)
 
@@ -168,11 +171,25 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			profileId := labels.(map[string]interface{})["_tag_profileId"].(string)
 			topic := "trace-" + profileId 
 			record := map[string]interface{}{"key": msg.key, "value": valueData}
-			kafkaRecords = append(kafkaRecords, record)
-			sendToDest(url, topic,  kafkaRecords)
+			if _, exist := data[topic]; exist {
+				data[topic] = append(data[topic], record)
+				eventsRecord[topic] = append(eventsRecord[topic], events[i])
+			} else {
+				rec := []map[string]interface{}{}
+				rec = append(rec, record)
+				data[topic] = rec
+				evnts := []publisher.Event{}
+				evnts = append(evnts, events[i])
+				eventsRecord[topic] = evnts
+			}
+			 
+			//kafkaRecords = append(kafkaRecords, record)
+			//sendToDest(url, topic,  kafkaRecords)
 			//if sendErr != nil {
 			//	failedEvents = append(failedEvents, events[i])
 			//}
+
+			
 		}
 
 		//msg.ref = ref
@@ -180,7 +197,30 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		//ch <- &msg.msg
 	}
 
-	batch.ACK()
+
+	if len(data) > 0 {
+		for topic, records := range data {
+			sendErr = sendToDest(url, topic,  records)
+		if sendErr != nil {
+			if evnts, ok:= eventsRecord[topic]; ok {
+				for _, event := range evnts {
+					failedEvents = append(failedEvents, event) 		
+				}
+			}
+		}
+		}
+	}
+
+	if len(failedEvents) == 0{
+		batch.ACK()
+	} else {
+		batch.RetryEvents(failedEvents)
+	}
+
+
+
+
+	//batch.ACK()
 	//if len(kafkaRecords) > 0{	
 		//if len(failedEvents) == 0 {
 /*
@@ -192,9 +232,10 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		}
 */
 	//}
-	kafkaRecords = kafkaRecords[:0]
+	//kafkaRecords = kafkaRecords[:0]
 
-	return nil
+	//return nil
+	return sendErr
 }
 
 func (c *client) String() string {

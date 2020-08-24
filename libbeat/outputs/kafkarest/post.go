@@ -26,7 +26,7 @@ import (
 	"time"
 )
 
-func sendToDest(url string, topic string, kafkaRecords []interface{})error {
+func sendToDest(url string, topic string, kafkaRecords []map[string]interface{})error {
 
 	kafkaUrl := "http://" + url +"/topics/" + topic
 	fmt.Println(kafkaUrl)

@@ -59,7 +59,7 @@ func makeKafka(
 	cfg *common.Config,
 ) (outputs.Group, error) {
 	log := logp.NewLogger(logSelector)
-	log.Debug("initialize kafka output")
+	log.Debug("initialize kafkarest output")
 
 	config, err := readConfig(cfg)
 	if err != nil {
