@@ -20,11 +20,11 @@ package state_node
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes"
-	p "github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/kubernetes/util"
+	"github.com/jksroot/beats/v7/libbeat/common/kubernetes"
+	p "github.com/jksroot/beats/v7/metricbeat/helper/prometheus"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/metricbeat/module/kubernetes/util"
 )
 
 const (

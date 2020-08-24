@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 // ErrInvalidNamespace is error returned when namespace value provided is invalid.

@@ -7,11 +7,11 @@ package storage
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 
 	// Register input module and metricset
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/googlecloud"
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/googlecloud/metrics"
+	_ "github.com/jksroot/beats/v7/x-pack/metricbeat/module/googlecloud"
+	_ "github.com/jksroot/beats/v7/x-pack/metricbeat/module/googlecloud/metrics"
 )
 
 func init() {

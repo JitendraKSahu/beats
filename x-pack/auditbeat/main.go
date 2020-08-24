@@ -7,14 +7,14 @@ package main
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/cmd"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/cmd"
 
 	// Register modules.
-	_ "github.com/JitendraKSahu/beats/v7/auditbeat/module/auditd"
-	_ "github.com/JitendraKSahu/beats/v7/auditbeat/module/file_integrity"
+	_ "github.com/jksroot/beats/v7/auditbeat/module/auditd"
+	_ "github.com/jksroot/beats/v7/auditbeat/module/file_integrity"
 
 	// Register includes.
-	_ "github.com/JitendraKSahu/beats/v7/auditbeat/include"
+	_ "github.com/jksroot/beats/v7/auditbeat/include"
 )
 
 func main() {

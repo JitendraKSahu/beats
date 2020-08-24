@@ -7,10 +7,10 @@ package server
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	serverhelper "github.com/JitendraKSahu/beats/v7/metricbeat/helper/server"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/server/udp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	serverhelper "github.com/jksroot/beats/v7/metricbeat/helper/server"
+	"github.com/jksroot/beats/v7/metricbeat/helper/server/udp"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // init registers the MetricSet with the central registry.

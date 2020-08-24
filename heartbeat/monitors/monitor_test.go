@@ -21,14 +21,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	"github.com/elastic/go-lookslike/testslike"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/scheduler"
+	"github.com/jksroot/beats/v7/heartbeat/scheduler"
 )
 
 func TestMonitor(t *testing.T) {

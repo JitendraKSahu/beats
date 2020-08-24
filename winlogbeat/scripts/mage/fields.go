@@ -22,7 +22,7 @@ import (
 
 	"github.com/magefile/mage/mg"
 
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
 )
 
 var fb fieldsBuilder

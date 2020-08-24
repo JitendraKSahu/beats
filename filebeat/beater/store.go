@@ -20,12 +20,12 @@ package beater
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/config"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
-	"github.com/JitendraKSahu/beats/v7/libbeat/statestore"
-	"github.com/JitendraKSahu/beats/v7/libbeat/statestore/backend/memlog"
+	"github.com/jksroot/beats/v7/filebeat/config"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/libbeat/statestore"
+	"github.com/jksroot/beats/v7/libbeat/statestore/backend/memlog"
 )
 
 type filebeatStore struct {

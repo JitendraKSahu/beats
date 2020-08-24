@@ -22,9 +22,9 @@ package look
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/reason"
+	"github.com/jksroot/beats/v7/heartbeat/reason"
 )
 
 // RTT formats a round-trip-time given as time.Duration into an

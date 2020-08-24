@@ -20,9 +20,9 @@ package state_cronjob
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	p "github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	p "github.com/jksroot/beats/v7/metricbeat/helper/prometheus"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 func init() {

@@ -22,11 +22,11 @@ package module_test
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	pubtest "github.com/JitendraKSahu/beats/v7/libbeat/publisher/testing"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/module"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	pubtest "github.com/jksroot/beats/v7/libbeat/publisher/testing"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/module"
 
 	"github.com/stretchr/testify/assert"
 )

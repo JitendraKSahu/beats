@@ -31,8 +31,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/dialer"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/helper/dialer"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 func TestGetAuthHeaderFromToken(t *testing.T) {

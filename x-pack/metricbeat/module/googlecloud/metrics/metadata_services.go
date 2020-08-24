@@ -5,8 +5,8 @@
 package metrics
 
 import (
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/googlecloud"
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/googlecloud/metrics/compute"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/googlecloud"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/googlecloud/metrics/compute"
 )
 
 // NewMetadataServiceForConfig returns a service to fetch metadata from a config struct. It must return the Compute

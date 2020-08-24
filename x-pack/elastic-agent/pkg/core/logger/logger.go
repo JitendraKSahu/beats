@@ -13,12 +13,12 @@ import (
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/yaml.v2"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/file"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp/configure"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/paths"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/file"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp/configure"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/paths"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
 )
 
 const agentName = "elastic-agent"

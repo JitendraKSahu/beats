@@ -5,14 +5,14 @@
 package localremote
 
 import (
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download/composed"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download/fs"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download/http"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download/snapshot"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/release"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download/composed"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download/fs"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download/http"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download/snapshot"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/release"
 )
 
 // NewDownloader creates a downloader which first checks local directory

@@ -22,10 +22,10 @@ package state_pod
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus/ptest"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/metricbeat/helper/prometheus/ptest"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/kubernetes"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/kubernetes"
 )
 
 func TestEventMapping(t *testing.T) {

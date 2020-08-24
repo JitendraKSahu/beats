@@ -10,14 +10,14 @@ package container_service
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/azure/test"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/azure/test"
 
 	"github.com/stretchr/testify/assert"
 
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 
 	// Register input module and metricset
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/azure/monitor"
+	_ "github.com/jksroot/beats/v7/x-pack/metricbeat/module/azure/monitor"
 )
 
 func TestFetchMetricset(t *testing.T) {

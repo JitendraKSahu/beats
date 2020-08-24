@@ -20,8 +20,8 @@ package mysql
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/packetbeat/config"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
+	"github.com/jksroot/beats/v7/packetbeat/config"
+	"github.com/jksroot/beats/v7/packetbeat/protos"
 )
 
 type mysqlConfig struct {

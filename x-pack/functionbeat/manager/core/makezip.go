@@ -11,11 +11,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/keystore"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/manager/core/bundle"
+	"github.com/jksroot/beats/v7/libbeat/cfgfile"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/keystore"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/config"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/manager/core/bundle"
 )
 
 func rawYaml() ([]byte, error) {

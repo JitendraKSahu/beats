@@ -31,18 +31,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/active/dialchain/tlsmeta"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/active/dialchain/tlsmeta"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/eventext"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/look"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/active/dialchain"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/jobs"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/reason"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/useragent"
+	"github.com/jksroot/beats/v7/heartbeat/eventext"
+	"github.com/jksroot/beats/v7/heartbeat/look"
+	"github.com/jksroot/beats/v7/heartbeat/monitors"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/active/dialchain"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/jobs"
+	"github.com/jksroot/beats/v7/heartbeat/reason"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/common/useragent"
 )
 
 var userAgent = useragent.UserAgent("Heartbeat")

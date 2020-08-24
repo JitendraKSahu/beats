@@ -22,15 +22,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
-	"github.com/JitendraKSahu/beats/v7/filebeat/harvester"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input"
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource"
-	netcommon "github.com/JitendraKSahu/beats/v7/filebeat/inputsource/common"
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource/tcp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/filebeat/channel"
+	"github.com/jksroot/beats/v7/filebeat/harvester"
+	"github.com/jksroot/beats/v7/filebeat/input"
+	"github.com/jksroot/beats/v7/filebeat/inputsource"
+	netcommon "github.com/jksroot/beats/v7/filebeat/inputsource/common"
+	"github.com/jksroot/beats/v7/filebeat/inputsource/tcp"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 func init() {

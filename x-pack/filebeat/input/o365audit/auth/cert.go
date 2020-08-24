@@ -12,7 +12,7 @@ import (
 	"github.com/Azure/go-autorest/autorest/adal"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
 )
 
 // NewProviderFromCertificate returns a TokenProvider that uses certificate-based

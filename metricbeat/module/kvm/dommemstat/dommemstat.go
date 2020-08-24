@@ -22,15 +22,15 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
 
 	"github.com/pkg/errors"
 
 	"github.com/digitalocean/go-libvirt"
 	"github.com/digitalocean/go-libvirt/libvirttest"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 const (

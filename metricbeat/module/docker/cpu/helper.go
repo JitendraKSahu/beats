@@ -20,9 +20,9 @@ package cpu
 import (
 	"strconv"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/docker"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/metricbeat/module/docker"
 )
 
 type CPUStats struct {

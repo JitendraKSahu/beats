@@ -28,9 +28,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/look"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/heartbeat/look"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
 )
 
 func AddTLSMetadata(fields common.MapStr, connState cryptoTLS.ConnectionState, duration time.Duration) {

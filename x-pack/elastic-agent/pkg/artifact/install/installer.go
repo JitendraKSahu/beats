@@ -9,12 +9,12 @@ import (
 	"errors"
 	"runtime"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/install/dir"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/install/dir"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/install/hooks"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/install/tar"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/install/zip"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/install/hooks"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/install/tar"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/install/zip"
 )
 
 var (

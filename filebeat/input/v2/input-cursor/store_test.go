@@ -26,9 +26,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/statestore"
-	"github.com/JitendraKSahu/beats/v7/libbeat/statestore/storetest"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/statestore"
+	"github.com/jksroot/beats/v7/libbeat/statestore/storetest"
 )
 
 type testStateStore struct {

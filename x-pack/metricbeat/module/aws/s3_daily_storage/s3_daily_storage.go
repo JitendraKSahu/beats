@@ -13,9 +13,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/cloudwatch"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	awscommon "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/aws"
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/aws"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	awscommon "github.com/jksroot/beats/v7/x-pack/libbeat/common/aws"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/aws"
 )
 
 var metricsetName = "s3_daily_storage"

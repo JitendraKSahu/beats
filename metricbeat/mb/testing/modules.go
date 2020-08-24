@@ -28,7 +28,7 @@ that Metricbeat does it and with the same validations.
 	package mymetricset_test
 
 	import (
-		mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+		mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 	)
 
 	func TestFetch(t *testing.T) {
@@ -59,8 +59,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 type TestModule struct {

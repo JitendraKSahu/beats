@@ -22,17 +22,17 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/beater"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/cmd/test"
+	"github.com/jksroot/beats/v7/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/metricbeat/beater"
+	"github.com/jksroot/beats/v7/metricbeat/cmd/test"
 
 	// import modules
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/include"
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/include/fields"
+	_ "github.com/jksroot/beats/v7/metricbeat/include"
+	_ "github.com/jksroot/beats/v7/metricbeat/include/fields"
 
 	// Import processors.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script"
 )
 
 // Name of this beat

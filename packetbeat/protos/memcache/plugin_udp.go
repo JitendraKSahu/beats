@@ -23,13 +23,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/streambuf"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/streambuf"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 
-	"github.com/JitendraKSahu/beats/v7/packetbeat/procs"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/applayer"
+	"github.com/jksroot/beats/v7/packetbeat/procs"
+	"github.com/jksroot/beats/v7/packetbeat/protos"
+	"github.com/jksroot/beats/v7/packetbeat/protos/applayer"
 )
 
 type udpMemcache struct {

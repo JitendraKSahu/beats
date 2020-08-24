@@ -20,10 +20,10 @@ package health
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/helper"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
 )
 
 // init registers the MetricSet with the central registry.

@@ -20,7 +20,7 @@ package wineventlog
 import (
 	"sync"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // bufferPool contains a pool of byteBuffer objects.

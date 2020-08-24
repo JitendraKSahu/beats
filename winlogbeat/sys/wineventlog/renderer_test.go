@@ -32,9 +32,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/sys"
+	"github.com/jksroot/beats/v7/libbeat/common/atomic"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/winlogbeat/sys"
 )
 
 func TestRenderer(t *testing.T) {

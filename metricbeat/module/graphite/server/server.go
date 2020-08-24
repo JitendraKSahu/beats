@@ -20,11 +20,11 @@ package server
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	serverhelper "github.com/JitendraKSahu/beats/v7/metricbeat/helper/server"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/server/tcp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/server/udp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	serverhelper "github.com/jksroot/beats/v7/metricbeat/helper/server"
+	"github.com/jksroot/beats/v7/metricbeat/helper/server/tcp"
+	"github.com/jksroot/beats/v7/metricbeat/helper/server/udp"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // init registers the MetricSet with the central registry.

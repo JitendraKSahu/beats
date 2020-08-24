@@ -27,9 +27,9 @@ import (
 	saramacluster "github.com/bsm/sarama-cluster"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/tests/compose"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/libbeat/tests/compose"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 )
 
 const (

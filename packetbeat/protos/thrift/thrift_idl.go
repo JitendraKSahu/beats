@@ -20,7 +20,7 @@ package thrift
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 
 	"github.com/samuel/go-thrift/parser"
 )

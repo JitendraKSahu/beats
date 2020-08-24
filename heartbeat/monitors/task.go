@@ -23,14 +23,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/eventext"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/jobs"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/scheduler"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/scheduler/schedule"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/heartbeat/eventext"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/jobs"
+	"github.com/jksroot/beats/v7/heartbeat/scheduler"
+	"github.com/jksroot/beats/v7/heartbeat/scheduler/schedule"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
 )
 
 // configuredJob represents a job combined with its config and any

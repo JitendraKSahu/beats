@@ -19,9 +19,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/sys/unix"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/dns"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/tracing"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/dns"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/tracing"
 )
 
 type logWrapper testing.T

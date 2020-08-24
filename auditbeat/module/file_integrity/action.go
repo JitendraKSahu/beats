@@ -21,7 +21,7 @@ import (
 	"math/bits"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // Action is a description of the changes described by an event.

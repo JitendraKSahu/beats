@@ -20,7 +20,7 @@ package helper
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
 )
 
 // Config for an HTTP helper

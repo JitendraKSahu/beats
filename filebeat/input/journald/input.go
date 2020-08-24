@@ -25,14 +25,14 @@ import (
 	"github.com/coreos/go-systemd/v22/sdjournal"
 	"github.com/urso/sderr"
 
-	input "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
-	cursor "github.com/JitendraKSahu/beats/v7/filebeat/input/v2/input-cursor"
-	"github.com/JitendraKSahu/beats/v7/journalbeat/pkg/journalfield"
-	"github.com/JitendraKSahu/beats/v7/journalbeat/pkg/journalread"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/backoff"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	input "github.com/jksroot/beats/v7/filebeat/input/v2"
+	cursor "github.com/jksroot/beats/v7/filebeat/input/v2/input-cursor"
+	"github.com/jksroot/beats/v7/journalbeat/pkg/journalfield"
+	"github.com/jksroot/beats/v7/journalbeat/pkg/journalread"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/backoff"
+	"github.com/jksroot/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 type journald struct {

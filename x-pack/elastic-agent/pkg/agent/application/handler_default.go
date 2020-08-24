@@ -7,7 +7,7 @@ package application
 import (
 	"context"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 type handlerDefault struct {

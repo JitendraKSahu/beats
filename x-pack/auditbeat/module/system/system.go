@@ -5,8 +5,8 @@
 package system
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 	"github.com/elastic/go-sysinfo"
 )
 

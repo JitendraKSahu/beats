@@ -11,7 +11,7 @@ import (
 
 	"github.com/docker/docker/daemon/logger"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/dockerlogbeat/pipelinemanager"
+	"github.com/jksroot/beats/v7/x-pack/dockerlogbeat/pipelinemanager"
 
 	"github.com/docker/docker/pkg/ioutils"
 	"github.com/pkg/errors"

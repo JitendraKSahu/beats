@@ -1395,7 +1395,7 @@ def getProjectDependencies(beatName){
     output = sh(label: 'Get vendor dependency patterns', returnStdout: true, script: """
       go list -deps ./${beatName} \
         | grep 'elastic/beats' \
-        | sed -e "s#github.com/JitendraKSahu/beats/v7/##g" \
+        | sed -e "s#github.com/jksroot/beats/v7/##g" \
         | awk '{print "^" \$1 "/.*"}'
     """)
   }

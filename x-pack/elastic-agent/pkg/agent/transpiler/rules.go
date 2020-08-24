@@ -11,7 +11,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
 )
 
 // RuleList is a container that allow the same tree to be executed on multiple defined Rule.

@@ -25,20 +25,20 @@ import (
 
 	"github.com/magefile/mage/mg"
 
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
-	"github.com/JitendraKSahu/beats/v7/generator/common/beatgen"
-	heartbeat "github.com/JitendraKSahu/beats/v7/heartbeat/scripts/mage"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
+	"github.com/jksroot/beats/v7/generator/common/beatgen"
+	heartbeat "github.com/jksroot/beats/v7/heartbeat/scripts/mage"
 
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/common"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/common"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/build"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/build"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/unittest"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/unittest"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/integtest"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/integtest"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/test"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/test"
 )
 
 func init() {

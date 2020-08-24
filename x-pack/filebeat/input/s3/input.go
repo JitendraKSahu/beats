@@ -27,14 +27,14 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/sqs/sqsiface"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	awscommon "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/aws"
+	"github.com/jksroot/beats/v7/filebeat/channel"
+	"github.com/jksroot/beats/v7/filebeat/input"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/acker"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	awscommon "github.com/jksroot/beats/v7/x-pack/libbeat/common/aws"
 )
 
 const inputName = "s3"

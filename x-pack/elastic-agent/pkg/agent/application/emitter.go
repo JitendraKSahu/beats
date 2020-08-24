@@ -7,11 +7,11 @@ package application
 import (
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 type decoratorFunc = func(string, *transpiler.AST, []program.Program) ([]program.Program, error)

@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/sorted"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/sorted"
 )
 
 // defautlRK default routing keys until we implement the routing key / config matrix.

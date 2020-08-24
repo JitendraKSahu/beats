@@ -22,7 +22,7 @@ package state_cronjob
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus/ptest"
+	"github.com/jksroot/beats/v7/metricbeat/helper/prometheus/ptest"
 )
 
 func TestEventMapping(t *testing.T) {

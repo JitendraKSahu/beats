@@ -28,8 +28,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/elasticsearch"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/metricbeat/module/elasticsearch"
 )
 
 func TestFetch(t *testing.T) {

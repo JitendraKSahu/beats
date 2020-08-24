@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/streambuf"
+	"github.com/jksroot/beats/v7/libbeat/common/streambuf"
 )
 
 type StreamDecoder struct {

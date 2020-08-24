@@ -11,9 +11,9 @@ import (
 
 	"github.com/elastic/elastic-agent-client/v7/pkg/proto"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
-	"github.com/JitendraKSahu/beats/v7/libbeat/management"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/reload"
+	"github.com/jksroot/beats/v7/libbeat/management"
 )
 
 func TestConfigBlocks(t *testing.T) {

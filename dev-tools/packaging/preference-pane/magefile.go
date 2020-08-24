@@ -28,7 +28,7 @@ import (
 	"github.com/magefile/mage/sh"
 	"github.com/pkg/errors"
 
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
 )
 
 var builder = preferencePaneBuilder{

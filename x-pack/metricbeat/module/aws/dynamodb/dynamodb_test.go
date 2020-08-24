@@ -7,11 +7,11 @@ package dynamodb
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 
 	// Register input module and metricset
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/aws"
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/aws/cloudwatch"
+	_ "github.com/jksroot/beats/v7/x-pack/metricbeat/module/aws"
+	_ "github.com/jksroot/beats/v7/x-pack/metricbeat/module/aws/cloudwatch"
 )
 
 func init() {

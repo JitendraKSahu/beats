@@ -30,12 +30,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	sock "github.com/JitendraKSahu/beats/v7/metricbeat/helper/socket"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/system"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	sock "github.com/jksroot/beats/v7/metricbeat/helper/socket"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/metricbeat/module/system"
 	"github.com/elastic/gosigar/sys/linux"
 )
 

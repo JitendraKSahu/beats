@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/state"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/state"
 )
 
 // operationVerify verifies downloaded artifact for correct signature

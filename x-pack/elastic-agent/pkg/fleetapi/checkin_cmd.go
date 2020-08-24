@@ -13,8 +13,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
 )
 
 const checkingPath = "/api/ingest_manager/fleet/agents/%s/checkin"

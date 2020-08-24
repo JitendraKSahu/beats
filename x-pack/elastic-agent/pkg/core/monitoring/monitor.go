@@ -5,11 +5,11 @@
 package monitoring
 
 import (
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/beats"
-	monitoringConfig "github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/beats"
+	monitoringConfig "github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
 )
 
 // Monitor is a monitoring interface providing information about the way

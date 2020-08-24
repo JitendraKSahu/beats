@@ -5,8 +5,8 @@
 package cmd
 
 import (
-	funcmd "github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/cmd"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/manager/beater"
+	funcmd "github.com/jksroot/beats/v7/x-pack/functionbeat/function/cmd"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/manager/beater"
 )
 
 // Name of this beat

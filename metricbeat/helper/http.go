@@ -28,10 +28,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/dialer"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common/transport"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/metricbeat/helper/dialer"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // HTTP is a custom HTTP Client that handle the complexity of connection and retrieving information

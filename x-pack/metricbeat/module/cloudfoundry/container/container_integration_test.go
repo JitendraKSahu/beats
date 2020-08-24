@@ -13,9 +13,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/cloudfoundry/mtest"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/cloudfoundry/mtest"
 )
 
 func TestFetch(t *testing.T) {

@@ -18,11 +18,11 @@
 package cmd
 
 import (
-	cmd "github.com/JitendraKSahu/beats/v7/libbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/beater"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/cmd/test"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/module"
+	cmd "github.com/jksroot/beats/v7/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/metricbeat/beater"
+	"github.com/jksroot/beats/v7/metricbeat/cmd/test"
+	"github.com/jksroot/beats/v7/metricbeat/mb/module"
 )
 
 // Name of this beat

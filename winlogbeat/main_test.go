@@ -22,8 +22,8 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/tests/system/template"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/tests/system/template"
+	"github.com/jksroot/beats/v7/winlogbeat/cmd"
 )
 
 var systemTest *bool

@@ -24,12 +24,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 
-	v2 "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input/v2/internal/inputest"
+	v2 "github.com/jksroot/beats/v7/filebeat/input/v2"
+	"github.com/jksroot/beats/v7/filebeat/input/v2/internal/inputest"
 )
 
 func TestRunnerFactory_CheckConfig(t *testing.T) {

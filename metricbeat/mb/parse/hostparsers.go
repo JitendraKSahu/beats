@@ -20,7 +20,7 @@ package parse
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // PassThruHostParser is a HostParser that sets the HostData URI, SanitizedURI,

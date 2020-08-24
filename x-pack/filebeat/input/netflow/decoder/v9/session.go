@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/atomic"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/atomic"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
 )
 
 // SessionKey is the key used to lookup sessions: exporter address + port

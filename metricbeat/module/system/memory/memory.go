@@ -20,10 +20,10 @@
 package memory
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	mem "github.com/JitendraKSahu/beats/v7/libbeat/metric/system/memory"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	mem "github.com/jksroot/beats/v7/libbeat/metric/system/memory"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
 
 	"github.com/pkg/errors"
 )

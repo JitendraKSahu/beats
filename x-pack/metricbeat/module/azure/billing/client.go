@@ -12,7 +12,7 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/services/consumption/mgmt/2019-01-01/consumption"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Client represents the azure client which will make use of the azure sdk go metrics related clients

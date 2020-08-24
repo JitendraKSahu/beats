@@ -24,16 +24,16 @@ import (
 
 	"github.com/dustin/go-humanize"
 
-	cfg "github.com/JitendraKSahu/beats/v7/filebeat/config"
-	"github.com/JitendraKSahu/beats/v7/filebeat/harvester"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input/file"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader/multiline"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader/readfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader/readjson"
+	cfg "github.com/jksroot/beats/v7/filebeat/config"
+	"github.com/jksroot/beats/v7/filebeat/harvester"
+	"github.com/jksroot/beats/v7/filebeat/input/file"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/common/match"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/reader/multiline"
+	"github.com/jksroot/beats/v7/libbeat/reader/readfile"
+	"github.com/jksroot/beats/v7/libbeat/reader/readjson"
 )
 
 type config struct {

@@ -18,8 +18,8 @@ import (
 
 	"github.com/elastic/elastic-agent-client/v7/pkg/proto"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/state"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/state"
 )
 
 func TestMain(m *testing.M) {

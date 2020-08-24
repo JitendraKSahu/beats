@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/scheduler"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/scheduler"
 )
 
 func TestTokenBucket(t *testing.T) {

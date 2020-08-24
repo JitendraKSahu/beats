@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // FieldConversion provides the mappings and conversion rules for raw fields of journald entries.

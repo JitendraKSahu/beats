@@ -9,12 +9,12 @@ package collector
 import (
 	"testing"
 
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/prometheus"
+	_ "github.com/jksroot/beats/v7/x-pack/metricbeat/module/prometheus"
 
 	// Import common fields for validation
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/prometheus"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/prometheus"
 )
 
 func TestData(t *testing.T) {

@@ -17,10 +17,10 @@ import (
 	eventhub "github.com/Azure/azure-event-hubs-go/v3"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/filebeat/channel"
+	"github.com/jksroot/beats/v7/filebeat/input"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 var (

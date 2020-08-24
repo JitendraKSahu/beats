@@ -18,8 +18,8 @@
 package memory
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/docker"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/module/docker"
 )
 
 // MemoryData contains parsed container memory info

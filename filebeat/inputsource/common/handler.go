@@ -24,8 +24,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/filebeat/inputsource"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // HandlerFactory returns a ConnectionHandler func

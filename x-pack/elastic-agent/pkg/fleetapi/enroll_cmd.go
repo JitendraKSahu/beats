@@ -14,8 +14,8 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
 )
 
 // EnrollType is the type of enrollment to do with the elastic-agent.

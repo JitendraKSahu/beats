@@ -9,10 +9,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control/client"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/cli"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/control"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/control/client"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/cli"
 )
 
 // NewCommandWithArgs returns a new version command.

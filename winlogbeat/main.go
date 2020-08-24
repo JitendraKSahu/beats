@@ -27,7 +27,7 @@ package main
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/cmd"
+	"github.com/jksroot/beats/v7/winlogbeat/cmd"
 )
 
 func main() {

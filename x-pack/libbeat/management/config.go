@@ -11,7 +11,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/kibana"
+	"github.com/jksroot/beats/v7/libbeat/kibana"
 )
 
 // ManagedConfigTemplate is used to overwrite settings file during enrollment

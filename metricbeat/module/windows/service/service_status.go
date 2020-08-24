@@ -27,12 +27,12 @@ import (
 	"unicode/utf16"
 	"unsafe"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 
 	"github.com/pkg/errors"
 	"golang.org/x/sys/windows"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 	"github.com/elastic/gosigar"
 )
 

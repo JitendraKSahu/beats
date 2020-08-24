@@ -8,15 +8,15 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/beater"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/gcp/gcp"
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/gcp/include"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/cfgfile"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/config"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/beater"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/provider/gcp/gcp"
+	_ "github.com/jksroot/beats/v7/x-pack/functionbeat/provider/gcp/include"
 )
 
 func RunCloudStorage(ctx context.Context, e gcp.StorageEvent) error {

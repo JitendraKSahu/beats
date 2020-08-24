@@ -30,10 +30,10 @@ import (
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/client"
 
-	"github.com/JitendraKSahu/beats/v7/auditbeat/core"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/docker"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/auditbeat/core"
+	"github.com/jksroot/beats/v7/libbeat/common/docker"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 )
 
 func TestData(t *testing.T) {

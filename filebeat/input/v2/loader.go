@@ -20,9 +20,9 @@ package v2
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 	"github.com/elastic/go-concert/unison"
 )
 

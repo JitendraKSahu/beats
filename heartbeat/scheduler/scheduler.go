@@ -27,10 +27,10 @@ import (
 
 	"golang.org/x/sync/semaphore"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/scheduler/timerqueue"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/heartbeat/scheduler/timerqueue"
+	"github.com/jksroot/beats/v7/libbeat/common/atomic"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
 )
 
 const (

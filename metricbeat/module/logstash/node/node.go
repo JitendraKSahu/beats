@@ -18,9 +18,9 @@
 package node
 
 import (
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/logstash"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/metricbeat/module/logstash"
 )
 
 // init registers the MetricSet with the central registry.

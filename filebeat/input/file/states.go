@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // States handles list of FileState. One must use NewStates to instantiate a

@@ -28,9 +28,9 @@ import (
 	"github.com/andrewkroh/sys/windows/svc/eventlog"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/checkpoint"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/sys/eventlogging"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/winlogbeat/checkpoint"
+	"github.com/jksroot/beats/v7/winlogbeat/sys/eventlogging"
 )
 
 // Names that are registered by the test for logging events.

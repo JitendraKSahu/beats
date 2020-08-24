@@ -13,10 +13,10 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
-	monitoringConfig "github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
+	monitoringConfig "github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
 )
 
 const httpPlusPrefix = "http+"

@@ -8,7 +8,7 @@ package include
 
 import (
 	// Import packages that need to register themselves.
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/winlogbeat/module/powershell"
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/winlogbeat/module/security"
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/winlogbeat/module/sysmon"
+	_ "github.com/jksroot/beats/v7/x-pack/winlogbeat/module/powershell"
+	_ "github.com/jksroot/beats/v7/x-pack/winlogbeat/module/security"
+	_ "github.com/jksroot/beats/v7/x-pack/winlogbeat/module/sysmon"
 )

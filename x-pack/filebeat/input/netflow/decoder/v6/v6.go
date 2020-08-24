@@ -7,12 +7,12 @@ package v6
 import (
 	"log"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/fields"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/protocol"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
-	v1 "github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/v1"
-	v5 "github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/v5"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/config"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/fields"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/protocol"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
+	v1 "github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/v1"
+	v5 "github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/v5"
 )
 
 const (

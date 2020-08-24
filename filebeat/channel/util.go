@@ -20,7 +20,7 @@ package channel
 import (
 	"sync"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/beat"
 )
 
 type subOutlet struct {

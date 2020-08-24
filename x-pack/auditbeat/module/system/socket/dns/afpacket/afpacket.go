@@ -17,14 +17,14 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/net/bpf"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/afpacket"
 	"github.com/google/gopacket/layers"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	parent "github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/dns"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	parent "github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/dns"
 )
 
 var udpSrcPort53Filter = []bpf.RawInstruction{

@@ -20,7 +20,7 @@ package common
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgtype"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgtype"
 )
 
 // ListenerConfig exposes the shared listener configuration.

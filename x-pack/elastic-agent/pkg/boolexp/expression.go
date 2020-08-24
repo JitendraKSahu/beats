@@ -10,7 +10,7 @@ import (
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/boolexp/parser"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/boolexp/parser"
 )
 
 // VarStore is the interface to implements when you want the expression engine to be able to fetch

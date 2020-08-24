@@ -17,7 +17,7 @@
 
 package hints
 
-import "github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+import "github.com/jksroot/beats/v7/metricbeat/mb"
 
 type config struct {
 	Key      string `config:"key"`

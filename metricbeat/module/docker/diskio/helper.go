@@ -22,7 +22,7 @@ import (
 
 	"github.com/docker/docker/api/types"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/docker"
+	"github.com/jksroot/beats/v7/metricbeat/module/docker"
 )
 
 // BlkioStats contains all formatted blkio stats

@@ -20,8 +20,8 @@ package mgr
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/helper"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 type MetricSet struct {

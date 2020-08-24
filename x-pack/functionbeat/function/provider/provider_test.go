@@ -12,10 +12,10 @@ import (
 	e "github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/core"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/telemetry"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/core"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/telemetry"
 )
 
 type simpleFunction struct {

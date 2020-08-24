@@ -27,14 +27,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/paths"
 
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/checkpoint"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/config"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/eventlog"
+	"github.com/jksroot/beats/v7/winlogbeat/checkpoint"
+	"github.com/jksroot/beats/v7/winlogbeat/config"
+	"github.com/jksroot/beats/v7/winlogbeat/eventlog"
 )
 
 // Debug logging functions for this package.

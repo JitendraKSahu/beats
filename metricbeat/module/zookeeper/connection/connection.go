@@ -20,9 +20,9 @@ package connection
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/zookeeper"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/metricbeat/module/zookeeper"
 )
 
 // init registers the MetricSet with the central registry as soon as the program

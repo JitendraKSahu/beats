@@ -20,7 +20,7 @@ package unix
 import (
 	"net"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource"
+	"github.com/jksroot/beats/v7/filebeat/inputsource"
 )
 
 // MetadataCallback returns common metadata about a unix connection

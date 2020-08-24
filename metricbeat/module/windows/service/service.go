@@ -20,7 +20,7 @@
 package service
 
 import (
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // init registers the MetricSet with the central registry.

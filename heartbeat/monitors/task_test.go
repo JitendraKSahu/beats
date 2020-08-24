@@ -28,10 +28,10 @@ import (
 	"github.com/elastic/go-lookslike"
 	"github.com/elastic/go-lookslike/testslike"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/eventext"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/jobs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/heartbeat/eventext"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/jobs"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 func Test_runPublishJob(t *testing.T) {

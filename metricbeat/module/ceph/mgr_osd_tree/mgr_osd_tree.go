@@ -18,10 +18,10 @@
 package mgr_osd_tree
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/ceph/mgr"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/metricbeat/module/ceph/mgr"
 )
 
 const (

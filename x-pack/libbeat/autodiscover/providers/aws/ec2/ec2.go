@@ -8,9 +8,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/ec2"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	awsauto "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/autodiscover/providers/aws"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	awsauto "github.com/jksroot/beats/v7/x-pack/libbeat/autodiscover/providers/aws"
 )
 
 type ec2Instance struct {

@@ -22,8 +22,8 @@ import (
 
 	"github.com/docker/docker/api/types"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/docker"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/docker"
 )
 
 func eventsMapping(imagesList []types.ImageSummary, dedot bool) []common.MapStr {

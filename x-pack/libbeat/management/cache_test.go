@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management/api"
+	"github.com/jksroot/beats/v7/x-pack/libbeat/management/api"
 )
 
 func TestHasConfig(t *testing.T) {

@@ -7,7 +7,7 @@
 package helper
 
 import (
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/tracing"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/tracing"
 )
 
 // Logger exposes logging functions.

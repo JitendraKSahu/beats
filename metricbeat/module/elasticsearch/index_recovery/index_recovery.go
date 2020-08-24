@@ -18,8 +18,8 @@
 package index_recovery
 
 import (
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/elasticsearch"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/module/elasticsearch"
 )
 
 func init() {

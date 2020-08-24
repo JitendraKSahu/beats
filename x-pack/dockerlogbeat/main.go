@@ -11,18 +11,18 @@ import (
 
 	"github.com/docker/go-plugins-helpers/sdk"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	logpcfg "github.com/JitendraKSahu/beats/v7/libbeat/logp/configure"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/console"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/elasticsearch"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/fileout"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/kafka"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/logstash"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/redis"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/memqueue"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/spool"
-	"github.com/JitendraKSahu/beats/v7/libbeat/service"
-	"github.com/JitendraKSahu/beats/v7/x-pack/dockerlogbeat/pipelinemanager"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	logpcfg "github.com/jksroot/beats/v7/libbeat/logp/configure"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/console"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/elasticsearch"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/fileout"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/kafka"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/logstash"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/redis"
+	_ "github.com/jksroot/beats/v7/libbeat/publisher/queue/memqueue"
+	_ "github.com/jksroot/beats/v7/libbeat/publisher/queue/spool"
+	"github.com/jksroot/beats/v7/libbeat/service"
+	"github.com/jksroot/beats/v7/x-pack/dockerlogbeat/pipelinemanager"
 )
 
 // genNewMonitoringConfig is a hacked-in function to enable a debug stderr logger

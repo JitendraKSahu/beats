@@ -5,10 +5,10 @@
 package application
 
 import (
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/paths"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/paths"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
 )
 
 // InjectAgentConfig injects config to a provided configuration.

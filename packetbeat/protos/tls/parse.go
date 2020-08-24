@@ -27,9 +27,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/streambuf"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/streambuf"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 type direction uint8

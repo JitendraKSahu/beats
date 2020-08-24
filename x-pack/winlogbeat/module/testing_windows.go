@@ -20,15 +20,15 @@ import (
 	"github.com/pmezard/go-difflib/difflib"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/mapping"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/checkpoint"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/eventlog"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/mapping"
+	"github.com/jksroot/beats/v7/libbeat/processors/script/javascript"
+	"github.com/jksroot/beats/v7/winlogbeat/checkpoint"
+	"github.com/jksroot/beats/v7/winlogbeat/eventlog"
 
 	// Register javascript modules.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module"
-	_ "github.com/JitendraKSahu/beats/v7/winlogbeat/processors/script/javascript/module/winlogbeat"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module"
+	_ "github.com/jksroot/beats/v7/winlogbeat/processors/script/javascript/module/winlogbeat"
 )
 
 var update = flag.Bool("update", false, "update golden files")

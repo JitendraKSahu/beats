@@ -12,8 +12,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/tracing"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/tracing"
 )
 
 // ProbeDef couples a probe with a decoder factory.

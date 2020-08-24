@@ -20,7 +20,7 @@ package v2
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/libbeat/feature"
 )
 
 func TestPlugin_Validate(t *testing.T) {

@@ -28,8 +28,8 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/net/netutil"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/filebeat/inputsource/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Server represent a unix server

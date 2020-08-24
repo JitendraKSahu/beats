@@ -9,12 +9,12 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/storage"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/storage"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
 )
 
 // IntrospectConfigCmd is an introspect subcommand that shows configurations of the agent.

@@ -8,7 +8,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/program"
 )
 
 type embeddedUninstaller interface {

@@ -9,11 +9,11 @@ import (
 
 	"github.com/elastic/elastic-agent-client/v7/pkg/proto"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/app"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/server"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/state"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/app"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/server"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/state"
 )
 
 // operation is an operation definition

@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"time"
 
-	v2 "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
-	stateless "github.com/JitendraKSahu/beats/v7/filebeat/input/v2/input-stateless"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
+	v2 "github.com/jksroot/beats/v7/filebeat/input/v2"
+	stateless "github.com/jksroot/beats/v7/filebeat/input/v2/input-stateless"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/feature"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/cloudfoundry"
+	"github.com/jksroot/beats/v7/x-pack/libbeat/common/cloudfoundry"
 )
 
 type cloudfoundryEvent interface {

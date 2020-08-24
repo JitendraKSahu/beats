@@ -13,9 +13,9 @@ import (
 	"math"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/fields"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
-	v9 "github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/v9"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/fields"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
+	v9 "github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/v9"
 )
 
 const (

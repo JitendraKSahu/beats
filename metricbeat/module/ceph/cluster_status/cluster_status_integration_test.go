@@ -22,8 +22,8 @@ package cluster_status
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/tests/compose"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/libbeat/tests/compose"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 )
 
 func TestData(t *testing.T) {

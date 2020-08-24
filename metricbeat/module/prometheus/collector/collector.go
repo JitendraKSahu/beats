@@ -23,10 +23,10 @@ import (
 	"github.com/pkg/errors"
 	dto "github.com/prometheus/client_model/go"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	p "github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	p "github.com/jksroot/beats/v7/metricbeat/helper/prometheus"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
 )
 
 const (

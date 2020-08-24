@@ -12,11 +12,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/fields"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/record"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/test"
-	v9 "github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/v9"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/config"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/fields"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/record"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/test"
+	v9 "github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/v9"
 )
 
 func TestMessageWithOptions(t *testing.T) {

@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/filebeat/channel"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 var fakeFactory = func(_ *common.Config, _ channel.Connector, _ Context) (Input, error) {

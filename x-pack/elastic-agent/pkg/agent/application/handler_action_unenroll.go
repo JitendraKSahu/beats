@@ -8,9 +8,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
 )
 
 // After running Unenroll agent is in idle state, non managed non standalone.

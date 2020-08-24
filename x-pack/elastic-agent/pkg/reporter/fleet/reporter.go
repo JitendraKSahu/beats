@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/reporter"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/reporter"
 )
 
 const (

@@ -18,10 +18,10 @@
 package container
 
 import (
-	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input/log"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/filebeat/channel"
+	"github.com/jksroot/beats/v7/filebeat/input"
+	"github.com/jksroot/beats/v7/filebeat/input/log"
+	"github.com/jksroot/beats/v7/libbeat/common"
 
 	"github.com/pkg/errors"
 )

@@ -20,7 +20,7 @@ package udp
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgtype"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgtype"
 )
 
 // Config options for the UDPServer

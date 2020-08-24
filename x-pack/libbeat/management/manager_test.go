@@ -18,10 +18,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
-	"github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management/api"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/reload"
+	"github.com/jksroot/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/x-pack/libbeat/management/api"
 )
 
 type reloadable struct {

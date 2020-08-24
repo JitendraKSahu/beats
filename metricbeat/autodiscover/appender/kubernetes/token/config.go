@@ -18,7 +18,7 @@
 package token
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/conditions"
+	"github.com/jksroot/beats/v7/libbeat/conditions"
 )
 
 type config struct {

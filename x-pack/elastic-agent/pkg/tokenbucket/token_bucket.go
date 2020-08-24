@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/scheduler"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/scheduler"
 )
 
 // Bucket is a Token Bucket for rate limiting

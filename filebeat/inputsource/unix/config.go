@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgtype"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgtype"
 )
 
 // Name is the human readable name and identifier.

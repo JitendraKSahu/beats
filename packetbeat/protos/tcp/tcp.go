@@ -22,12 +22,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
 
-	"github.com/JitendraKSahu/beats/v7/packetbeat/flows"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
+	"github.com/jksroot/beats/v7/packetbeat/flows"
+	"github.com/jksroot/beats/v7/packetbeat/protos"
 
 	"github.com/tsg/gopacket/layers"
 )

@@ -22,13 +22,13 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/jobs"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/wrappers"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/heartbeat/monitors"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/jobs"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/wrappers"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/transport"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 func init() {

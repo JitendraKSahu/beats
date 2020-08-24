@@ -23,7 +23,7 @@ import (
 
 	"github.com/gofrs/uuid"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Registry struct manages (start / stop) a list of harvesters

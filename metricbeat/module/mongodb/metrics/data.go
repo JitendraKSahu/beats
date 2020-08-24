@@ -18,8 +18,8 @@
 package metrics
 
 import (
-	s "github.com/JitendraKSahu/beats/v7/libbeat/common/schema"
-	c "github.com/JitendraKSahu/beats/v7/libbeat/common/schema/mapstriface"
+	s "github.com/jksroot/beats/v7/libbeat/common/schema"
+	c "github.com/jksroot/beats/v7/libbeat/common/schema/mapstriface"
 )
 
 var schemaMetrics = s.Schema{

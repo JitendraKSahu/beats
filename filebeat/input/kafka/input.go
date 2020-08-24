@@ -27,14 +27,14 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/backoff"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kafka"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/filebeat/channel"
+	"github.com/jksroot/beats/v7/filebeat/input"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/acker"
+	"github.com/jksroot/beats/v7/libbeat/common/backoff"
+	"github.com/jksroot/beats/v7/libbeat/common/kafka"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 
 	"github.com/pkg/errors"
 )

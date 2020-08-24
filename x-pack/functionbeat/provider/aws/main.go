@@ -7,8 +7,8 @@ package main
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/aws/cmd"
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/aws/include"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/provider/aws/cmd"
+	_ "github.com/jksroot/beats/v7/x-pack/functionbeat/provider/aws/include"
 )
 
 func main() {

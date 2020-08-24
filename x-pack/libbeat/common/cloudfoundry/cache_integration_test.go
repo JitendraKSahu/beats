@@ -16,9 +16,9 @@ import (
 
 	"github.com/cloudfoundry-community/go-cfclient"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	cftest "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/cloudfoundry/test"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	cftest "github.com/jksroot/beats/v7/x-pack/libbeat/common/cloudfoundry/test"
 )
 
 func TestGetApps(t *testing.T) {

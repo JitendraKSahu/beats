@@ -23,12 +23,12 @@ import (
 	"net"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/eventext"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/look"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/jobs"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/wrappers"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/heartbeat/eventext"
+	"github.com/jksroot/beats/v7/heartbeat/look"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/jobs"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/wrappers"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // IPSettings provides common configuration settings for IP resolution and ping

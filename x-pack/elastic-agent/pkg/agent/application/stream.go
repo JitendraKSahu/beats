@@ -7,18 +7,18 @@ package application
 import (
 	"context"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/operation"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/stateresolver"
-	downloader "github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download/localremote"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/install"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/uninstall"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/server"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/state"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/operation"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/stateresolver"
+	downloader "github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download/localremote"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/install"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/uninstall"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/server"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/state"
 )
 
 type operatorStream struct {

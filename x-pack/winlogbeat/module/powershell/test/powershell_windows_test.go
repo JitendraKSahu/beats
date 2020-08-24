@@ -7,11 +7,11 @@ package test
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/winlogbeat/module"
+	"github.com/jksroot/beats/v7/x-pack/winlogbeat/module"
 
 	// Register required processors.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/timestamp"
+	_ "github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/timestamp"
 )
 
 // Ignore these fields because they can be different on different versions

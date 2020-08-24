@@ -23,11 +23,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/flowhash"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/procs"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/applayer"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/flowhash"
+	"github.com/jksroot/beats/v7/packetbeat/procs"
+	"github.com/jksroot/beats/v7/packetbeat/protos/applayer"
 )
 
 type flowsProcessor struct {

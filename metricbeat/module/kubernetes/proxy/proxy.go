@@ -18,8 +18,8 @@
 package proxy
 
 import (
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/helper/prometheus"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 func init() {

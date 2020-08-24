@@ -22,9 +22,9 @@ package state_deployment
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus/ptest"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/kubernetes"
+	"github.com/jksroot/beats/v7/metricbeat/helper/prometheus/ptest"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/kubernetes"
 )
 
 func TestEventMapping(t *testing.T) {

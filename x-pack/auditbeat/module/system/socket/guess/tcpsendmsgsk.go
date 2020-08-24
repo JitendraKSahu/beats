@@ -11,9 +11,9 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/helper"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/tracing"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/helper"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/tracing"
 )
 
 // Guess how to get a struct sock* from tcp_sendmsg parameters. It can be:

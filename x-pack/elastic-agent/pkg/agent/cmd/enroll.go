@@ -11,20 +11,20 @@ import (
 	"os"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control/client"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/control/client"
 
 	"github.com/spf13/cobra"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/backoff"
-	c "github.com/JitendraKSahu/beats/v7/libbeat/common/cli"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/warn"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/cli"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
+	"github.com/jksroot/beats/v7/libbeat/common/backoff"
+	c "github.com/jksroot/beats/v7/libbeat/common/cli"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/warn"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/cli"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
 )
 
 var defaultDelay = 1 * time.Second

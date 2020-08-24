@@ -22,25 +22,25 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/autodiscover"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/management"
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/module"
+	"github.com/jksroot/beats/v7/libbeat/autodiscover"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/cfgfile"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/reload"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/management"
+	"github.com/jksroot/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb/module"
 
 	// include all metricbeat specific builders
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/autodiscover/builder/hints"
+	_ "github.com/jksroot/beats/v7/metricbeat/autodiscover/builder/hints"
 
 	// include all metricbeat specific appenders
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/autodiscover/appender/kubernetes/token"
+	_ "github.com/jksroot/beats/v7/metricbeat/autodiscover/appender/kubernetes/token"
 
 	// Add metricbeat default processors
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/processor/add_kubernetes_metadata"
+	_ "github.com/jksroot/beats/v7/metricbeat/processor/add_kubernetes_metadata"
 )
 
 // Metricbeat implements the Beater interface for metricbeat.

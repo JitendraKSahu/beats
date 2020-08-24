@@ -10,7 +10,7 @@ package metrics
 import (
 	"testing"
 
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 )
 
 func TestData(t *testing.T) {

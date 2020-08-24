@@ -11,12 +11,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control/client"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control/server"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/release"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/control/client"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/control/server"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/release"
 )
 
 func TestServerClient_Version(t *testing.T) {

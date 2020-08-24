@@ -21,21 +21,21 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/guess"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/helper"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/tracing"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/guess"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/helper"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/tracing"
 	"github.com/elastic/go-perf"
 	"github.com/elastic/go-sysinfo"
 	"github.com/elastic/go-sysinfo/providers/linux"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/dns"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/dns"
 	// Register dns capture implementations
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/dns/afpacket"
+	_ "github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/dns/afpacket"
 )
 
 const (

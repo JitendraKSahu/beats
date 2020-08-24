@@ -20,12 +20,12 @@ package routes
 import (
 	"encoding/json"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 
 	"github.com/pkg/errors"
 
-	s "github.com/JitendraKSahu/beats/v7/libbeat/common/schema"
-	c "github.com/JitendraKSahu/beats/v7/libbeat/common/schema/mapstriface"
+	s "github.com/jksroot/beats/v7/libbeat/common/schema"
+	c "github.com/jksroot/beats/v7/libbeat/common/schema/mapstriface"
 )
 
 var (

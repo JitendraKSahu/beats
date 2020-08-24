@@ -18,7 +18,7 @@
 package php_fpm
 
 import (
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb/parse"
+	"github.com/jksroot/beats/v7/metricbeat/mb/parse"
 )
 
 const (

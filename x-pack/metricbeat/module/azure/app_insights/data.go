@@ -12,8 +12,8 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/services/preview/appinsights/v1/insights"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 func EventsMapping(metricValues insights.ListMetricsResultsItem, applicationId string) []mb.Event {

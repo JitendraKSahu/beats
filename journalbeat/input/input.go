@@ -21,17 +21,17 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/add_formatted_index"
+	"github.com/jksroot/beats/v7/libbeat/processors/add_formatted_index"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
+	"github.com/jksroot/beats/v7/libbeat/common/acker"
+	"github.com/jksroot/beats/v7/libbeat/common/fmtstr"
 
-	"github.com/JitendraKSahu/beats/v7/journalbeat/checkpoint"
-	"github.com/JitendraKSahu/beats/v7/journalbeat/reader"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/journalbeat/checkpoint"
+	"github.com/jksroot/beats/v7/journalbeat/reader"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
 )
 
 // Input manages readers and forwards entries from journals.

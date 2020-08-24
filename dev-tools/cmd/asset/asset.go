@@ -26,8 +26,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/asset"
-	"github.com/JitendraKSahu/beats/v7/licenses"
+	"github.com/jksroot/beats/v7/libbeat/asset"
+	"github.com/jksroot/beats/v7/licenses"
 )
 
 var (

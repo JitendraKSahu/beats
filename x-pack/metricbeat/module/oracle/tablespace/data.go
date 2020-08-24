@@ -7,12 +7,12 @@ package tablespace
 import (
 	"context"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/oracle"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/oracle"
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // extract is the E of a ETL processing. Gets the data files, used/free space and temp free space data that is fetch

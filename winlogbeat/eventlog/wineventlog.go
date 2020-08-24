@@ -31,11 +31,11 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/sys/windows"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/checkpoint"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/sys"
-	win "github.com/JitendraKSahu/beats/v7/winlogbeat/sys/wineventlog"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/winlogbeat/checkpoint"
+	"github.com/jksroot/beats/v7/winlogbeat/sys"
+	win "github.com/jksroot/beats/v7/winlogbeat/sys/wineventlog"
 )
 
 const (

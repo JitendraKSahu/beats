@@ -10,12 +10,12 @@ import (
 
 	"cloud.google.com/go/functions/metadata"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/core"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/provider"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/telemetry"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/core"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/provider"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/telemetry"
 )
 
 const (

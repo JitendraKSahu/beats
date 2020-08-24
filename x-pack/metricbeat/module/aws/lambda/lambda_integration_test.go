@@ -10,8 +10,8 @@ package lambda
 import (
 	"testing"
 
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/aws/mtest"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/aws/mtest"
 )
 
 func TestData(t *testing.T) {

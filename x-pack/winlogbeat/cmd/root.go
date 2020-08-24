@@ -5,11 +5,11 @@
 package cmd
 
 import (
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/cmd"
-	xpackcmd "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/cmd"
+	"github.com/jksroot/beats/v7/winlogbeat/cmd"
+	xpackcmd "github.com/jksroot/beats/v7/x-pack/libbeat/cmd"
 
 	// Register fields.
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/winlogbeat/include"
+	_ "github.com/jksroot/beats/v7/x-pack/winlogbeat/include"
 )
 
 // Name of this beat.

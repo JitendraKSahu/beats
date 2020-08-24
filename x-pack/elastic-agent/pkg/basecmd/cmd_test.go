@@ -7,7 +7,7 @@ package basecmd
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/cli"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/cli"
 )
 
 func TestBaseCmd(t *testing.T) {

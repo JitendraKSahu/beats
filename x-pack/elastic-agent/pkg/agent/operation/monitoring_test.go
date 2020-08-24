@@ -11,18 +11,18 @@ import (
 
 	"github.com/elastic/elastic-agent-client/v7/pkg/proto"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/stateresolver"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/app"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
-	monitoringConfig "github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/process"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/retry"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/server"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/state"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/stateresolver"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/app"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
+	monitoringConfig "github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/process"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/retry"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/server"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/state"
 )
 
 func TestGenerateSteps(t *testing.T) {

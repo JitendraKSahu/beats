@@ -34,7 +34,7 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/tools/go/vcs"
 
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/gotool"
+	"github.com/jksroot/beats/v7/dev-tools/mage/gotool"
 )
 
 const (
@@ -47,7 +47,7 @@ const (
 
 	elasticBeatsImportPath = "github.com/elastic/beats"
 
-	elasticBeatsModulePath = "github.com/JitendraKSahu/beats/v7"
+	elasticBeatsModulePath = "github.com/jksroot/beats/v7"
 )
 
 // Common settings with defaults derived from files, CWD, and environment.

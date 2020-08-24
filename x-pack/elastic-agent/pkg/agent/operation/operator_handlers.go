@@ -7,11 +7,11 @@ package operation
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/app"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/release"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/app"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/release"
 )
 
 type handleFunc func(step configrequest.Step) error

@@ -24,9 +24,9 @@ import (
 
 	_ "github.com/denisenkom/go-mssqldb"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/tests/compose"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/consul"
+	"github.com/jksroot/beats/v7/libbeat/tests/compose"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/metricbeat/module/consul"
 )
 
 func TestData(t *testing.T) {

@@ -24,7 +24,7 @@ import (
 
 	bolt "go.etcd.io/bbolt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/libbeat/paths"
 )
 
 var (

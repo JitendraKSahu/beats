@@ -13,10 +13,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/record"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder/test"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/config"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/record"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/template"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder/test"
 )
 
 func TestNetflowProtocol_New(t *testing.T) {

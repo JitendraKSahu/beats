@@ -23,7 +23,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource"
+	"github.com/jksroot/beats/v7/filebeat/inputsource"
 )
 
 func TestCreateEvent(t *testing.T) {

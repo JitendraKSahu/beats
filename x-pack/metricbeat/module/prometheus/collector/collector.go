@@ -5,8 +5,8 @@
 package collector
 
 import (
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/prometheus/collector"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/module/prometheus/collector"
 )
 
 func init() {

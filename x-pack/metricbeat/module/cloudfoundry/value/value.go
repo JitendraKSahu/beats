@@ -7,9 +7,9 @@ package value
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/cloudfoundry"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/cloudfoundry"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // init registers the MetricSet with the central registry.

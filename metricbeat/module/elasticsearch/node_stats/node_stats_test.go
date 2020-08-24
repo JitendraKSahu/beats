@@ -20,7 +20,7 @@ package node_stats
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/elasticsearch"
+	"github.com/jksroot/beats/v7/metricbeat/module/elasticsearch"
 
 	"github.com/stretchr/testify/require"
 )

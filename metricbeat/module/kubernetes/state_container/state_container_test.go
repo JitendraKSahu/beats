@@ -22,10 +22,10 @@ package state_container
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus/ptest"
+	"github.com/jksroot/beats/v7/metricbeat/helper/prometheus/ptest"
 
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/kubernetes"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/kubernetes"
 )
 
 func TestEventMapping(t *testing.T) {

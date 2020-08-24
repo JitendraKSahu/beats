@@ -20,16 +20,16 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/beater"
+	"github.com/jksroot/beats/v7/heartbeat/beater"
 
 	// include all heartbeat specific autodiscovery builders
-	_ "github.com/JitendraKSahu/beats/v7/heartbeat/autodiscover/builder/hints"
+	_ "github.com/jksroot/beats/v7/heartbeat/autodiscover/builder/hints"
 
 	// register default heartbeat monitors
-	_ "github.com/JitendraKSahu/beats/v7/heartbeat/monitors/defaults"
-	cmd "github.com/JitendraKSahu/beats/v7/libbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/processing"
+	_ "github.com/jksroot/beats/v7/heartbeat/monitors/defaults"
+	cmd "github.com/jksroot/beats/v7/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/publisher/processing"
 )
 
 // Name of this beat

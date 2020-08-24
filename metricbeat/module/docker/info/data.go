@@ -20,7 +20,7 @@ package info
 import (
 	"github.com/docker/docker/api/types"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 func eventMapping(info *types.Info) common.MapStr {

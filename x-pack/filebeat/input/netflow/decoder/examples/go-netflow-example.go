@@ -12,7 +12,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/input/netflow/decoder"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/input/netflow/decoder"
 )
 
 func main() {

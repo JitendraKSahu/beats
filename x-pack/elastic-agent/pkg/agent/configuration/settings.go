@@ -5,12 +5,12 @@
 package configuration
 
 import (
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	monitoringCfg "github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/process"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/retry"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/server"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	monitoringCfg "github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/process"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/retry"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/server"
 )
 
 // SettingsConfig is an collection of agent settings configuration.

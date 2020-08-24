@@ -20,7 +20,7 @@ package mqtt
 import (
 	libmqtt "github.com/eclipse/paho.mqtt.golang"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
 )
 
 func createClientOptions(config mqttInputConfig, onConnectHandler func(client libmqtt.Client)) (*libmqtt.ClientOptions, error) {

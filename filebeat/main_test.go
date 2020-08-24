@@ -24,10 +24,10 @@ import (
 	"os"
 	"testing"
 
-	fbcmd "github.com/JitendraKSahu/beats/v7/filebeat/cmd"
-	inputs "github.com/JitendraKSahu/beats/v7/filebeat/input/default-inputs"
-	cmd "github.com/JitendraKSahu/beats/v7/libbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/libbeat/tests/system/template"
+	fbcmd "github.com/jksroot/beats/v7/filebeat/cmd"
+	inputs "github.com/jksroot/beats/v7/filebeat/input/default-inputs"
+	cmd "github.com/jksroot/beats/v7/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/tests/system/template"
 )
 
 var systemTest *bool

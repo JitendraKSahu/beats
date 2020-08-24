@@ -10,10 +10,10 @@ import (
 	"net"
 	"os/user"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/api/npipe"
+	"github.com/jksroot/beats/v7/libbeat/api/npipe"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/control"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/control"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
 )
 
 // createListener creates a named pipe listener on Windows

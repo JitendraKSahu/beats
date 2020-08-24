@@ -10,11 +10,11 @@ import (
 	"net"
 	"net/http"
 
-	v2 "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
-	stateless "github.com/JitendraKSahu/beats/v7/filebeat/input/v2/input-stateless"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
+	v2 "github.com/jksroot/beats/v7/filebeat/input/v2"
+	stateless "github.com/jksroot/beats/v7/filebeat/input/v2/input-stateless"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/feature"
 	"github.com/elastic/go-concert/ctxtool"
 )
 

@@ -9,19 +9,19 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/beater"
-	mbcmd "github.com/JitendraKSahu/beats/v7/metricbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/cmd/test"
-	xpackcmd "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/metricbeat/beater"
+	mbcmd "github.com/jksroot/beats/v7/metricbeat/cmd"
+	"github.com/jksroot/beats/v7/metricbeat/cmd/test"
+	xpackcmd "github.com/jksroot/beats/v7/x-pack/libbeat/cmd"
 
 	// Register the includes.
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/include"
+	_ "github.com/jksroot/beats/v7/x-pack/metricbeat/include"
 
 	// Import OSS modules.
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/include"
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/include/fields"
+	_ "github.com/jksroot/beats/v7/metricbeat/include"
+	_ "github.com/jksroot/beats/v7/metricbeat/include/fields"
 )
 
 // Name of this beat

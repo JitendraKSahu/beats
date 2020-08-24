@@ -20,8 +20,8 @@ package host
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/vmware/govmomi/simulator"

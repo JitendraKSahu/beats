@@ -28,30 +28,30 @@ import (
 
 	"github.com/magefile/mage/mg"
 
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
-	metricbeat "github.com/JitendraKSahu/beats/v7/metricbeat/scripts/mage"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
+	metricbeat "github.com/jksroot/beats/v7/metricbeat/scripts/mage"
 
 	// register kubernetes runner
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/kubernetes"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/kubernetes"
 
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/build"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/build"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/common"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/common"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/dashboards"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/dashboards"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/docs"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/docs"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/pkg"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/pkg"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/test"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/test"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/unittest"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/unittest"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/compose"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/compose"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/scripts/mage/target/metricset"
+	_ "github.com/jksroot/beats/v7/metricbeat/scripts/mage/target/metricset"
 )
 
 func init() {
@@ -116,7 +116,7 @@ func configYML() error {
 func MockedTests(ctx context.Context) error {
 	params := devtools.DefaultGoTestUnitArgs()
 
-	params.ExtraFlags = []string{"github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing/data/."}
+	params.ExtraFlags = []string{"github.com/jksroot/beats/v7/metricbeat/mb/testing/data/."}
 
 	if module := os.Getenv("MODULE"); module != "" {
 		params.ExtraFlags = append(params.ExtraFlags, "-module="+module)

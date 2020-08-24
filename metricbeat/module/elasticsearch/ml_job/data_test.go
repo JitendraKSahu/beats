@@ -22,7 +22,7 @@ package ml_job
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/elasticsearch"
+	"github.com/jksroot/beats/v7/metricbeat/module/elasticsearch"
 )
 
 func TestMapper(t *testing.T) {

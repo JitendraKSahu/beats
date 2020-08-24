@@ -22,7 +22,7 @@ package perfmon
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
 )
 
 var allowedFormats = []string{"float", "large", "long"}

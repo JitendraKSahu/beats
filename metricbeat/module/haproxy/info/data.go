@@ -20,11 +20,11 @@ package info
 import (
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	s "github.com/JitendraKSahu/beats/v7/libbeat/common/schema"
-	c "github.com/JitendraKSahu/beats/v7/libbeat/common/schema/mapstrstr"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/haproxy"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	s "github.com/jksroot/beats/v7/libbeat/common/schema"
+	c "github.com/jksroot/beats/v7/libbeat/common/schema/mapstrstr"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/module/haproxy"
 
 	"reflect"
 	"strconv"

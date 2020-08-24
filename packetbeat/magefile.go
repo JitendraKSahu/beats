@@ -29,17 +29,17 @@ import (
 	"github.com/magefile/mage/sh"
 	"github.com/pkg/errors"
 
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
-	packetbeat "github.com/JitendraKSahu/beats/v7/packetbeat/scripts/mage"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
+	packetbeat "github.com/jksroot/beats/v7/packetbeat/scripts/mage"
 
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/common"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/common"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/unittest"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/unittest"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/integtest/notests"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/integtest/notests"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/test"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/test"
 )
 
 func init() {
@@ -253,7 +253,7 @@ var crossBuildDeps = map[string]func() error{
 
 // buildLibpcapFromSource builds libpcap from source because the library needs
 // to be compiled with -fPIC.
-// See https://github.com/JitendraKSahu/beats/v7/pull/4217.
+// See https://github.com/jksroot/beats/v7/pull/4217.
 func buildLibpcapFromSource(params map[string]string) error {
 	tarFile, err := devtools.DownloadFile(libpcapURL, "/libpcap")
 	if err != nil {
@@ -395,7 +395,7 @@ func generateWin64StaticWinpcap() error {
 
 	// Notes: We are using absolute path to make sure the files
 	// are available for x-pack build.
-	// Ref: https://github.com/JitendraKSahu/beats/v7/issues/1259
+	// Ref: https://github.com/jksroot/beats/v7/issues/1259
 	defer devtools.DockerChown(devtools.MustExpand("{{elastic_beats_dir}}/{{.BeatName}}/lib"))
 	return devtools.RunCmds(
 		// Requires mingw-w64-tools.

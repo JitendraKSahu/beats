@@ -11,8 +11,8 @@ import (
 	"golang.org/x/oauth2"
 	cloudfunctions "google.golang.org/api/cloudfunctions/v1"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/manager/executor"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/manager/executor"
 )
 
 type opDeleteFunction struct {

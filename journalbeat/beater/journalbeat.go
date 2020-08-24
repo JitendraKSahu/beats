@@ -22,21 +22,21 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/journalbeat/checkpoint"
-	"github.com/JitendraKSahu/beats/v7/journalbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/journalbeat/input"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/pipetool"
+	"github.com/jksroot/beats/v7/journalbeat/checkpoint"
+	"github.com/jksroot/beats/v7/journalbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/journalbeat/input"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/acker"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/publisher/pipetool"
 
-	"github.com/JitendraKSahu/beats/v7/journalbeat/config"
-	_ "github.com/JitendraKSahu/beats/v7/journalbeat/include"
+	"github.com/jksroot/beats/v7/journalbeat/config"
+	_ "github.com/jksroot/beats/v7/journalbeat/include"
 
 	// Add dedicated processors
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/decode_csv_fields"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/decode_csv_fields"
 )
 
 // Journalbeat instance

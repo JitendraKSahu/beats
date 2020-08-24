@@ -7,7 +7,7 @@ package application
 import (
 	"context"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/fleetapi"
 )
 
 type batchAcker interface {

@@ -28,10 +28,10 @@ import (
 	"github.com/elastic/go-concert/ctxtool"
 	"github.com/elastic/go-concert/unison"
 
-	input "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/acker"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	input "github.com/jksroot/beats/v7/filebeat/input/v2"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common/acker"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Input interface for cursor based inputs. This interface must be implemented

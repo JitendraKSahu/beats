@@ -12,11 +12,11 @@ import (
 	"github.com/spf13/cobra"
 
 	// import logp flags
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/logp/configure"
+	_ "github.com/jksroot/beats/v7/libbeat/logp/configure"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/paths"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/basecmd"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/cli"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/paths"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/basecmd"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/cli"
 )
 
 const defaultConfig = "elastic-agent.yml"

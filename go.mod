@@ -1,4 +1,4 @@
-module github.com/JitendraKSahu/beats/v7
+module github.com/jksroot/beats/v7
 
 go 1.14
 

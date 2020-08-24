@@ -23,15 +23,15 @@ import (
 
 	"github.com/dustin/go-humanize"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/harvester"
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource"
-	netcommon "github.com/JitendraKSahu/beats/v7/filebeat/inputsource/common"
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource/tcp"
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource/udp"
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource/unix"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/filebeat/harvester"
+	"github.com/jksroot/beats/v7/filebeat/inputsource"
+	netcommon "github.com/jksroot/beats/v7/filebeat/inputsource/common"
+	"github.com/jksroot/beats/v7/filebeat/inputsource/tcp"
+	"github.com/jksroot/beats/v7/filebeat/inputsource/udp"
+	"github.com/jksroot/beats/v7/filebeat/inputsource/unix"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 type config struct {

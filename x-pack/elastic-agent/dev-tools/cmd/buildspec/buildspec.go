@@ -13,8 +13,8 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/JitendraKSahu/beats/v7/licenses"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/packer"
+	"github.com/jksroot/beats/v7/licenses"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/packer"
 )
 
 var (
@@ -38,7 +38,7 @@ package program
 import (
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/packer"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/packer"
 )
 
 var Supported []Spec

@@ -32,12 +32,12 @@ import (
 	"github.com/Shopify/sarama"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/channel"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/format"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
+	"github.com/jksroot/beats/v7/filebeat/channel"
+	"github.com/jksroot/beats/v7/filebeat/input"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/codec/format"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/codec/json"
 )
 
 const (

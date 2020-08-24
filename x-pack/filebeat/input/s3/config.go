@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/harvester"
-	awscommon "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/aws"
+	"github.com/jksroot/beats/v7/filebeat/harvester"
+	awscommon "github.com/jksroot/beats/v7/x-pack/libbeat/common/aws"
 )
 
 type config struct {

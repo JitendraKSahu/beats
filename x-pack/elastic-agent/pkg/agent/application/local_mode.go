@@ -7,19 +7,19 @@ package application
 import (
 	"context"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/filters"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/operation"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/logger"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/core/server"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/dir"
-	reporting "github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/reporter"
-	logreporter "github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/reporter/log"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/filters"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/application/info"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configrequest"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/configuration"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/errors"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/operation"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/config"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/logger"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/monitoring"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/core/server"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/dir"
+	reporting "github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/reporter"
+	logreporter "github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/reporter/log"
 )
 
 type emitterFunc func(*config.Config) error

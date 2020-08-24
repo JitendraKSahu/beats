@@ -25,13 +25,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/hbtest"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/look"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/stdfields"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/wrappers"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/scheduler/schedule"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/heartbeat/hbtest"
+	"github.com/jksroot/beats/v7/heartbeat/look"
+	"github.com/jksroot/beats/v7/heartbeat/monitors"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/stdfields"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/wrappers"
+	"github.com/jksroot/beats/v7/heartbeat/scheduler/schedule"
+	"github.com/jksroot/beats/v7/libbeat/beat"
 	"github.com/elastic/go-lookslike"
 	"github.com/elastic/go-lookslike/testslike"
 )

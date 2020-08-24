@@ -18,8 +18,8 @@
 package beat
 
 import (
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/helper"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 // MetricSet can be used to build other metricsets within the Beat module.

@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	cfcommon "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/cloudfoundry"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	cfcommon "github.com/jksroot/beats/v7/x-pack/libbeat/common/cloudfoundry"
 )
 
 func TestDispatcher(t *testing.T) {

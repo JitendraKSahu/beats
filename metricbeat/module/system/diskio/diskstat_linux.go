@@ -23,7 +23,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/shirou/gopsutil/disk"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/metric/system/cpu"
+	"github.com/jksroot/beats/v7/libbeat/metric/system/cpu"
 )
 
 func Get_CLK_TCK() uint32 {

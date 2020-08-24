@@ -5,8 +5,8 @@
 package rds
 
 import (
-	s "github.com/JitendraKSahu/beats/v7/libbeat/common/schema"
-	c "github.com/JitendraKSahu/beats/v7/libbeat/common/schema/mapstrstr"
+	s "github.com/jksroot/beats/v7/libbeat/common/schema"
+	c "github.com/jksroot/beats/v7/libbeat/common/schema/mapstrstr"
 )
 
 var (

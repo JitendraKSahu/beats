@@ -26,25 +26,25 @@ import (
 
 	"github.com/tsg/gopacket/layers"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	"github.com/JitendraKSahu/beats/v7/libbeat/service"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/libbeat/service"
 
-	"github.com/JitendraKSahu/beats/v7/packetbeat/config"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/decoder"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/flows"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/procs"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/icmp"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/tcp"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/udp"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/publish"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/sniffer"
+	"github.com/jksroot/beats/v7/packetbeat/config"
+	"github.com/jksroot/beats/v7/packetbeat/decoder"
+	"github.com/jksroot/beats/v7/packetbeat/flows"
+	"github.com/jksroot/beats/v7/packetbeat/procs"
+	"github.com/jksroot/beats/v7/packetbeat/protos"
+	"github.com/jksroot/beats/v7/packetbeat/protos/icmp"
+	"github.com/jksroot/beats/v7/packetbeat/protos/tcp"
+	"github.com/jksroot/beats/v7/packetbeat/protos/udp"
+	"github.com/jksroot/beats/v7/packetbeat/publish"
+	"github.com/jksroot/beats/v7/packetbeat/sniffer"
 
 	// Add packetbeat default processors
-	_ "github.com/JitendraKSahu/beats/v7/packetbeat/processor/add_kubernetes_metadata"
+	_ "github.com/jksroot/beats/v7/packetbeat/processor/add_kubernetes_metadata"
 )
 
 // Beater object. Contains all objects needed to run the beat

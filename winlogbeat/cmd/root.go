@@ -18,19 +18,19 @@
 package cmd
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/processing"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/beater"
+	"github.com/jksroot/beats/v7/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/publisher/processing"
+	"github.com/jksroot/beats/v7/winlogbeat/beater"
 
 	// Register fields.
-	_ "github.com/JitendraKSahu/beats/v7/winlogbeat/include"
+	_ "github.com/jksroot/beats/v7/winlogbeat/include"
 
 	// Import processors and supporting modules.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/timestamp"
-	_ "github.com/JitendraKSahu/beats/v7/winlogbeat/processors/script/javascript/module/winlogbeat"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/timestamp"
+	_ "github.com/jksroot/beats/v7/winlogbeat/processors/script/javascript/module/winlogbeat"
 )
 
 const (

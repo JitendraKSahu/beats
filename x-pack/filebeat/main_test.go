@@ -9,9 +9,9 @@ import (
 	"os"
 	"testing"
 
-	cmd "github.com/JitendraKSahu/beats/v7/libbeat/cmd"
-	"github.com/JitendraKSahu/beats/v7/libbeat/tests/system/template"
-	fbcmd "github.com/JitendraKSahu/beats/v7/x-pack/filebeat/cmd"
+	cmd "github.com/jksroot/beats/v7/libbeat/cmd"
+	"github.com/jksroot/beats/v7/libbeat/tests/system/template"
+	fbcmd "github.com/jksroot/beats/v7/x-pack/filebeat/cmd"
 )
 
 var systemTest *bool

@@ -35,8 +35,8 @@ import (
 	"github.com/magefile/mage/sh"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/gotool"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/dissect"
+	"github.com/jksroot/beats/v7/dev-tools/mage/gotool"
+	"github.com/jksroot/beats/v7/libbeat/processors/dissect"
 )
 
 // Check looks for created/modified/deleted/renamed files and returns an error

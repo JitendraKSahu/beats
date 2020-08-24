@@ -20,7 +20,7 @@ package icmp
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
+	"github.com/jksroot/beats/v7/packetbeat/protos"
 )
 
 type icmpConfig struct {

@@ -26,8 +26,8 @@ import (
 
 	"github.com/dustin/go-humanize"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/inputsource"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/filebeat/inputsource"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Name is the human readable name and identifier.

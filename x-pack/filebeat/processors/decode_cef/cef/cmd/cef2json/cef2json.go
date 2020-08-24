@@ -13,7 +13,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/filebeat/processors/decode_cef/cef"
+	"github.com/jksroot/beats/v7/x-pack/filebeat/processors/decode_cef/cef"
 )
 
 var (

@@ -26,13 +26,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/filebeat/config"
-	"github.com/JitendraKSahu/beats/v7/filebeat/input/file"
-	helper "github.com/JitendraKSahu/beats/v7/libbeat/common/file"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
-	"github.com/JitendraKSahu/beats/v7/libbeat/statestore"
-	"github.com/JitendraKSahu/beats/v7/libbeat/statestore/backend/memlog"
+	"github.com/jksroot/beats/v7/filebeat/config"
+	"github.com/jksroot/beats/v7/filebeat/input/file"
+	helper "github.com/jksroot/beats/v7/libbeat/common/file"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/libbeat/statestore"
+	"github.com/jksroot/beats/v7/libbeat/statestore/backend/memlog"
 )
 
 type registryVersion string

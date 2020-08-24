@@ -20,8 +20,8 @@ package harvester
 import (
 	"errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Outlet interface is used for forwarding events

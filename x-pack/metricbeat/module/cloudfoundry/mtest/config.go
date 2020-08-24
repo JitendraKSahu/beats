@@ -7,7 +7,7 @@ package mtest
 import (
 	"testing"
 
-	cftest "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/cloudfoundry/test"
+	cftest "github.com/jksroot/beats/v7/x-pack/libbeat/common/cloudfoundry/test"
 )
 
 func GetConfig(t *testing.T, metricset string) map[string]interface{} {

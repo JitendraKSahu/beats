@@ -10,8 +10,8 @@ import (
 
 	"github.com/cloudfoundry-community/go-cfclient"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // cfClient interface is provided so unit tests can mock the actual client.

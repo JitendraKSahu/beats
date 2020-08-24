@@ -18,7 +18,7 @@
 package jobs
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/beat"
 )
 
 // A Job represents a unit of execution, and may return multiple continuation jobs.

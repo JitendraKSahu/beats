@@ -24,8 +24,8 @@ import (
 
 	"github.com/joeshaw/multierror"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // PipelineLoaderFactory builds and returns a PipelineLoader

@@ -22,7 +22,7 @@ package memcache
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/streambuf"
+	"github.com/jksroot/beats/v7/libbeat/common/streambuf"
 )
 
 const (

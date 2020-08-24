@@ -20,12 +20,12 @@ package decoder
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/flows"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/icmp"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/tcp"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/udp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/packetbeat/flows"
+	"github.com/jksroot/beats/v7/packetbeat/protos"
+	"github.com/jksroot/beats/v7/packetbeat/protos/icmp"
+	"github.com/jksroot/beats/v7/packetbeat/protos/tcp"
+	"github.com/jksroot/beats/v7/packetbeat/protos/udp"
 
 	"github.com/tsg/gopacket"
 	"github.com/tsg/gopacket/layers"

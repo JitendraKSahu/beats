@@ -5,8 +5,8 @@
 package include
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/local/local"
+	"github.com/jksroot/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/provider/local/local"
 )
 
 // Bundle feature enabled.

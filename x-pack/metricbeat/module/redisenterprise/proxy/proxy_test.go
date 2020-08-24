@@ -10,13 +10,13 @@ import (
 	"os"
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 
 	// Register input module and metricset
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/prometheus"
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/prometheus/collector"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/prometheus"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/prometheus/collector"
 )
 
 func init() {

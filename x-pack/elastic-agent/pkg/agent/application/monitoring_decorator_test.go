@@ -7,8 +7,8 @@ package application
 import (
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/program"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/program"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/agent/transpiler"
 )
 
 func TestMonitoringInjection(t *testing.T) {

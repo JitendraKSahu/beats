@@ -23,7 +23,7 @@ import (
 
 	"github.com/tsg/gopacket/layers"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // TODO: more types (that are not provided as constants in gopacket)

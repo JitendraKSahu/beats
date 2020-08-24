@@ -8,7 +8,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/backoff"
+	"github.com/jksroot/beats/v7/libbeat/common/backoff"
 )
 
 // DoWithBackoff ignores retry config of delays and lets backoff decide how much time it needs.

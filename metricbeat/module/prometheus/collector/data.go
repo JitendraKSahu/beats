@@ -21,9 +21,9 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/labelhash"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/metricbeat/helper/labelhash"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 
 	dto "github.com/prometheus/client_model/go"
 )

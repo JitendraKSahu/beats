@@ -23,10 +23,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/JitendraKSahu/beats/v7/libbeat/conditions"
+	"github.com/jksroot/beats/v7/heartbeat/monitors"
+	"github.com/jksroot/beats/v7/libbeat/common/match"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/conditions"
 )
 
 type Config struct {

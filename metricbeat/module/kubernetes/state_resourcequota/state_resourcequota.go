@@ -18,8 +18,8 @@
 package state_resourcequota
 
 import (
-	p "github.com/JitendraKSahu/beats/v7/metricbeat/helper/prometheus"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	p "github.com/jksroot/beats/v7/metricbeat/helper/prometheus"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 )
 
 func init() {

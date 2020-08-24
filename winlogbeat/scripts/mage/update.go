@@ -20,11 +20,11 @@ package mage
 import (
 	"github.com/magefile/mage/mg"
 
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/build"
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/common"
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/dashboards"
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/docs"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/build"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/common"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/dashboards"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/docs"
 )
 
 func init() {

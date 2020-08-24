@@ -26,11 +26,11 @@ import (
 
 	"github.com/mitchellh/hashstructure"
 
-	v2 "github.com/JitendraKSahu/beats/v7/filebeat/input/v2"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	v2 "github.com/jksroot/beats/v7/filebeat/input/v2"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/cfgfile"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 	"github.com/elastic/go-concert"
 )
 

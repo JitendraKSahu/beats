@@ -20,7 +20,7 @@ package main
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/packetbeat/cmd"
+	"github.com/jksroot/beats/v7/packetbeat/cmd"
 )
 
 var Name = "packetbeat"

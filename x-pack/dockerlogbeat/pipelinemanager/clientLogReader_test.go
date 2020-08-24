@@ -17,10 +17,10 @@ import (
 
 	"github.com/docker/docker/daemon/logger/jsonfilelog"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/x-pack/dockerlogbeat/pipelinemock"
-	"github.com/JitendraKSahu/beats/v7/x-pack/dockerlogbeat/pipereader"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/x-pack/dockerlogbeat/pipelinemock"
+	"github.com/jksroot/beats/v7/x-pack/dockerlogbeat/pipereader"
 )
 
 func TestConfigHosts(t *testing.T) {

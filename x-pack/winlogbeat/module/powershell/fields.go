@@ -7,7 +7,7 @@
 package powershell
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/asset"
+	"github.com/jksroot/beats/v7/libbeat/asset"
 )
 
 func init() {

@@ -27,7 +27,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
 )
 
 // CfgPrefix specifies the env variable prefix used to configure the beat

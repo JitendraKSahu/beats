@@ -28,7 +28,7 @@ import (
 
 	"gopkg.in/inf.v0"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // TypeInfo describes a Cassandra specific data type.

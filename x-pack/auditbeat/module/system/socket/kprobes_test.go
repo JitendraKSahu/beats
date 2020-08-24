@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/guess"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/module/system/socket/helper"
-	"github.com/JitendraKSahu/beats/v7/x-pack/auditbeat/tracing"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/guess"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/module/system/socket/helper"
+	"github.com/jksroot/beats/v7/x-pack/auditbeat/tracing"
 )
 
 func probeName(p tracing.Probe) string {

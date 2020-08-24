@@ -9,20 +9,20 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/libbeat/processors/script/javascript"
 	"github.com/elastic/go-lookslike"
 	"github.com/elastic/go-lookslike/isdef"
 	"github.com/elastic/go-lookslike/validator"
 
 	// Register JS "require" modules.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module"
 	// Register required processors.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/timestamp"
+	_ "github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/timestamp"
 )
 
 var logInputHeaders = []string{

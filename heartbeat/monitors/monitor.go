@@ -23,18 +23,18 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/stdfields"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/stdfields"
 
 	"github.com/mitchellh/hashstructure"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/jobs"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/monitors/wrappers"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/scheduler"
-	"github.com/JitendraKSahu/beats/v7/heartbeat/watcher"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/jobs"
+	"github.com/jksroot/beats/v7/heartbeat/monitors/wrappers"
+	"github.com/jksroot/beats/v7/heartbeat/scheduler"
+	"github.com/jksroot/beats/v7/heartbeat/watcher"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Monitor represents a configured recurring monitoring configuredJob loaded from a config file. Starting it

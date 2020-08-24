@@ -18,8 +18,8 @@
 package channel
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // ConnectorFunc is an adapter for using ordinary functions as Connector.

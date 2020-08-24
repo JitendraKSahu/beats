@@ -20,7 +20,7 @@ package file
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 type File struct {

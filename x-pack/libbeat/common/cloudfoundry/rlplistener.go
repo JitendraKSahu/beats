@@ -12,7 +12,7 @@ import (
 	"code.cloudfoundry.org/go-loggregator/conversion"
 	"code.cloudfoundry.org/go-loggregator/rpc/loggregator_v2"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 type RlpListenerCallbacks struct {

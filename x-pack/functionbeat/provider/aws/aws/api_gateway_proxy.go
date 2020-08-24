@@ -12,14 +12,14 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/core"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/provider"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/telemetry"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/aws/aws/transformer"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/core"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/provider"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/telemetry"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/provider/aws/aws/transformer"
 )
 
 type message struct {

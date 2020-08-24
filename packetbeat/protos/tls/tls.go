@@ -24,15 +24,15 @@ import (
 
 	"github.com/elastic/ecs/code/go/ecs"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/x509util"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/pb"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/procs"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/applayer"
-	"github.com/JitendraKSahu/beats/v7/packetbeat/protos/tcp"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/x509util"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/packetbeat/pb"
+	"github.com/jksroot/beats/v7/packetbeat/procs"
+	"github.com/jksroot/beats/v7/packetbeat/protos"
+	"github.com/jksroot/beats/v7/packetbeat/protos/applayer"
+	"github.com/jksroot/beats/v7/packetbeat/protos/tcp"
 )
 
 type stream struct {

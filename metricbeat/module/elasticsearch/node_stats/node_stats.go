@@ -20,8 +20,8 @@ package node_stats
 import (
 	"net/url"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/module/elasticsearch"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/module/elasticsearch"
 )
 
 // init registers the MetricSet with the central registry.

@@ -18,8 +18,8 @@
 package dialchain
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common/transport"
 )
 
 // DialerChain composes builders for multiple network layers, used to build

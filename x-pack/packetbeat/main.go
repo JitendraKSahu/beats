@@ -7,7 +7,7 @@ package main
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/packetbeat/cmd"
+	"github.com/jksroot/beats/v7/x-pack/packetbeat/cmd"
 )
 
 // Setups and Runs Packetbeat

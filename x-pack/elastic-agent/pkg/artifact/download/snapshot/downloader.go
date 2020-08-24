@@ -10,10 +10,10 @@ import (
 	gohttp "net/http"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/artifact/download/http"
-	"github.com/JitendraKSahu/beats/v7/x-pack/elastic-agent/pkg/release"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/artifact/download/http"
+	"github.com/jksroot/beats/v7/x-pack/elastic-agent/pkg/release"
 )
 
 // NewDownloader creates a downloader which first checks local directory

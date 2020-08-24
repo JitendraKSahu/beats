@@ -5,10 +5,10 @@
 package fleet
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
-	"github.com/JitendraKSahu/beats/v7/libbeat/management"
-	xmanagement "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/management"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/libbeat/management"
+	xmanagement "github.com/jksroot/beats/v7/x-pack/libbeat/management"
 )
 
 func init() {

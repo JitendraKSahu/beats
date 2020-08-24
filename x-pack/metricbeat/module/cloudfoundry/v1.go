@@ -5,10 +5,10 @@
 package cloudfoundry
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	cfcommon "github.com/JitendraKSahu/beats/v7/x-pack/libbeat/common/cloudfoundry"
+	"github.com/jksroot/beats/v7/libbeat/common/atomic"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	cfcommon "github.com/jksroot/beats/v7/x-pack/libbeat/common/cloudfoundry"
 )
 
 type ModuleV1 struct {

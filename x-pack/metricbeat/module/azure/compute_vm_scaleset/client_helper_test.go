@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/azure"
+	"github.com/jksroot/beats/v7/x-pack/metricbeat/module/azure"
 )
 
 func MockResource() resources.GenericResource {

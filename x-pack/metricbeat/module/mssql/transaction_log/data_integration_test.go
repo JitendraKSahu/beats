@@ -7,8 +7,8 @@ package transaction_log
 import (
 	"testing"
 
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
-	mtest "github.com/JitendraKSahu/beats/v7/x-pack/metricbeat/module/mssql/testing"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
+	mtest "github.com/jksroot/beats/v7/x-pack/metricbeat/module/mssql/testing"
 )
 
 func TestData(t *testing.T) {

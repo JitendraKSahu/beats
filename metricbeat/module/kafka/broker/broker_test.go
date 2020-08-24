@@ -20,10 +20,10 @@ package broker
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
 	// Register input module and metricset
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/jolokia"
-	_ "github.com/JitendraKSahu/beats/v7/metricbeat/module/jolokia/jmx"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/jolokia"
+	_ "github.com/jksroot/beats/v7/metricbeat/module/jolokia/jmx"
 )
 
 func init() {

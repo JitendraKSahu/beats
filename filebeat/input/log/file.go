@@ -20,7 +20,7 @@ package log
 import (
 	"os"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/file"
+	"github.com/jksroot/beats/v7/libbeat/common/file"
 )
 
 type File struct {

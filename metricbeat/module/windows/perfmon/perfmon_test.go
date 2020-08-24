@@ -25,13 +25,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/helper/windows/pdh"
+	"github.com/jksroot/beats/v7/metricbeat/helper/windows/pdh"
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/metricbeat/mb"
-	mbtest "github.com/JitendraKSahu/beats/v7/metricbeat/mb/testing"
+	"github.com/jksroot/beats/v7/metricbeat/mb"
+	mbtest "github.com/jksroot/beats/v7/metricbeat/mb/testing"
 )
 
 const processorTimeCounter = `\Processor Information(_Total)\% Processor Time`

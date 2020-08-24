@@ -10,15 +10,15 @@ import (
 
 	gpubsub "cloud.google.com/go/pubsub"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/config"
-	"github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/function/beater"
-	prov "github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/gcp/gcp"
-	_ "github.com/JitendraKSahu/beats/v7/x-pack/functionbeat/provider/gcp/include"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/cfgfile"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/config"
+	"github.com/jksroot/beats/v7/x-pack/functionbeat/function/beater"
+	prov "github.com/jksroot/beats/v7/x-pack/functionbeat/provider/gcp/gcp"
+	_ "github.com/jksroot/beats/v7/x-pack/functionbeat/provider/gcp/include"
 )
 
 func RunPubSub(ctx context.Context, m gpubsub.Message) error {
