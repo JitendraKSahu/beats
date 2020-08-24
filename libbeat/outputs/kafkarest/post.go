@@ -32,6 +32,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
 
 	records := make(map[string]interface{})
 	records["records"] = kafkaRecords
+	fmt.Println(records)
 
 	recordsData, err := json.Marshal(records)
     if err != nil {
@@ -39,6 +40,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
         return 
     }
 
+	fmt.Println("42  ....................")
 	fmt.Println(string(recordsData))
 	fmt.Printf("No of records to be sent %d\n", len(kafkaRecords))
 	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(recordsData))
@@ -47,6 +49,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
         return
     }
 
+	fmt.Println("......52  ....................")
 	req.Header.Set("Content-Type", "application/vnd.kafka.json.v2+json")
 	//req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
 
