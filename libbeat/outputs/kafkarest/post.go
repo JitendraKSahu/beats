@@ -29,28 +29,28 @@ import (
 func sendToDest(url string, topic string, kafkaRecords []map[string]interface{})error {
 
 	kafkaUrl := "http://" + url +"/topics/" + topic
-	fmt.Println(kafkaUrl)
+	//fmt.Println(kafkaUrl)
 
 	records := make(map[string]interface{})
 	records["records"] = kafkaRecords
-	fmt.Println(records)
+	//fmt.Println(records)
 
 	recordsData, err := json.Marshal(records)
+	fmt.Println(string(recordsData))
     if err != nil {
         fmt.Println(err)
         return err
     }
 
-	fmt.Println("42  ....................")
-	fmt.Println(string(recordsData))
+	//fmt.Println("42  ....................")
 	fmt.Printf("No of records to be sent %d\n", len(kafkaRecords))
 	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(recordsData))
     if err != nil {
-		fmt.Println(err)
+		//fmt.Println(err)
         return  err
     }
 
-	fmt.Println("......52  ....................")
+	//fmt.Println("......52  ....................")
 	req.Header.Set("Content-Type", "application/vnd.kafka.json.v2+json")
 	//req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
 
@@ -63,7 +63,7 @@ func sendToDest(url string, topic string, kafkaRecords []map[string]interface{})
         return err
     }
     defer res.Body.Close()
-    fmt.Println(res.StatusCode)
+    //fmt.Println(res.StatusCode)
     if res.StatusCode == 200 {
     	fmt.Printf("Successfully sent records to Kafka\n")
     } else {
