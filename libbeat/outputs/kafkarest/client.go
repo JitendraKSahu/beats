@@ -134,6 +134,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 	var kafkaRecords []interface{}	
 	var valueData map[string]interface{}
+	var failedEvents []publisher.Event
 
 	url := c.hosts[0]
 	//fmt.Println(c.topic)
@@ -167,15 +168,26 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			topic := "trace-" + profileId 
 			record := map[string]interface{}{"key": msg.key, "value": valueData}
 			kafkaRecords = append(kafkaRecords, record)
-			sendToDest(url, topic,  kafkaRecords)
-			kafkaRecords = kafkaRecords[:0]
+			sendErr := sendToDest(url, topic,  kafkaRecords)
+			if sendErr != nil {
+				failedEvents = append(failedEvents, events[i])
+			}
 		}
 
 		msg.ref = ref
 		msg.initProducerMessage()
 		ch <- &msg.msg
 	}
-	
+
+	//if len(kafkaRecords) > 0{	
+		if len(failedEvents) == 0 {
+			batch.ACK()
+		} else {
+			batch.RetryEvents(failedEvents)
+		}
+	//}
+	kafkaRecords = kafkaRecords[:0]
+
 	return nil
 }
 

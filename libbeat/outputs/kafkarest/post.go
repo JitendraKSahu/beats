@@ -20,12 +20,13 @@ package kafkarest
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"net/http"
 	"time"
 )
 
-func sendToDest(url string, topic string, kafkaRecords []interface{}) {
+func sendToDest(url string, topic string, kafkaRecords []interface{})error {
 
 	kafkaUrl := "http://" + url +"/topics/" + topic
 	fmt.Println(kafkaUrl)
@@ -37,7 +38,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
 	recordsData, err := json.Marshal(records)
     if err != nil {
         fmt.Println(err)
-        return 
+        return err
     }
 
 	fmt.Println("42  ....................")
@@ -46,7 +47,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
 	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(recordsData))
     if err != nil {
 		fmt.Println(err)
-        return
+        return  err
     }
 
 	fmt.Println("......52  ....................")
@@ -59,7 +60,7 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
     if err != nil {
     	fmt.Println(err)
 		fmt.Println(kafkaUrl)
-        return
+        return err
     }
     defer res.Body.Close()
     fmt.Println(res.StatusCode)
@@ -69,5 +70,8 @@ func sendToDest(url string, topic string, kafkaRecords []interface{}) {
 		fmt.Println(kafkaUrl)
 		fmt.Println(string(recordsData))
     	fmt.Println("Failed to send Kafka records", res.Status)
+		err = errors.New("Failed to send Kafka records")
     }
+
+	return nil
 }
