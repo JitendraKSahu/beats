@@ -28,8 +28,8 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 type partitionBuilder func(*logp.Logger, *common.Config) (func() partitioner, error)

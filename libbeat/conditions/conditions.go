@@ -20,8 +20,8 @@ package conditions
 import (
 	"errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common/match"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 const logName = "conditions"

@@ -23,9 +23,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/conditions"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/conditions"
 )
 
 // NewConditional returns a constructor suitable for registering when conditionals as a plugin.

@@ -35,13 +35,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegtest"
-	"github.com/JitendraKSahu/beats/v7/libbeat/idxmgmt"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outest"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/esleg/eslegtest"
+	"github.com/jksroot/beats/v7/libbeat/idxmgmt"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/outputs/outest"
 )
 
 func TestClientPublishEvent(t *testing.T) {

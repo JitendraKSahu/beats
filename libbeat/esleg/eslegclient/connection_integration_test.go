@@ -33,9 +33,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegtest"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/esleg/eslegtest"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
 )
 
 func TestConnect(t *testing.T) {

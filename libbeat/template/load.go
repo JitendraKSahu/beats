@@ -25,10 +25,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/paths"
 )
 
 //Loader interface for loading templates

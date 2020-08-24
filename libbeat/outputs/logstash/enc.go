@@ -20,9 +20,9 @@ package logstash
 import (
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec/json"
 )
 
 func makeLogstashEventEncoder(log *logp.Logger, info beat.Info, escapeHTML bool, index string) func(interface{}) ([]byte, error) {

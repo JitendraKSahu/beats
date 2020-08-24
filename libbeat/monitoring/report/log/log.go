@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring/report"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/monitoring/report"
 )
 
 // List of metrics that are gauges. This is used to identify metrics that should
@@ -33,7 +33,7 @@ import (
 // observable change during the interval.
 //
 // TODO: Replace this with a proper solution that uses the metric type from
-// where it is defined. See: https://github.com/JitendraKSahu/beats/issues/5433
+// where it is defined. See: https://github.com/jksroot/beats/issues/5433
 var gauges = map[string]bool{
 	"libbeat.pipeline.events.active": true,
 	"libbeat.pipeline.clients":       true,

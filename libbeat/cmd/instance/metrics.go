@@ -23,11 +23,11 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/metric/system/cpu"
-	"github.com/JitendraKSahu/beats/v7/libbeat/metric/system/process"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/metric/system/cpu"
+	"github.com/jksroot/beats/v7/libbeat/metric/system/process"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
 )
 
 var (

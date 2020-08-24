@@ -24,13 +24,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/libbeat/processors/script/javascript"
 
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/require"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/require"
 )
 
 func init() {

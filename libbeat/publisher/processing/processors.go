@@ -22,11 +22,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec/json"
+	"github.com/jksroot/beats/v7/libbeat/processors"
 )
 
 type group struct {

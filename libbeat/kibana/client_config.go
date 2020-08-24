@@ -20,7 +20,7 @@ package kibana
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
 )
 
 // ClientConfig to connect to Kibana

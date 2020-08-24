@@ -20,16 +20,16 @@
 package main
 
 import (
-	devtools "github.com/JitendraKSahu/beats/v7/dev-tools/mage"
+	devtools "github.com/jksroot/beats/v7/dev-tools/mage"
 
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/common"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/common"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/unittest"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/unittest"
 	// mage:import
-	"github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/integtest"
+	"github.com/jksroot/beats/v7/dev-tools/mage/target/integtest"
 	// mage:import
-	_ "github.com/JitendraKSahu/beats/v7/dev-tools/mage/target/test"
+	_ "github.com/jksroot/beats/v7/dev-tools/mage/target/test"
 )
 
 func init() {

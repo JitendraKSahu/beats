@@ -20,7 +20,7 @@ package reader
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // Message represents a reader event with timestamp, content and actual number

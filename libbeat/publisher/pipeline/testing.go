@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/publisher/queue"
 )
 
 type mockPublishFn func(publisher.Batch) error

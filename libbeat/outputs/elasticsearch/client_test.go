@@ -31,16 +31,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	e "github.com/JitendraKSahu/beats/v7/libbeat/beat/events"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/JitendraKSahu/beats/v7/libbeat/idxmgmt"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outest"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outil"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
-	"github.com/JitendraKSahu/beats/v7/libbeat/version"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	e "github.com/jksroot/beats/v7/libbeat/beat/events"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/jksroot/beats/v7/libbeat/idxmgmt"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs/outest"
+	"github.com/jksroot/beats/v7/libbeat/outputs/outil"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/version"
 )
 
 func TestCollectPublishFailsNone(t *testing.T) {

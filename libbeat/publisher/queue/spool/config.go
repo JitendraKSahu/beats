@@ -27,7 +27,7 @@ import (
 	"github.com/dustin/go-humanize"
 	"github.com/joeshaw/multierror"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgtype"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgtype"
 )
 
 type config struct {

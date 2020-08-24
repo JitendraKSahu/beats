@@ -29,11 +29,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/pipeline/stress"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/memqueue"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/spool"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/publisher/pipeline/stress"
+	_ "github.com/jksroot/beats/v7/libbeat/publisher/queue/memqueue"
+	_ "github.com/jksroot/beats/v7/libbeat/publisher/queue/spool"
 )
 
 // additional flags

@@ -24,7 +24,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
 )
 
 type stubResolver struct{}

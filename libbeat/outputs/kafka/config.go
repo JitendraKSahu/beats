@@ -27,16 +27,16 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kafka"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/kerberos"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring/adapter"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/common/fmtstr"
+	"github.com/jksroot/beats/v7/libbeat/common/kafka"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/kerberos"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/monitoring/adapter"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec"
 )
 
 type backoffConfig struct {

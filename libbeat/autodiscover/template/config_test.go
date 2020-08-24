@@ -25,9 +25,9 @@ import (
 	"github.com/docker/docker/pkg/ioutils"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/bus"
-	"github.com/JitendraKSahu/beats/v7/libbeat/keystore"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/bus"
+	"github.com/jksroot/beats/v7/libbeat/keystore"
 )
 
 func TestConfigsMapping(t *testing.T) {

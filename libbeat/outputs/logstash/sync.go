@@ -21,11 +21,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common/transport"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
 	v2 "github.com/elastic/go-lumber/client/v2"
 )
 

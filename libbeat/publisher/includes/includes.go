@@ -19,15 +19,15 @@ package includes
 
 import (
 	// import queue types
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/format"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/console"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/elasticsearch"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/fileout"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/kafka"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/kafkarest"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/logstash"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/redis"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/memqueue"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue/spool"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/codec/format"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/codec/json"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/console"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/elasticsearch"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/fileout"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/kafka"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/kafkarest"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/logstash"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/redis"
+	_ "github.com/jksroot/beats/v7/libbeat/publisher/queue/memqueue"
+	_ "github.com/jksroot/beats/v7/libbeat/publisher/queue/spool"
 )

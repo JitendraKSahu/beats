@@ -18,7 +18,7 @@
 package add_id
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/add_id/generator"
+	"github.com/jksroot/beats/v7/libbeat/processors/add_id/generator"
 )
 
 // configuration for Add ID processor.

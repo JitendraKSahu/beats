@@ -22,10 +22,10 @@ import (
 
 	"github.com/gofrs/uuid"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
-	"github.com/JitendraKSahu/beats/v7/libbeat/feature"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/reload"
+	"github.com/jksroot/beats/v7/libbeat/feature"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Status describes the current status of the beat.

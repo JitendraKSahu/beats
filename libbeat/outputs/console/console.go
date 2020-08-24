@@ -25,13 +25,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec/json"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
 )
 
 type console struct {

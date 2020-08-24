@@ -23,10 +23,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/dashboards"
-	"github.com/JitendraKSahu/beats/v7/libbeat/kibana"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/dashboards"
+	"github.com/jksroot/beats/v7/libbeat/kibana"
 )
 
 // GenDashboardCmd is the command used to export a dashboard.

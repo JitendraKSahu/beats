@@ -24,9 +24,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec"
 	"github.com/elastic/go-structform/gotype"
 	"github.com/elastic/go-structform/json"
 )

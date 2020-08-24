@@ -26,7 +26,7 @@ import (
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/client"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/docker"
+	"github.com/jksroot/beats/v7/libbeat/common/docker"
 )
 
 // Client for Docker

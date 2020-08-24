@@ -31,10 +31,10 @@ services:
       - ES_SUPERUSER_USER=admin
       - ES_SUPERUSER_PASS=changeme
     volumes:
-      - ${PWD}/..:/go/src/github.com/JitendraKSahu/beats/
+      - ${PWD}/..:/go/src/github.com/jksroot/beats/
       # Used for docker integration tests:
       - /var/run/docker.sock:/var/run/docker.sock
-    working_dir: /go/src/github.com/JitendraKSahu/beats/libbeat
+    working_dir: /go/src/github.com/jksroot/beats/libbeat
     command: make
 
   # This is a proxy used to block beats until all services are healthy.

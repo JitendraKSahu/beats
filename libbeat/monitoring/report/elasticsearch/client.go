@@ -28,13 +28,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat/events"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring/report"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
-	"github.com/JitendraKSahu/beats/v7/libbeat/testing"
+	"github.com/jksroot/beats/v7/libbeat/beat/events"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/monitoring/report"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/testing"
 )
 
 var createDocPrivAvailableESVersion = common.MustNewVersion("7.5.0")

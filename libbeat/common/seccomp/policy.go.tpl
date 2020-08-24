@@ -7,7 +7,7 @@ package {{.Package}}
 import (
 	"github.com/elastic/go-seccomp-bpf"
 
-	beat "github.com/JitendraKSahu/beats/v7/libbeat/common/seccomp"
+	beat "github.com/jksroot/beats/v7/libbeat/common/seccomp"
 )
 
 func init() {

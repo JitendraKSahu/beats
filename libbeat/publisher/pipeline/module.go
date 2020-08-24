@@ -23,13 +23,13 @@ import (
 
 	"go.elastic.co/apm"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/processing"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/publisher/processing"
+	"github.com/jksroot/beats/v7/libbeat/publisher/queue"
 )
 
 // Global pipeline module for loading the main pipeline from a configuration object

@@ -28,8 +28,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sys/windows"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/sys"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/winlogbeat/sys"
 )
 
 func TestTranslateSID(t *testing.T) {

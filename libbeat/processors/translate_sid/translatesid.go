@@ -27,12 +27,12 @@ import (
 	"go.uber.org/multierr"
 	"golang.org/x/sys/windows"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	jsprocessor "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/processor"
-	"github.com/JitendraKSahu/beats/v7/winlogbeat/sys"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	jsprocessor "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/processor"
+	"github.com/jksroot/beats/v7/winlogbeat/sys"
 )
 
 const logName = "processor.translate_sid"

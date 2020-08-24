@@ -27,8 +27,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/file"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common/file"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 	ucfg "github.com/elastic/go-ucfg"
 	"github.com/elastic/go-ucfg/cfgutil"
 	"github.com/elastic/go-ucfg/yaml"

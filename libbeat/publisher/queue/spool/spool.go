@@ -26,8 +26,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue"
+	"github.com/jksroot/beats/v7/libbeat/common/atomic"
+	"github.com/jksroot/beats/v7/libbeat/publisher/queue"
 	"github.com/elastic/go-txfile"
 	"github.com/elastic/go-txfile/pq"
 )

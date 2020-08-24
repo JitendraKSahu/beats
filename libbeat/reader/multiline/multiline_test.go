@@ -29,10 +29,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader/readfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader/readfile/encoding"
+	"github.com/jksroot/beats/v7/libbeat/common/match"
+	"github.com/jksroot/beats/v7/libbeat/reader"
+	"github.com/jksroot/beats/v7/libbeat/reader/readfile"
+	"github.com/jksroot/beats/v7/libbeat/reader/readfile/encoding"
 )
 
 type bufferSource struct{ buf *bytes.Buffer }

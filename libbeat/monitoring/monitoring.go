@@ -20,7 +20,7 @@ package monitoring
 import (
 	"errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // BeatConfig represents the part of the $BEAT.yml to do with monitoring settings

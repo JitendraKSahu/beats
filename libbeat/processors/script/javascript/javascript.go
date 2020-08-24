@@ -30,12 +30,12 @@ import (
 	"github.com/pkg/errors"
 	"github.com/rcrowley/go-metrics"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring"
-	"github.com/JitendraKSahu/beats/v7/libbeat/monitoring/adapter"
-	"github.com/JitendraKSahu/beats/v7/libbeat/paths"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/monitoring"
+	"github.com/jksroot/beats/v7/libbeat/monitoring/adapter"
+	"github.com/jksroot/beats/v7/libbeat/paths"
+	"github.com/jksroot/beats/v7/libbeat/processors"
 )
 
 type jsProcessor struct {

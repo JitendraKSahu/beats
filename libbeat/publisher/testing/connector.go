@@ -18,8 +18,8 @@
 package testing
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common/atomic"
 )
 
 // ClientCounter can be used to create a beat.PipelineConnector that count

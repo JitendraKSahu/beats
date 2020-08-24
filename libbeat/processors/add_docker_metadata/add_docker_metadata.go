@@ -30,13 +30,13 @@ import (
 
 	"github.com/elastic/gosigar/cgroup"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/docker"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/safemapstr"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/actions"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/docker"
+	"github.com/jksroot/beats/v7/libbeat/common/safemapstr"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/libbeat/processors/actions"
 )
 
 const (

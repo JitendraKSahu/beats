@@ -30,10 +30,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
-	"github.com/JitendraKSahu/beats/v7/libbeat/internal/testutil"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/common/atomic"
+	"github.com/jksroot/beats/v7/libbeat/internal/testutil"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
 )
 
 func TestMakeClientWorker(t *testing.T) {

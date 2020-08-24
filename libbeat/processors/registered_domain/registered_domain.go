@@ -23,12 +23,12 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/net/publicsuffix"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	jsprocessor "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/processor"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	jsprocessor "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/processor"
 )
 
 const (

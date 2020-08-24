@@ -20,7 +20,7 @@ package statestore
 import (
 	"sync"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/statestore/backend"
+	"github.com/jksroot/beats/v7/libbeat/statestore/backend"
 )
 
 // Registry manages multiple key-value stores.

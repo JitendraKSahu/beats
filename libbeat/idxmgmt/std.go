@@ -22,15 +22,15 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat/events"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/atomic"
-	"github.com/JitendraKSahu/beats/v7/libbeat/idxmgmt/ilm"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outil"
-	"github.com/JitendraKSahu/beats/v7/libbeat/template"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/beat/events"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/atomic"
+	"github.com/jksroot/beats/v7/libbeat/idxmgmt/ilm"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/outputs/outil"
+	"github.com/jksroot/beats/v7/libbeat/template"
 )
 
 type indexSupport struct {

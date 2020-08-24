@@ -23,12 +23,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes/metadata"
+	"github.com/jksroot/beats/v7/libbeat/common/kubernetes/metadata"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/autodiscover/template"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/autodiscover/template"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // Config for kubernetes autodiscover provider

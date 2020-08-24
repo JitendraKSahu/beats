@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // GeoConfig contains geo configuration data.

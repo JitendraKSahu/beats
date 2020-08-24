@@ -24,9 +24,9 @@ import (
 
 	"github.com/elastic/go-ucfg"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/autodiscover"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/bus"
+	"github.com/jksroot/beats/v7/libbeat/autodiscover"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/bus"
 )
 
 func TestConfigWithCustomBuilders(t *testing.T) {

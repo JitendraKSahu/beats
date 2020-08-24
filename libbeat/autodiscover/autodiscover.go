@@ -23,14 +23,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/autodiscover/meta"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/cfgfile"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/bus"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/reload"
-	"github.com/JitendraKSahu/beats/v7/libbeat/keystore"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/autodiscover/meta"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/cfgfile"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/bus"
+	"github.com/jksroot/beats/v7/libbeat/common/reload"
+	"github.com/jksroot/beats/v7/libbeat/keystore"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 const (

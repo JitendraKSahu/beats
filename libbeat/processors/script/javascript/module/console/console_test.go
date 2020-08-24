@@ -23,13 +23,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/processors/script/javascript"
 
 	// Register require module.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/require"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/require"
 )
 
 func TestConsole(t *testing.T) {

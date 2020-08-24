@@ -20,8 +20,8 @@
 package instance
 
 import (
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/autodiscover/providers/docker" // Register autodiscover providers
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/autodiscover/providers/kubernetes"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/add_docker_metadata"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/add_kubernetes_metadata"
+	_ "github.com/jksroot/beats/v7/libbeat/autodiscover/providers/docker" // Register autodiscover providers
+	_ "github.com/jksroot/beats/v7/libbeat/autodiscover/providers/kubernetes"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/add_docker_metadata"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/add_kubernetes_metadata"
 )

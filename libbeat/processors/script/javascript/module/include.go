@@ -19,9 +19,9 @@ package module
 
 import (
 	// Register javascript modules.
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/console"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/net"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/path"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/processor"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/require"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/console"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/net"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/path"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/processor"
+	_ "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/require"
 )

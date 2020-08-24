@@ -20,7 +20,7 @@ package beat
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common"
 )
 
 // Pipeline provides access to libbeat event publishing by creating a Client

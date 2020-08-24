@@ -20,7 +20,7 @@ package multiline
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader"
+	"github.com/jksroot/beats/v7/libbeat/reader"
 )
 
 // New creates a new multi-line reader combining stream of

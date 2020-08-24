@@ -38,7 +38,7 @@ import (
 	"github.com/docker/docker/client"
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/docker"
+	"github.com/jksroot/beats/v7/libbeat/common/docker"
 )
 
 const (

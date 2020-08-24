@@ -18,7 +18,7 @@
 package multiline
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader"
+	"github.com/jksroot/beats/v7/libbeat/reader"
 )
 
 type counterReader struct {

@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/mapping"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/mapping"
 )
 
 // Processor struct to process fields to template

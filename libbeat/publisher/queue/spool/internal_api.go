@@ -18,7 +18,7 @@
 package spool
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
 )
 
 // producer -> broker API

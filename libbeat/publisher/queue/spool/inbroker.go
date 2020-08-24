@@ -22,7 +22,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher/queue"
+	"github.com/jksroot/beats/v7/libbeat/publisher/queue"
 	"github.com/elastic/go-txfile/pq"
 )
 

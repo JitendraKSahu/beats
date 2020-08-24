@@ -62,8 +62,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/schema"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/schema"
 )
 
 // toBool converts value to bool. In case of error, returns false

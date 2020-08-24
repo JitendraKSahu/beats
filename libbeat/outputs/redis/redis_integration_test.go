@@ -31,12 +31,12 @@ import (
 	"github.com/garyburd/redigo/redis"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/format"
-	_ "github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outest"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/codec/format"
+	_ "github.com/jksroot/beats/v7/libbeat/outputs/codec/json"
+	"github.com/jksroot/beats/v7/libbeat/outputs/outest"
 )
 
 const (

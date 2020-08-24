@@ -26,7 +26,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/api/npipe"
+	"github.com/jksroot/beats/v7/libbeat/api/npipe"
 )
 
 func makeListener(cfg Config) (net.Listener, error) {

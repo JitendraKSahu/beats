@@ -20,11 +20,11 @@ package add_kubernetes_metadata
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes/metadata"
+	"github.com/jksroot/beats/v7/libbeat/common/kubernetes/metadata"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/kubernetes"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 const (

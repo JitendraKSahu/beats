@@ -27,15 +27,15 @@ import (
 
 	"go.elastic.co/apm"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat/events"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outil"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
-	"github.com/JitendraKSahu/beats/v7/libbeat/testing"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/beat/events"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/outputs/outil"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/testing"
 )
 
 // Client is an elasticsearch client.

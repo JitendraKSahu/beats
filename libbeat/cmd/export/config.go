@@ -23,8 +23,8 @@ import (
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v2"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cli"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/common/cli"
 )
 
 // GenExportConfigCmd write to stdout the current configuration in the YAML format.

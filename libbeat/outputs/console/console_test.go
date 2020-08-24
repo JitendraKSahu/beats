@@ -28,15 +28,15 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/format"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec/json"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/outest"
-	"github.com/JitendraKSahu/beats/v7/libbeat/publisher"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/fmtstr"
+	"github.com/jksroot/beats/v7/libbeat/outputs"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec/format"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec/json"
+	"github.com/jksroot/beats/v7/libbeat/outputs/outest"
+	"github.com/jksroot/beats/v7/libbeat/publisher"
 )
 
 // capture stdout and return captured string

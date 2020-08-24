@@ -24,13 +24,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/metric/system/host"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	jsprocessor "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/processor"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/util"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/metric/system/host"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	jsprocessor "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/processor"
+	"github.com/jksroot/beats/v7/libbeat/processors/util"
 	"github.com/elastic/go-sysinfo"
 )
 

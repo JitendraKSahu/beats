@@ -20,8 +20,8 @@ package builder
 import (
 	"errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/autodiscover"
-	p "github.com/JitendraKSahu/beats/v7/libbeat/plugin"
+	"github.com/jksroot/beats/v7/libbeat/autodiscover"
+	p "github.com/jksroot/beats/v7/libbeat/plugin"
 )
 
 type builderPlugin struct {

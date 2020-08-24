@@ -29,10 +29,10 @@ import (
 	"github.com/spf13/cobra"
 	tml "golang.org/x/crypto/ssh/terminal"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/cmd/instance"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cli"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/terminal"
-	"github.com/JitendraKSahu/beats/v7/libbeat/keystore"
+	"github.com/jksroot/beats/v7/libbeat/cmd/instance"
+	"github.com/jksroot/beats/v7/libbeat/common/cli"
+	"github.com/jksroot/beats/v7/libbeat/common/terminal"
+	"github.com/jksroot/beats/v7/libbeat/keystore"
 )
 
 func getKeystore(settings instance.Settings) (keystore.Keystore, error) {

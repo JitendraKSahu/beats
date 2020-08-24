@@ -20,9 +20,9 @@ package add_cloud_metadata
 import (
 	"path"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	s "github.com/JitendraKSahu/beats/v7/libbeat/common/schema"
-	c "github.com/JitendraKSahu/beats/v7/libbeat/common/schema/mapstriface"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	s "github.com/jksroot/beats/v7/libbeat/common/schema"
+	c "github.com/jksroot/beats/v7/libbeat/common/schema/mapstriface"
 )
 
 // Google GCE Metadata Service

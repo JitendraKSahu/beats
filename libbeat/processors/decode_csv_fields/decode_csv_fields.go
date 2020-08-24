@@ -25,11 +25,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors"
-	"github.com/JitendraKSahu/beats/v7/libbeat/processors/checks"
-	jsprocessor "github.com/JitendraKSahu/beats/v7/libbeat/processors/script/javascript/module/processor"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/processors"
+	"github.com/jksroot/beats/v7/libbeat/processors/checks"
+	jsprocessor "github.com/jksroot/beats/v7/libbeat/processors/script/javascript/module/processor"
 )
 
 type decodeCSVFields struct {

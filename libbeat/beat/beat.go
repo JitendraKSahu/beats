@@ -18,10 +18,10 @@
 package beat
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/instrumentation"
-	"github.com/JitendraKSahu/beats/v7/libbeat/keystore"
-	"github.com/JitendraKSahu/beats/v7/libbeat/management"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/instrumentation"
+	"github.com/jksroot/beats/v7/libbeat/keystore"
+	"github.com/jksroot/beats/v7/libbeat/management"
 )
 
 // Creator initializes and configures a new Beater instance used to execute

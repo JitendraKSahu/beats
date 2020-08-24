@@ -18,9 +18,9 @@
 package idxmgmt
 
 import (
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/idxmgmt/ilm"
-	"github.com/JitendraKSahu/beats/v7/libbeat/template"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/idxmgmt/ilm"
+	"github.com/jksroot/beats/v7/libbeat/template"
 )
 
 // ClientHandler defines the interface between a remote service and the Manager for ILM and templates.

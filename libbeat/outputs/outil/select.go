@@ -20,10 +20,10 @@ package outil
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/fmtstr"
-	"github.com/JitendraKSahu/beats/v7/libbeat/conditions"
+	"github.com/jksroot/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/fmtstr"
+	"github.com/jksroot/beats/v7/libbeat/conditions"
 )
 
 // Selector is used to produce a string based on the contents of a Beats event.

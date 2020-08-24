@@ -22,7 +22,7 @@ package add_docker_metadata
 import (
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/docker"
+	"github.com/jksroot/beats/v7/libbeat/common/docker"
 )
 
 // Config for docker processor.

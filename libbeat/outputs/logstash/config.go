@@ -21,12 +21,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/beat"
+	"github.com/jksroot/beats/v7/libbeat/beat"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/cfgwarn"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/transport/tlscommon"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/cfgwarn"
+	"github.com/jksroot/beats/v7/libbeat/common/transport"
+	"github.com/jksroot/beats/v7/libbeat/common/transport/tlscommon"
 )
 
 type Config struct {

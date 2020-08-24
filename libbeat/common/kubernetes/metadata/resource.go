@@ -22,9 +22,9 @@ import (
 
 	"k8s.io/apimachinery/pkg/api/meta"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/safemapstr"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/kubernetes"
+	"github.com/jksroot/beats/v7/libbeat/common/safemapstr"
 )
 
 // Resource generates metadata for any kubernetes resource

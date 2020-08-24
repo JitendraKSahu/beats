@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/match"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader"
-	"github.com/JitendraKSahu/beats/v7/libbeat/reader/readfile"
+	"github.com/jksroot/beats/v7/libbeat/common/match"
+	"github.com/jksroot/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/reader"
+	"github.com/jksroot/beats/v7/libbeat/reader/readfile"
 )
 
 // MultiLine reader combining multiple line events into one multi-line event.

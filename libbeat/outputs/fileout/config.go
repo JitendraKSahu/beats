@@ -20,8 +20,8 @@ package fileout
 import (
 	"fmt"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/file"
-	"github.com/JitendraKSahu/beats/v7/libbeat/outputs/codec"
+	"github.com/jksroot/beats/v7/libbeat/common/file"
+	"github.com/jksroot/beats/v7/libbeat/outputs/codec"
 )
 
 type config struct {

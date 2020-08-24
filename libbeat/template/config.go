@@ -17,7 +17,7 @@
 
 package template
 
-import "github.com/JitendraKSahu/beats/v7/libbeat/mapping"
+import "github.com/jksroot/beats/v7/libbeat/mapping"
 
 // TemplateConfig holds config information about the Elasticsearch template
 type TemplateConfig struct {

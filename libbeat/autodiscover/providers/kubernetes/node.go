@@ -26,13 +26,13 @@ import (
 	"k8s.io/apimachinery/pkg/api/equality"
 	k8s "k8s.io/client-go/kubernetes"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/autodiscover/builder"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/bus"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/kubernetes/metadata"
-	"github.com/JitendraKSahu/beats/v7/libbeat/common/safemapstr"
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/autodiscover/builder"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/common/bus"
+	"github.com/jksroot/beats/v7/libbeat/common/kubernetes"
+	"github.com/jksroot/beats/v7/libbeat/common/kubernetes/metadata"
+	"github.com/jksroot/beats/v7/libbeat/common/safemapstr"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 type node struct {

@@ -21,7 +21,7 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/logp"
+	"github.com/jksroot/beats/v7/libbeat/logp"
 )
 
 // TLSConfig is the interface used to configure a tcp client or server from a `Config`

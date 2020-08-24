@@ -30,10 +30,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/JitendraKSahu/beats/v7/libbeat/common"
-	"github.com/JitendraKSahu/beats/v7/libbeat/esleg/eslegclient"
-	"github.com/JitendraKSahu/beats/v7/libbeat/idxmgmt/ilm"
-	"github.com/JitendraKSahu/beats/v7/libbeat/version"
+	"github.com/jksroot/beats/v7/libbeat/common"
+	"github.com/jksroot/beats/v7/libbeat/esleg/eslegclient"
+	"github.com/jksroot/beats/v7/libbeat/idxmgmt/ilm"
+	"github.com/jksroot/beats/v7/libbeat/version"
 )
 
 const (
