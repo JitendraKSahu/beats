@@ -66,7 +66,6 @@ func makeClientWorker(observer outputObserver, qu workQueue, client outputs.Clie
 	}
 
 	if nc, ok := client.(outputs.NetworkClient); ok {
-		fmt.Println(" @@@@@@@@@@@@@@@@@@@@@@@@@@ Network Client @@@@@@@@@@@@@@@@@@@@@")
 		c = &netClientWorker{
 			worker: w,
 			client: nc,
@@ -74,7 +73,6 @@ func makeClientWorker(observer outputObserver, qu workQueue, client outputs.Clie
 			tracer: tracer,
 		}
 	} else {
-		fmt.Println(" ######################### @@@@@@@@@@@@@@@@@@@@@@@@@@ Client @@@@@@@@@@@@@@@@@@@@@")
 		c = &clientWorker{worker: w, client: client}
 	}
 
