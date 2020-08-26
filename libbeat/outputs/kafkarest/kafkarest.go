@@ -71,11 +71,12 @@ func makeKafka(
 		return outputs.Fail(err)
 	}
 */
+/*
 	libCfg, err := newSaramaConfig(log, config)
 	if err != nil {
 		return outputs.Fail(err)
 	}
-
+*/
 	hosts, err := outputs.ReadHostList(cfg)
 	if err != nil {
 		return outputs.Fail(err)
@@ -87,7 +88,7 @@ func makeKafka(
 	}
 
 	//client, err := newKafkaClient(observer, hosts, beat.IndexPrefix, config.Key, topic, codec, libCfg)
-	client, err := newKafkaClient(observer, hosts, beat.IndexPrefix, config.Key, codec, libCfg)
+	client, err := newKafkaRestClient(observer, hosts, beat.IndexPrefix, config.Key, codec, cfg)
 	if err != nil {
 		return outputs.Fail(err)
 	}

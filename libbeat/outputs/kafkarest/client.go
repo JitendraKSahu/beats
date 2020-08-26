@@ -23,13 +23,15 @@ import (
 	"errors"
 	//"fmt"
 	"strings"
-	"sync"
+	//"sync"
 	"sync/atomic"
 
 	"github.com/Shopify/sarama"
 
+	"github.com/jksroot/beats/v7/libbeat/common"
+
 	"github.com/jksroot/beats/v7/libbeat/common/fmtstr"
-	"github.com/jksroot/beats/v7/libbeat/common/transport"
+	//"github.com/jksroot/beats/v7/libbeat/common/transport"
 	"github.com/jksroot/beats/v7/libbeat/logp"
 	"github.com/jksroot/beats/v7/libbeat/outputs"
 	"github.com/jksroot/beats/v7/libbeat/outputs/codec"
@@ -46,12 +48,13 @@ type client struct {
 	key      *fmtstr.EventFormatString
 	index    string
 	codec    codec.Codec
-	config   sarama.Config
-	mux      sync.Mutex
+	//config   sarama.Config
+	config   common.Config
+	//mux      sync.Mutex
 
-	producer sarama.AsyncProducer
+	//producer sarama.AsyncProducer
 
-	wg sync.WaitGroup
+	//wg sync.WaitGroup
 }
 
 type msgRef struct {
@@ -68,20 +71,19 @@ var (
 	errNoTopicsSelected = errors.New("no topic could be selected")
 )
 
-func newKafkaClient(
+func newKafkaRestClient(
 	observer outputs.Observer,
 	hosts []string,
 	index string,
 	key *fmtstr.EventFormatString,
-	//topic outil.Selector,
 	writer codec.Codec,
-	cfg *sarama.Config,
+	//cfg *sarama.Config,
+	cfg *common.Config,
 ) (*client, error) {
 	c := &client{
 		log:      logp.NewLogger(logSelector),
 		observer: observer,
 		hosts:    hosts,
-		//topic:    topic,
 		key:      key,
 		index:    strings.ToLower(index),
 		codec:    writer,
@@ -90,7 +92,9 @@ func newKafkaClient(
 	return c, nil
 }
 
+
 func (c *client) Connect() error {
+/*
 	c.mux.Lock()
 	defer c.mux.Unlock()
 
@@ -108,11 +112,13 @@ func (c *client) Connect() error {
 	c.wg.Add(2)
 	go c.successWorker(producer.Successes())
 	go c.errorWorker(producer.Errors())
-
+*/
 	return nil
 }
 
+
 func (c *client) Close() error {
+/*
 	c.mux.Lock()
 	defer c.mux.Unlock()
 	c.log.Debug("closed kafka client")
@@ -125,6 +131,7 @@ func (c *client) Close() error {
 	c.producer.AsyncClose()
 	c.wg.Wait()
 	c.producer = nil
+*/
 	return nil
 }
 
@@ -158,6 +165,14 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		}
 
 		json.Unmarshal(msg.value, &valueData)
+		if processor,  ok := valueData["processor"]; ok {
+            eventType := processor.(map[string]interface{})["event"].(string)
+            c.log.Debugf(eventType)
+            if(eventType == "metric"){
+                continue;
+            }
+        }
+
 		if labels, ok := valueData["labels"]; ok {
 			profileId := labels.(map[string]interface{})["_tag_profileId"].(string)
 			topic := "trace-" + profileId 
@@ -180,7 +195,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 	if len(data) > 0 {
 		for topic, records := range data {
-			sendErr = sendToDest(url, topic,  records)
+			sendErr = c.sendToDest(url, topic,  records)
 			if sendErr != nil {
 				if evnts, ok:= eventsRecord[topic]; ok {
 					for _, event := range evnts {
@@ -253,12 +268,12 @@ func (c *client) getEventMessage(data *publisher.Event) (*message, error) {
 	buf := make([]byte, len(serializedEvent))
 	copy(buf, serializedEvent)
 	msg.value = buf
-
+/*
 	// message timestamps have been added to kafka with version 0.10.0.0
 	if c.config.Version.IsAtLeast(sarama.V0_10_0_0) {
 		msg.ts = event.Timestamp
 	}
-
+*/
 	if c.key != nil {
 		if key, err := c.key.RunBytes(event); err == nil {
 			msg.key = key
@@ -268,6 +283,7 @@ func (c *client) getEventMessage(data *publisher.Event) (*message, error) {
 	return msg, nil
 }
 
+/*
 func (c *client) successWorker(ch <-chan *sarama.ProducerMessage) {
 	defer c.wg.Done()
 	defer c.log.Debug("Stop kafka ack worker")
@@ -287,6 +303,7 @@ func (c *client) errorWorker(ch <-chan *sarama.ProducerError) {
 		msg.ref.fail(msg, errMsg.Err)
 	}
 }
+*/
 
 func (r *msgRef) done() {
 	r.dec()
@@ -339,10 +356,10 @@ func (r *msgRef) dec() {
 }
 
 func (c *client) Test(d testing.Driver) {
+/*
 	if c.config.Net.TLS.Enable == true {
 		d.Warn("TLS", "Kafka output doesn't support TLS testing")
 	}
-
 	for _, host := range c.hosts {
 		d.Run("Kafka: "+host, func(d testing.Driver) {
 			netDialer := transport.TestNetDialer(d, c.config.Net.DialTimeout)
@@ -351,5 +368,6 @@ func (c *client) Test(d testing.Driver) {
 		})
 	}
 
+*/
 }
 
