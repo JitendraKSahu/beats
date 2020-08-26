@@ -29,14 +29,11 @@ import (
 func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]interface{})error {
 
 	kafkaUrl := "http://" + url +"/topics/" + topic
-	//fmt.Println(kafkaUrl)
 
 	records := make(map[string]interface{})
 	records["records"] = kafkaRecords
-	//fmt.Println(records)
 
 	recordsData, err := json.Marshal(records)
-	//fmt.Println(string(recordsData))
     if err != nil {
         fmt.Println(err)
         return err
@@ -50,14 +47,14 @@ func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]
     }
 
 	req.Header.Set("Content-Type", "application/vnd.kafka.json.v2+json")
-	req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
+	//req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
 
     client := &http.Client{Timeout: 30 * time.Second}
 
     res, err := client.Do(req)
     if err != nil {
 		c.log.Debugf(kafkaUrl)
-        fmt.Println(err)
+    	fmt.Println(err)
         return err
     }
     defer res.Body.Close()
@@ -65,8 +62,8 @@ func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]
 		c.log.Debugf("Successfully sent records to Kafka\n")
     } else {
 		c.log.Debugf(kafkaUrl)
-        c.log.Debugf(string(recordsData))
-        c.log.Debugf("Failed to send Kafka records", res.Status)
+		c.log.Debugf(string(recordsData))
+		c.log.Debugf("Failed to send Kafka records", res.Status)
 		err = errors.New("Failed to send Kafka records")
     }
 
