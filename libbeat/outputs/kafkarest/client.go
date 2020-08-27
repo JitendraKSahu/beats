@@ -154,6 +154,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		batch:  batch,
 	}
 
+	dropped := 0
 	for i := range events {
 		d := &events[i]
 		msg, err := c.getEventMessage(d)
@@ -169,8 +170,9 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
             eventType := processor.(map[string]interface{})["event"].(string)
             c.log.Infof("eventType: %v", eventType)
             if(eventType == "metric"){
-				ref.done()
-				c.observer.Dropped(1)
+				//ref.done()
+				dropped += 1
+				//c.observer.Dropped(1)
                 continue;
             }
         }
@@ -179,9 +181,13 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			profileId := labels.(map[string]interface{})["_tag_profileId"].(string)
 			topic := "trace-" + profileId 
 			record := map[string]interface{}{"key": msg.key, "value": valueData}
-			if _, exist := data[topic]; exist {
-				data[topic] = append(data[topic], record)
-				eventsRecord[topic] = append(eventsRecord[topic], events[i])
+			if rec, exist := data[topic]; exist {
+				rec = append(rec, record)
+				if evnts, exst := eventsRecord[topic]; exst {
+					evnts = append(evnts, events[i])
+				}
+				fmt.Println("189")
+				fmt.Println(data)
 			} else {
 				rec := []map[string]interface{}{}
 				rec = append(rec, record)
@@ -189,13 +195,17 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 				evnts := []publisher.Event{}
 				evnts = append(evnts, events[i])
 				eventsRecord[topic] = evnts
+				fmt.Println("198")
+				fmt.Println(data)
 			}
 			 
 		}
 		fmt.Println(data)
 	}
+	c.observer.Dropped(dropped)
 
 
+	fmt.Println(data)
 	if len(data) > 0 {
 		for topic, records := range data {
 			sendErr = c.sendToDest(url, topic,  records)
