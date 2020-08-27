@@ -53,17 +53,17 @@ func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]
 
     res, err := client.Do(req)
     if err != nil {
-		c.log.Debugf(kafkaUrl)
+		c.log.Infof(kafkaUrl)
     	fmt.Println(err)
         return err
     }
     defer res.Body.Close()
     if res.StatusCode == 200 {
-		c.log.Debugf("Successfully sent records to Kafka\n")
+		c.log.Infof("Successfully sent records to Kafka\n")
     } else {
-		c.log.Debugf(kafkaUrl)
-		c.log.Debugf(string(recordsData))
-		c.log.Debugf("Failed to send Kafka records", res.Status)
+		c.log.Infof(kafkaUrl)
+		c.log.Infof(string(recordsData))
+		c.log.Infof("Failed to send Kafka records", res.Status)
 		err = errors.New("Failed to send Kafka records")
     }
 

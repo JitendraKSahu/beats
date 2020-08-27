@@ -167,7 +167,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		json.Unmarshal(msg.value, &valueData)
 		if processor,  ok := valueData["processor"]; ok {
             eventType := processor.(map[string]interface{})["event"].(string)
-            c.log.Debugf(eventType)
+            c.log.Infof(eventType)
             if(eventType == "metric"){
                 continue;
             }
@@ -334,7 +334,7 @@ func (r *msgRef) dec() {
 		return
 	}
 
-	r.client.log.Debug("finished kafka batch")
+	r.client.log.Info("finished kafka batch")
 	stats := r.client.observer
 
 	err := r.err
@@ -348,7 +348,7 @@ func (r *msgRef) dec() {
 			stats.Acked(success)
 		}
 
-		r.client.log.Debugf("Kafka publish failed with: %+v", err)
+		r.client.log.Infof("Kafka publish failed with: %+v", err)
 	} else {
 		r.batch.ACK()
 		stats.Acked(r.total)
