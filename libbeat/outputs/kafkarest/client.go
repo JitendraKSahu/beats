@@ -182,7 +182,10 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		if labels, ok := valueData["labels"]; ok {
 			profileId := labels.(map[string]interface{})["_tag_profileId"].(string)
 			topic := "trace-" + profileId 
-			record := map[string]interface{}{"key": msg.key, "value": valueData}
+			record := make(map[string]interface{})
+			record["key"] = msg.key
+			record["value"] = valueData
+			//record := map[string]interface{}{"key": msg.key, "value": valueData}
 			if rec, exist := data[topic]; exist {
 				rec = append(rec, record)
 				if evnts, exst := eventsRecord[topic]; exst {
