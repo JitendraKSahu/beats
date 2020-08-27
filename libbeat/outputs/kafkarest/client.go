@@ -169,6 +169,8 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
             eventType := processor.(map[string]interface{})["event"].(string)
             c.log.Infof("eventType: %v", eventType)
             if(eventType == "metric"){
+				ref.done()
+				c.observer.Dropped(1)
                 continue;
             }
         }
