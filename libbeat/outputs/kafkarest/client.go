@@ -21,7 +21,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	//"fmt"
+	"fmt"
 	"strings"
 	//"sync"
 	"sync/atomic"
@@ -192,6 +192,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			}
 			 
 		}
+		fmt.Println(data)
 	}
 
 
