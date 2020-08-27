@@ -193,7 +193,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 				}
 				fmt.Println("189")
 				fmt.Println(record)
-				fmt.Println(data)
+				fmt.Println(*rec)
 			} else {
 				var rec []map[string]interface{}
 				rec = append(rec, record)
@@ -203,7 +203,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 				eventsRecord[topic] = &evnts
 				fmt.Println("198")
 				fmt.Println(record)
-				fmt.Println(data)
+				fmt.Println(rec)
 			}
 			 
 		}
