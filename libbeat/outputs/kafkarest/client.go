@@ -139,7 +139,6 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	events := batch.Events()
 	c.observer.NewBatch(len(events))
 
-	var valueData map[string]interface{}
 	data := make(map[string]*[]map[string]interface{})
 	eventsRecord := make(map[string]*[]publisher.Event)
 	failedEvents := events[:0]
@@ -157,6 +156,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	dropped := 0
 
 	for i := range events {
+		var valueData map[string]interface{}
 		fmt.Printf("len: %d\n",len(events))
 		d := &events[i]
 		msg, err := c.getEventMessage(d)
