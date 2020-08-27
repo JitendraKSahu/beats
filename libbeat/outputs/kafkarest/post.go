@@ -39,7 +39,7 @@ func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]
         return err
     }
 
-	c.log.Debugf("No of records to be sent %d\n", len(kafkaRecords))
+	c.log.Infof("No of records to be sent %d\n", len(kafkaRecords))
 	req, err := http.NewRequest("POST", kafkaUrl, bytes.NewBuffer(recordsData))
     if err != nil {
 		//fmt.Println(err)
