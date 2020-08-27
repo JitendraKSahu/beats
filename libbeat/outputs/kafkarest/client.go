@@ -185,8 +185,10 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			record := make(map[string]interface{})
 			record["key"] = msg.key
 			record["value"] = valueData
+			fmt.Println(record)
 			//record := map[string]interface{}{"key": msg.key, "value": valueData}
 			if rec, exist := data[topic]; exist {
+				fmt.Println(*rec)
 				*rec = append(*rec, record)
 				if evnts, exst := eventsRecord[topic]; exst {
 					*evnts = append(*evnts, events[i])
@@ -196,6 +198,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 				fmt.Println(*rec)
 			} else {
 				var rec []map[string]interface{}
+				fmt.Println(rec)
 				rec = append(rec, record)
 				data[topic] = &rec
 				evnts := []publisher.Event{}
