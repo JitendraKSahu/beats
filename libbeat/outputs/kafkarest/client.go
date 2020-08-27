@@ -140,7 +140,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	c.observer.NewBatch(len(events))
 
 	var valueData map[string]interface{}
-	data := make(map[string]*[]map[string]interface{})
+	data := make(map[string][]map[string]interface{})
 	eventsRecord := make(map[string][]publisher.Event)
 	failedEvents := events[:0]
 	var sendErr error
@@ -157,6 +157,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	dropped := 0
 
 	for i := range events {
+		fmt.Printf("len: %d\n",len(events))
 		d := &events[i]
 		msg, err := c.getEventMessage(d)
 		if err != nil {
@@ -183,20 +184,22 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			topic := "trace-" + profileId 
 			record := map[string]interface{}{"key": msg.key, "value": valueData}
 			if rec, exist := data[topic]; exist {
-				*rec = append(*rec, record)
+				rec = append(rec, record)
 				if evnts, exst := eventsRecord[topic]; exst {
 					evnts = append(evnts, events[i])
 				}
 				fmt.Println("189")
+				fmt.Println(record)
 				fmt.Println(data)
 			} else {
-				rec := []map[string]interface{}{}
+				var rec []map[string]interface{}
 				rec = append(rec, record)
-				data[topic] = &rec
+				data[topic] = rec
 				evnts := []publisher.Event{}
 				evnts = append(evnts, events[i])
 				eventsRecord[topic] = evnts
 				fmt.Println("198")
+				fmt.Println(record)
 				fmt.Println(data)
 			}
 			 
@@ -209,7 +212,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	fmt.Println(data)
 	if len(data) > 0 {
 		for topic, records := range data {
-			sendErr = c.sendToDest(url, topic,  *records)
+			sendErr = c.sendToDest(url, topic,  records)
 			if sendErr != nil {
 				if evnts, ok:= eventsRecord[topic]; ok {
 					for _, event := range evnts {
