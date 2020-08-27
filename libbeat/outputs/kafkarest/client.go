@@ -167,7 +167,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		json.Unmarshal(msg.value, &valueData)
 		if processor,  ok := valueData["processor"]; ok {
             eventType := processor.(map[string]interface{})["event"].(string)
-            c.log.Infof(eventType)
+            c.log.Infof("eventType: %v", eventType)
             if(eventType == "metric"){
                 continue;
             }
