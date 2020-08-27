@@ -21,7 +21,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"fmt"
+	//"fmt"
 	"strings"
 	//"sync"
 	"sync/atomic"
@@ -157,7 +157,6 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 
 	for i := range events {
 		var valueData map[string]interface{}
-		fmt.Printf("len: %d\n",len(events))
 		d := &events[i]
 		msg, err := c.getEventMessage(d)
 		if err != nil {
@@ -183,11 +182,12 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 			record := map[string]interface{}{"key": msg.key, "value": valueData}
 			if rec, exist := data[topic]; exist {
 				rec = append(rec, record)
+				data[topic] = rec
 				if evnts, exst := eventsRecord[topic]; exst {
 					evnts = append(evnts, events[i])
+					eventsRecord[topic] = evnts
 				}
 			} else {
-				//var rec []map[string]interface{}
 				rec := []map[string]interface{}{}
 				rec = append(rec, record)
 				data[topic] = rec
