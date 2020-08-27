@@ -139,8 +139,8 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 	events := batch.Events()
 	c.observer.NewBatch(len(events))
 
-	data := make(map[string]*[]map[string]interface{})
-	eventsRecord := make(map[string]*[]publisher.Event)
+	data := make(map[string][]map[string]interface{})
+	eventsRecord := make(map[string][]publisher.Event)
 	failedEvents := events[:0]
 	var sendErr error
 	url := c.hosts[0]
@@ -172,9 +172,7 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
             eventType := processor.(map[string]interface{})["event"].(string)
             c.log.Infof("eventType: %v", eventType)
             if(eventType == "metric"){
-				//ref.done()
 				dropped += 1
-				//c.observer.Dropped(1)
                 continue;
             }
         }
@@ -182,46 +180,33 @@ func (c *client) Publish(_ context.Context, batch publisher.Batch) error {
 		if labels, ok := valueData["labels"]; ok {
 			profileId := labels.(map[string]interface{})["_tag_profileId"].(string)
 			topic := "trace-" + profileId 
-			record := make(map[string]interface{})
-			record["key"] = msg.key
-			record["value"] = valueData
-			fmt.Println(record)
-			//record := map[string]interface{}{"key": msg.key, "value": valueData}
+			record := map[string]interface{}{"key": msg.key, "value": valueData}
 			if rec, exist := data[topic]; exist {
-				fmt.Println(*rec)
-				*rec = append(*rec, record)
-				if evnts, exst := eventsRecord[topic]; exst {
-					*evnts = append(*evnts, events[i])
-				}
-				fmt.Println("189")
-				fmt.Println(record)
-				fmt.Println(*rec)
-			} else {
-				var rec []map[string]interface{}
-				fmt.Println(rec)
 				rec = append(rec, record)
-				data[topic] = &rec
+				if evnts, exst := eventsRecord[topic]; exst {
+					evnts = append(evnts, events[i])
+				}
+			} else {
+				//var rec []map[string]interface{}
+				rec := []map[string]interface{}{}
+				rec = append(rec, record)
+				data[topic] = rec
 				evnts := []publisher.Event{}
 				evnts = append(evnts, events[i])
-				eventsRecord[topic] = &evnts
-				fmt.Println("198")
-				fmt.Println(record)
-				fmt.Println(rec)
+				eventsRecord[topic] = evnts
 			}
 			 
 		}
-		fmt.Println(data)
 	}
 	c.observer.Dropped(dropped)
 
 
-	fmt.Println(data)
 	if len(data) > 0 {
 		for topic, records := range data {
-			sendErr = c.sendToDest(url, topic,  *records)
+			sendErr = c.sendToDest(url, topic,  records)
 			if sendErr != nil {
 				if evnts, ok:= eventsRecord[topic]; ok {
-					for _, event := range *evnts {
+					for _, event := range evnts {
 						failedEvents = append(failedEvents, event) 		
 					}
 				}
