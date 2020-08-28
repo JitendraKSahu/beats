@@ -89,7 +89,7 @@ func makeKafkaRest(
 	}
 
 	token := getToken(cfg)
-	fmt.Printf("Token: %v\n", token[0])
+	fmt.Printf("Token: %v\n", token[0] == "")
 
 	client, err := newKafkaRestClient(observer, hosts, beat.IndexPrefix, config.Key, codec, cfg, token)
 	if err != nil {
