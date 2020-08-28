@@ -27,6 +27,11 @@ import (
 )
 
 func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]interface{})error {
+	if c.token != nil{ 
+		fmt.Println(c.token[0])
+	} else {
+		fmt.Println("No token")
+	}
 
 	kafkaUrl := "http://" + url +"/topics/" + topic
 
