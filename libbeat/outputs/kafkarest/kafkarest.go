@@ -89,7 +89,7 @@ func makeKafkaRest(
 	}
 
 	token := getToken(cfg)
-	fmt.Printf("Token: %v\n", token[0] == "")
+	fmt.Printf("Token: %v\n", token == "")
 
 	client, err := newKafkaRestClient(observer, hosts, beat.IndexPrefix, config.Key, codec, cfg, token)
 	if err != nil {
@@ -113,17 +113,17 @@ func buildTopicSelector(cfg *common.Config) (outil.Selector, error) {
 	})
 }
 
-func getToken(cfg *common.Config) ([]string) {
+func getToken(cfg *common.Config) (string) {
 	config := struct {
 		Token  string `config:"token"`
 	}{}
 
 	err := cfg.Unpack(&config)
 	if err != nil {
-		return nil
+		return ""
 	}
 
-	token := []string{config.Token}
+	token := config.Token
 
 	return token;
 }

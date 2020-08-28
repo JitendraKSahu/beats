@@ -56,7 +56,7 @@ type client struct {
 
 	//wg sync.WaitGroup
 
-	token	 []string
+	token	 string
 }
 
 type msgRef struct {
@@ -81,7 +81,7 @@ func newKafkaRestClient(
 	writer codec.Codec,
 	//cfg *sarama.Config,
 	cfg *common.Config,
-	token []string,
+	token string,
 ) (*client, error) {
 	c := &client{
 		log:      logp.NewLogger(logSelector),
