@@ -63,6 +63,7 @@ func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]
     res, err := client.Do(req)
     if err != nil {
 		c.log.Infof(kafkaUrl)
+		c.log.Infof("Failed, Status code", res.Status)	
     	fmt.Println(err)
         return err
     }
