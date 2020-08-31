@@ -53,10 +53,10 @@ func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]
     }
 
 	req.Header.Set("Content-Type", "application/vnd.kafka.json.v2+json")
-	//if c.token != "" {
-	//	req.Header.Set("Authorization", c.token)
-	//}
-	req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
+	if c.token != "" {
+		req.Header.Set("Authorization", c.token)
+	}
+	//req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
 
     client := &http.Client{Timeout: 10 * time.Second}
 
