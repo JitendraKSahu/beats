@@ -58,12 +58,11 @@ func (c *client) sendToDest(url string, topic string, kafkaRecords []map[string]
 	//}
 	req.Header.Set("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoiYWRtaW4vYWRtaW4iLCJpc3MiOiJsb2dhcmNoaXZhbCJ9.Aqhl-amaKaKDoXDc0-8TN4hhI7FFkLa76GwDMBTmR8s")
 
-    client := &http.Client{Timeout: 30 * time.Second}
+    client := &http.Client{Timeout: 10 * time.Second}
 
     res, err := client.Do(req)
     if err != nil {
 		c.log.Infof(kafkaUrl)
-		c.log.Infof("Failed, Status code", res.Status)	
     	fmt.Println(err)
         return err
     }
