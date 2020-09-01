@@ -19,7 +19,6 @@ package kafkarest
 
 import (
 	"errors"
-	"fmt"
 	"time"
 
 	"github.com/Shopify/sarama"
@@ -89,7 +88,6 @@ func makeKafkaRest(
 	}
 
 	token := getToken(cfg)
-	fmt.Printf("Token: %v\n", token == "")
 
 	client, err := newKafkaRestClient(observer, hosts, beat.IndexPrefix, config.Key, codec, cfg, token)
 	if err != nil {
